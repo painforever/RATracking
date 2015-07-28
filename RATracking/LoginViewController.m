@@ -21,7 +21,13 @@
 }
 
 - (IBAction)login_action:(id)sender {
-    [self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
+    [[User getAFManager] POST: [SERVER_URL stringByAppendingString:@"sessions"] parameters:@{@"email": self.email.text, @"password": self.password.text} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"success");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"failed");
+    }];
+    NSLog(@"clicked!");
+   // [self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{

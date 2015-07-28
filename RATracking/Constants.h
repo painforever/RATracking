@@ -1,5 +1,5 @@
 //
-//  Manifest.h
+//  Constants.h
 //  RATracking
 //
 //  Created by Yu Song on 7/28/15.
@@ -7,11 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MagicPieLayer.h>
-#import "User.h"
-#import "Constants.h"
 
-
-@interface Manifest : NSObject
-
+@interface Constants : NSObject
+extern NSString *SERVER_URL;
 @end

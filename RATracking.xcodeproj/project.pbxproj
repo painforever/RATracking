@@ -29,6 +29,8 @@
 		CF68295F1B6800B2004DE59E /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829591B6800B2004DE59E /* icon6.png */; };
 		CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829611B680AF2004DE59E /* ReportViewController.m */; };
 		CF6829651B68127A004DE59E /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829641B68127A004DE59E /* Manifest.m */; };
+		CFB6D0121B684250004849C4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0111B684250004849C4 /* Constants.m */; };
+		CFB6D0161B6842AD004849C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0151B6842AD004849C4 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		CF6829611B680AF2004DE59E /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		CF6829631B68127A004DE59E /* Manifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manifest.h; sourceTree = "<group>"; };
 		CF6829641B68127A004DE59E /* Manifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manifest.m; sourceTree = "<group>"; };
+		CFB6D0101B684250004849C4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CFB6D0111B684250004849C4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		CFB6D0141B6842AD004849C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CFB6D0151B6842AD004849C4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,8 @@
 		CF6829151B67D889004DE59E /* RATracking */ = {
 			isa = PBXGroup;
 			children = (
+				CFB6D0131B68429C004849C4 /* Models */,
+				CFB6D00F1B6841D8004849C4 /* Constants */,
 				CF6829531B67FFBC004DE59E /* Images */,
 				CF68294A1B67FCE7004DE59E /* Libs */,
 				CF6829461B67E5C1004DE59E /* Categories */,
@@ -237,6 +245,24 @@
 				CF6829591B6800B2004DE59E /* icon6.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		CFB6D00F1B6841D8004849C4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6D0101B684250004849C4 /* Constants.h */,
+				CFB6D0111B684250004849C4 /* Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		CFB6D0131B68429C004849C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6D0141B6842AD004849C4 /* User.h */,
+				CFB6D0151B6842AD004849C4 /* User.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB6D0121B684250004849C4 /* Constants.m in Sources */,
 				CF6829491B67E62B004DE59E /* UIViewController+SharedUIMethods.m in Sources */,
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
@@ -388,6 +415,7 @@
 				CF6829651B68127A004DE59E /* Manifest.m in Sources */,
 				CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */,
 				CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */,
+				CFB6D0161B6842AD004849C4 /* User.m in Sources */,
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CF6829191B67D889004DE59E /* main.m in Sources */,
