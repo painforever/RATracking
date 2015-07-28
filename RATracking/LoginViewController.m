@@ -21,8 +21,7 @@
 }
 
 - (IBAction)login_action:(id)sender {
-    [self jumpToViewController: @"HomeViewController"];
-    //[self showProgressBar];
+    [self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{

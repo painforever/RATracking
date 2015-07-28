@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "JKPopMenuItem.h"
 #import "JKPopMenuView.h"
+#import "ReportViewController.h"
+#import "UIViewController+SharedUIMethods.h"
+#import "Manifest.h"
 
 @interface HomeViewController : UIViewController <JKPopMenuViewSelectDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *actions_btn;

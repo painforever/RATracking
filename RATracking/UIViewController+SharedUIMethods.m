@@ -24,6 +24,19 @@
     [self presentViewController:view animated:YES completion:nil];
 }
 
+-(void)pushToViewController:(NSString *)viewControllerClass{
+    UIViewController *view = [self.storyboard instantiateViewControllerWithIdentifier: viewControllerClass];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
+-(void)pushToViewControllerAlwaysWithNavBar:(NSString *)viewControllerClass{
+    UIViewController *myViewController = [self.storyboard instantiateViewControllerWithIdentifier: viewControllerClass];
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController:myViewController];
+    //now present this navigation controller modally
+    [self presentViewController:navigationController animated:YES completion:^{}];
+}
+
 -(void)showProgressBar{
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(floor(self.view.bounds.size.width/2), floor(self.view.bounds.size.height/2), 50, 50)];
     topView.backgroundColor = [UIColor blackColor];

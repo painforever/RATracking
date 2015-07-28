@@ -13,7 +13,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Overview of reports";
     // Do any additional setup after loading the view, typically from a nib.
+    
+    PieLayer* pieLayer = [[PieLayer alloc] init];
+    pieLayer.frame = CGRectMake((self.view.bounds.size.width/2)-150, (self.view.bounds.size.height/2)-150, 300, 300);
+    [pieLayer addValues:@[[PieElement pieElementWithValue:5.0 color:[UIColor redColor]],
+                          [PieElement pieElementWithValue:4.0 color:[UIColor grayColor]],
+                          [PieElement pieElementWithValue:7.0 color:[UIColor greenColor]]] animated:YES];
+    [self.view.layer addSublayer:pieLayer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +36,6 @@
         JKPopMenuItem *item = [JKPopMenuItem itemWithTitle:string image:[UIImage imageNamed:string]];
         [array addObject:item];
     }
-    
     JKPopMenuView *jkpop = [JKPopMenuView menuViewWithItems:array];
     jkpop.delegate = self;
     [jkpop show];
@@ -37,6 +44,7 @@
 #pragma mark App JKPopMenuViewSelectDelegate
 - (void)popMenuViewSelectIndex:(NSInteger)index
 {
-    NSLog(@"%s",__func__);
+    NSLog(@"%d", index);
+    [self pushToViewController: @"ReportViewController"];
 }
 @end

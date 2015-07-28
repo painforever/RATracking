@@ -27,6 +27,8 @@
 		CF68295D1B6800B2004DE59E /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829571B6800B2004DE59E /* icon4.png */; };
 		CF68295E1B6800B2004DE59E /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829581B6800B2004DE59E /* icon5.png */; };
 		CF68295F1B6800B2004DE59E /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829591B6800B2004DE59E /* icon6.png */; };
+		CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829611B680AF2004DE59E /* ReportViewController.m */; };
+		CF6829651B68127A004DE59E /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829641B68127A004DE59E /* Manifest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		CF6829571B6800B2004DE59E /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon4.png; path = Images/icon4.png; sourceTree = SOURCE_ROOT; };
 		CF6829581B6800B2004DE59E /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon5.png; path = Images/icon5.png; sourceTree = SOURCE_ROOT; };
 		CF6829591B6800B2004DE59E /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon6.png; path = Images/icon6.png; sourceTree = SOURCE_ROOT; };
+		CF6829601B680AF1004DE59E /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		CF6829611B680AF2004DE59E /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		CF6829631B68127A004DE59E /* Manifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manifest.h; sourceTree = "<group>"; };
+		CF6829641B68127A004DE59E /* Manifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manifest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,8 @@
 			children = (
 				CF6829431B67E58D004DE59E /* HomeViewController.h */,
 				CF6829441B67E58D004DE59E /* HomeViewController.m */,
+				CF6829601B680AF1004DE59E /* ReportViewController.h */,
+				CF6829611B680AF2004DE59E /* ReportViewController.m */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -212,6 +220,8 @@
 				CF68294C1B67FD0F004DE59E /* JKPopMenuItem.m */,
 				CF68294D1B67FD0F004DE59E /* JKPopMenuView.h */,
 				CF68294E1B67FD0F004DE59E /* JKPopMenuView.m */,
+				CF6829631B68127A004DE59E /* Manifest.h */,
+				CF6829641B68127A004DE59E /* Manifest.m */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -375,7 +385,9 @@
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
+				CF6829651B68127A004DE59E /* Manifest.m in Sources */,
 				CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */,
+				CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */,
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CF6829191B67D889004DE59E /* main.m in Sources */,

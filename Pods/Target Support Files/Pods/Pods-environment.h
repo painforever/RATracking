@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_FXBlurView 6
 #define COCOAPODS_VERSION_PATCH_FXBlurView 3
 
+// MagicPie
+#define COCOAPODS_POD_AVAILABLE_MagicPie
+#define COCOAPODS_VERSION_MAJOR_MagicPie 1
+#define COCOAPODS_VERSION_MINOR_MagicPie 1
+#define COCOAPODS_VERSION_PATCH_MagicPie 1
+
 // SocketRocket
 #define COCOAPODS_POD_AVAILABLE_SocketRocket
 #define COCOAPODS_VERSION_MAJOR_SocketRocket 0

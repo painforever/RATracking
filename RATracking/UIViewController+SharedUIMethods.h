@@ -16,5 +16,7 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 
 -(void)showAlert: (NSString *)title withMessage: (NSString *)msg;
 -(void)jumpToViewController: (NSString *)ViewControllerClass;
+-(void)pushToViewController: (NSString *)viewControllerClass;
+-(void)pushToViewControllerAlwaysWithNavBar: (NSString *)viewControllerClass;
 -(void)showProgressBar;
 @end
