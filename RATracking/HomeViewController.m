@@ -14,6 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Home";
+    [self.menu close];
     // Do any additional setup after loading the view, typically from a nib.
     
     PieLayer* pieLayer = [[PieLayer alloc] init];
@@ -65,7 +66,7 @@
     [self.menu setCloseCompletionHandler:^{
         NSLog(@"Menu did close");
     }];
-    [self.menu showFromNavigationController:self.navigationController];
+    //[self.menu showFromNavigationController:self.navigationController];
 }
 
 - (IBAction)toggleMenu: (id)sender
