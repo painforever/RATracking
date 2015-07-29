@@ -13,5 +13,5 @@
 @interface User : NSObject
 +(AFHTTPRequestOperationManager*)getAFManager;
 
-+(NSString *)login: (NSString *)email withPassword: (NSString *)password;
+//+(NSString *)login: (NSString *)email withPassword: (NSString *)password;
 @end

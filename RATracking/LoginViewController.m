@@ -12,6 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.email.delegate = self;
+    self.password.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -22,18 +24,20 @@
 
 - (IBAction)login_action:(id)sender {
     [[User getAFManager] POST: [SERVER_URL stringByAppendingString:@"sessions"] parameters:@{@"email": self.email.text, @"password": self.password.text} success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"success");
+        if ([operation.response statusCode] == 201){
+            [self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"failed");
+        if ([operation.response statusCode] == 500) [self showAlert:@"Email/Password is wrong!" withMessage:@"Email or password is wrong!"];
     }];
-    NSLog(@"clicked!");
-   // [self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
 }
 
--(void)textFieldDidBeginEditing:(UITextField *)textField{
+-(void)textFieldDidEndEditing:(UITextField *)textField{
     [textField resignFirstResponder];
 }
--(void)textFieldDidEndEditing:(UITextField *)textField{
+
+-(void)textFieldShouldReturn:(UITextField *)textField
+{
     [textField resignFirstResponder];
 }
 @end

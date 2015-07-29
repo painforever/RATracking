@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="300" id="MOO-Xx-nGE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Om-9qm">
                                 <rect key="frame" x="38" y="275" width="298" height="30"/>
@@ -90,33 +90,29 @@
                     <view key="view" contentMode="scaleToFill" id="5uT-cI-4rZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxK-Yu-Lu1">
-                                <rect key="frame" x="16" y="55" width="106" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="juS-t6-WLd">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ljF-IP-7cD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9r0-UM-YGZ">
+                                <rect key="frame" x="16" y="7" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="MbD-et-eT4"/>
-                                    <constraint firstAttribute="height" constant="47" id="kga-6W-kyJ"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Actions">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="actions_action:" destination="O59-4K-KbT" eventType="touchUpInside" id="z3h-OL-Jkp"/>
+                                    <action selector="actions_action:" destination="O59-4K-KbT" eventType="touchUpInside" id="Q6z-0A-09W"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="KxK-Yu-Lu1" firstAttribute="leading" secondItem="5uT-cI-4rZ" secondAttribute="leading" constant="16" id="KLI-KC-Zhc"/>
-                            <constraint firstItem="KxK-Yu-Lu1" firstAttribute="top" secondItem="jnn-to-NGr" secondAttribute="bottom" constant="50" id="Sy2-jm-IWZ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="juS-t6-WLd"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="actions_btn" destination="KxK-Yu-Lu1" id="Guj-ZT-IN2"/>
+                        <outlet property="actions_btn" destination="9r0-UM-YGZ" id="Cnc-ir-cES"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJC-I3-ZKc" userLabel="First Responder" sceneMemberID="firstResponder"/>

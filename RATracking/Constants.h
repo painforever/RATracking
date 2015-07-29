@@ -10,4 +10,6 @@
 
 @interface Constants : NSObject
 extern NSString *SERVER_URL;
+extern NSString *user_id;
+extern NSString *full_name;
 @end

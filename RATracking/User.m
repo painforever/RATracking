@@ -17,7 +17,7 @@ static AFHTTPRequestOperationManager *manager = nil;
     return manager;
 }
 
-+(NSString *)login:(NSString *)email withPassword:(NSString *)password{
-    return @"";
-}
+//+(NSString *)login:(NSString *)email withPassword:(NSString *)password{
+//    return @"";
+//}
 @end

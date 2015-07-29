@@ -37,19 +37,4 @@
     [self presentViewController:navigationController animated:YES completion:^{}];
 }
 
--(void)showProgressBar{
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(floor(self.view.bounds.size.width/2), floor(self.view.bounds.size.height/2), 50, 50)];
-    topView.backgroundColor = [UIColor blackColor];
-    
-    THProgressView *topProgressView = [[THProgressView alloc] initWithFrame:CGRectMake(CGRectGetMidX(topView.frame) - progressViewSize.width / 2.0f,
-                                                                                       CGRectGetMidY(topView.frame) - progressViewSize.height / 2.0f,
-                                                                                       progressViewSize.width,
-                                                                                       progressViewSize.height)];
-    topProgressView.borderTintColor = [UIColor whiteColor];
-    topProgressView.progressTintColor = [UIColor whiteColor];
-    //topProgressView.backgroundColor = [UIColor redColor];
-    [topView addSubview:topProgressView];
-    [self.view addSubview:topView];
-}
-
 @end
