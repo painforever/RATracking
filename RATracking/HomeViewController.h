@@ -12,9 +12,11 @@
 #import "ReportViewController.h"
 #import "UIViewController+SharedUIMethods.h"
 #import "Manifest.h"
+#include "REMenu.h"
 
 @interface HomeViewController : UIViewController <JKPopMenuViewSelectDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *actions_btn;
+@property (strong, readwrite, nonatomic) REMenu *menu;
 - (IBAction)actions_action:(id)sender;
-
+- (IBAction)toggleMenu:(id)sender;
 @end
