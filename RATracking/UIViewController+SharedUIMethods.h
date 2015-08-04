@@ -12,10 +12,14 @@
 #import "JKPopMenuItem.h"
 #import "JKPopMenuView.h"
 
+//ViewControllers that needed
+#import "AddMedicationViewController.h"
+
 #define DEFAULT_BLUE [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]
 static const CGSize progressViewSize = { 100.0f, 10.0f };
 
 @interface UIViewController (SharedUIMethods)
+@property (strong, readwrite, nonatomic) REMenu *menu;
 
 -(void)showAlert: (NSString *)title withMessage: (NSString *)msg;
 -(void)jumpToViewController: (NSString *)ViewControllerClass;

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+SharedUIMethods.h"
 
-@interface AdverseEventViewController : UIViewController
-
+@interface AdverseEventViewController : UIViewController <JKPopMenuViewSelectDelegate >
+@property (strong, nonatomic) REMenu *menu;
+- (IBAction)actions_action:(id)sender;
+- (IBAction)toggleMenu:(id)sender;
 @end

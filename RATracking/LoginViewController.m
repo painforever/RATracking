@@ -31,6 +31,9 @@
 //        if ([operation.response statusCode] == 500) [self showAlert:@"Email/Password is wrong!" withMessage:@"Email or password is wrong!"];
 //    }];
     //[self pushToViewControllerAlwaysWithNavBar: @"HomeViewController"];
+    
+    med_name_arr = @[@"Orencia", @"Enbrel", @"Xeljanz"];
+    route_name_arr = @[@"ORAL", @"SHOOT"];
     UITabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
     AppDelegate *ddd = [UIApplication sharedApplication].delegate;
     [ddd.window setRootViewController: tabBarController];

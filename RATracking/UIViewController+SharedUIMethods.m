@@ -43,7 +43,7 @@
                                                        image:[UIImage imageNamed:@"Icon_Home"]
                                             highlightedImage:nil
                                                       action:^(REMenuItem *item) {
-                                                          NSLog(@"Item: %@", item);
+                                                          [self pushToViewController:@"AddMedicationViewController"];
                                                       }];
     
     return @[addMedication];

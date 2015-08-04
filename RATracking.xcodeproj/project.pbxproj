@@ -37,6 +37,7 @@
 		CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9BA1B71104F002AC0F9 /* treatment_plan_filled-32.png */; };
 		CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */; };
 		CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3A9C41B7119AB002AC0F9 /* JointViewController.m */; };
+		CFE3A9C91B714BC8002AC0F9 /* AddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3A9C81B714BC8002AC0F9 /* AddMedicationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverseEventViewController.m; sourceTree = "<group>"; };
 		CFE3A9C31B7119AB002AC0F9 /* JointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JointViewController.h; sourceTree = "<group>"; };
 		CFE3A9C41B7119AB002AC0F9 /* JointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JointViewController.m; sourceTree = "<group>"; };
+		CFE3A9C71B714BC8002AC0F9 /* AddMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicationViewController.h; sourceTree = "<group>"; };
+		CFE3A9C81B714BC8002AC0F9 /* AddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,7 @@
 		CF68293D1B67D89A004DE59E /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CFE3A9C61B714BAD002AC0F9 /* RxHistory */,
 				CF6829431B67E58D004DE59E /* HomeViewController.h */,
 				CF6829441B67E58D004DE59E /* HomeViewController.m */,
 				CFE3A9C01B711722002AC0F9 /* AdverseEventViewController.h */,
@@ -291,6 +295,15 @@
 				CFE3A9BA1B71104F002AC0F9 /* treatment_plan_filled-32.png */,
 			);
 			name = tabbar_icons;
+			sourceTree = "<group>";
+		};
+		CFE3A9C61B714BAD002AC0F9 /* RxHistory */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3A9C71B714BC8002AC0F9 /* AddMedicationViewController.h */,
+				CFE3A9C81B714BC8002AC0F9 /* AddMedicationViewController.m */,
+			);
+			name = RxHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +458,7 @@
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
+				CFE3A9C91B714BC8002AC0F9 /* AddMedicationViewController.m in Sources */,
 				CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */,
 				CF6829651B68127A004DE59E /* Manifest.m in Sources */,
 				CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */,

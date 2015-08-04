@@ -12,4 +12,8 @@
 extern NSString *SERVER_URL;
 extern NSString *user_id;
 extern NSString *full_name;
+
+//non control properties
+extern NSArray *med_name_arr;
+extern NSArray *route_name_arr;
 @end
