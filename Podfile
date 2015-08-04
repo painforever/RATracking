@@ -6,5 +6,4 @@ pod "AFNetworking", "~> 2.0"
 pod 'CWPopup', '~> 1.2.4'
 pod 'THProgressView', '~> 1.0'
 pod 'FXBlurView', '~> 1.6.3'
-pod 'MagicPie'
 pod 'REMenu'

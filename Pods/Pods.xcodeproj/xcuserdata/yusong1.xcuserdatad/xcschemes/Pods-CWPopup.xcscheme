@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C96A841ADF385317D0536DA"
+               BlueprintIdentifier = "0917BD35E5CA2121237652B0"
                BuildableName = "libPods-CWPopup.a"
                BlueprintName = "Pods-CWPopup"
                ReferencedContainer = "container:Pods.xcodeproj">

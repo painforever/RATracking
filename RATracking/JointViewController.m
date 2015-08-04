@@ -1,16 +1,14 @@
-
 //
-//  HomeViewController.m
+//  JointViewController.m
 //  RATracking
 //
-//  Created by Yu Song on 7/28/15.
+//  Created by Yu Song on 8/4/15.
 //  Copyright (c) 2015 EagleForce. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "JointViewController.h"
 
-@implementation HomeViewController
-
+@implementation JointViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initControls];
@@ -36,9 +34,9 @@
 }
 
 -(void)initControls{
-    self.title = @"Rx History";
     [self.menu close];
-    self.menu = [[REMenu alloc] initWithItems:[self actionsInRxHistory]];
+    self.title = @"Joint Report";
+    self.menu = [[REMenu alloc] initWithItems:[self actionsInJoint]];
     [self.menu setClosePreparationBlock:^{
         NSLog(@"Menu will close");
     }];

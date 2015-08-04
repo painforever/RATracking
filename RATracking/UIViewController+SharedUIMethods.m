@@ -37,4 +37,49 @@
     [self presentViewController:navigationController animated:YES completion:^{}];
 }
 
+-(NSArray *)actionsInRxHistory{
+    REMenuItem *addMedication = [[REMenuItem alloc] initWithTitle:@"Add RA Medications"
+                                                    subtitle:@"add new medications that you are taking"
+                                                       image:[UIImage imageNamed:@"Icon_Home"]
+                                            highlightedImage:nil
+                                                      action:^(REMenuItem *item) {
+                                                          NSLog(@"Item: %@", item);
+                                                      }];
+    
+    return @[addMedication];
+}
+
+-(NSArray *)actionsInAdverseEvent{
+    REMenuItem *addadverseEvent = [[REMenuItem alloc] initWithTitle:@"Report new adverse event"
+                                                         subtitle:@"You can report any adverse event for any drugs."
+                                                            image:[UIImage imageNamed:@"Icon_Home"]
+                                                 highlightedImage:nil
+                                                           action:^(REMenuItem *item) {
+                                                               NSLog(@"Item: %@", item);
+                                                           }];
+    return @[addadverseEvent];
+}
+
+-(NSArray *)actionsInJoint{
+    REMenuItem *joint = [[REMenuItem alloc] initWithTitle:@"Report pain of joints"
+                                                           subtitle:@"Let us know your pain of all kinds of joints anytime."
+                                                              image:[UIImage imageNamed:@"Icon_Home"]
+                                                   highlightedImage:nil
+                                                             action:^(REMenuItem *item) {
+                                                                 NSLog(@"Item: %@", item);
+                                                             }];
+    return @[joint];
+}
+
+-(void)quickStart{
+    NSMutableArray *array = [[NSMutableArray alloc]init];
+    for (NSInteger i = 1; i < 7; i++) {
+        NSString *string = [NSString stringWithFormat:@"icon%ld",i];
+        JKPopMenuItem *item = [JKPopMenuItem itemWithTitle:string image:[UIImage imageNamed:string]];
+        [array addObject:item];
+    }
+    JKPopMenuView *jkpop = [JKPopMenuView menuViewWithItems:array];
+    jkpop.delegate = self;
+    [jkpop show];
+}
 @end

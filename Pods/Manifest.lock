@@ -22,7 +22,6 @@ PODS:
     - AFNetworking/NSURLSession
   - CWPopup (1.2.6)
   - FXBlurView (1.6.3)
-  - MagicPie (1.1.1)
   - REMenu (1.10)
   - SocketRocket (0.4)
   - THProgressView (1.0)
@@ -32,7 +31,6 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - CWPopup (~> 1.2.4)
   - FXBlurView (~> 1.6.3)
-  - MagicPie
   - REMenu
   - SocketRocket
   - THProgressView (~> 1.0)
@@ -42,7 +40,6 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   CWPopup: 3f8b0704a9914813d90372d66525d31f24b27d49
   FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
-  MagicPie: 0cfe79ae6e312d64f6799e3c2ba146b26ba5c79c
   REMenu: 30dad195930adf6c5eeb8041e3257aa60bf9fa49
   SocketRocket: 01443933b7bc362621325f4607b80b4286a99707
   THProgressView: 999dc78f748f4cb6d69408f545de4d82ef7f1cec

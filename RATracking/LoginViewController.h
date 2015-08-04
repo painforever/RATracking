@@ -10,6 +10,7 @@
 #import "UIViewController+SharedUIMethods.h"
 #import "HomeViewController.h"
 #import "Manifest.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *email;

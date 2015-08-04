@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MagicPieLayer.h>
 #import "User.h"
 #import "Constants.h"
 

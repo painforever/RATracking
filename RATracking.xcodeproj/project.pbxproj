@@ -27,10 +27,16 @@
 		CF68295D1B6800B2004DE59E /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829571B6800B2004DE59E /* icon4.png */; };
 		CF68295E1B6800B2004DE59E /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829581B6800B2004DE59E /* icon5.png */; };
 		CF68295F1B6800B2004DE59E /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829591B6800B2004DE59E /* icon6.png */; };
-		CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829611B680AF2004DE59E /* ReportViewController.m */; };
 		CF6829651B68127A004DE59E /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829641B68127A004DE59E /* Manifest.m */; };
 		CFB6D0121B684250004849C4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0111B684250004849C4 /* Constants.m */; };
 		CFB6D0161B6842AD004849C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0151B6842AD004849C4 /* User.m */; };
+		CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */; };
+		CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B71B71104F002AC0F9 /* ambulance_filled-32.png */; };
+		CFE3A9BD1B71104F002AC0F9 /* body_scan_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B81B71104F002AC0F9 /* body_scan_filled-32.png */; };
+		CFE3A9BE1B71104F002AC0F9 /* compass_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B91B71104F002AC0F9 /* compass_filled-32.png */; };
+		CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9BA1B71104F002AC0F9 /* treatment_plan_filled-32.png */; };
+		CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */; };
+		CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3A9C41B7119AB002AC0F9 /* JointViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +83,21 @@
 		CF6829571B6800B2004DE59E /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon4.png; path = Images/icon4.png; sourceTree = SOURCE_ROOT; };
 		CF6829581B6800B2004DE59E /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon5.png; path = Images/icon5.png; sourceTree = SOURCE_ROOT; };
 		CF6829591B6800B2004DE59E /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon6.png; path = Images/icon6.png; sourceTree = SOURCE_ROOT; };
-		CF6829601B680AF1004DE59E /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
-		CF6829611B680AF2004DE59E /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		CF6829631B68127A004DE59E /* Manifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manifest.h; sourceTree = "<group>"; };
 		CF6829641B68127A004DE59E /* Manifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manifest.m; sourceTree = "<group>"; };
 		CFB6D0101B684250004849C4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CFB6D0111B684250004849C4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		CFB6D0141B6842AD004849C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		CFB6D0151B6842AD004849C4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity_feed_2-32.png"; sourceTree = "<group>"; };
+		CFE3A9B71B71104F002AC0F9 /* ambulance_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ambulance_filled-32.png"; sourceTree = "<group>"; };
+		CFE3A9B81B71104F002AC0F9 /* body_scan_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "body_scan_filled-32.png"; sourceTree = "<group>"; };
+		CFE3A9B91B71104F002AC0F9 /* compass_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_filled-32.png"; sourceTree = "<group>"; };
+		CFE3A9BA1B71104F002AC0F9 /* treatment_plan_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "treatment_plan_filled-32.png"; sourceTree = "<group>"; };
+		CFE3A9C01B711722002AC0F9 /* AdverseEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverseEventViewController.h; sourceTree = "<group>"; };
+		CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverseEventViewController.m; sourceTree = "<group>"; };
+		CFE3A9C31B7119AB002AC0F9 /* JointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JointViewController.h; sourceTree = "<group>"; };
+		CFE3A9C41B7119AB002AC0F9 /* JointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JointViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,8 +219,10 @@
 			children = (
 				CF6829431B67E58D004DE59E /* HomeViewController.h */,
 				CF6829441B67E58D004DE59E /* HomeViewController.m */,
-				CF6829601B680AF1004DE59E /* ReportViewController.h */,
-				CF6829611B680AF2004DE59E /* ReportViewController.m */,
+				CFE3A9C01B711722002AC0F9 /* AdverseEventViewController.h */,
+				CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */,
+				CFE3A9C31B7119AB002AC0F9 /* JointViewController.h */,
+				CFE3A9C41B7119AB002AC0F9 /* JointViewController.m */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -237,6 +252,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CFE3A9B51B711035002AC0F9 /* tabbar_icons */,
 				CF6829541B6800B2004DE59E /* icon1.png */,
 				CF6829551B6800B2004DE59E /* icon2.png */,
 				CF6829561B6800B2004DE59E /* icon3.png */,
@@ -263,6 +279,18 @@
 				CFB6D0151B6842AD004849C4 /* User.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		CFE3A9B51B711035002AC0F9 /* tabbar_icons */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */,
+				CFE3A9B71B71104F002AC0F9 /* ambulance_filled-32.png */,
+				CFE3A9B81B71104F002AC0F9 /* body_scan_filled-32.png */,
+				CFE3A9B91B71104F002AC0F9 /* compass_filled-32.png */,
+				CFE3A9BA1B71104F002AC0F9 /* treatment_plan_filled-32.png */,
+			);
+			name = tabbar_icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,13 +376,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6829221B67D889004DE59E /* Main.storyboard in Resources */,
+				CFE3A9BE1B71104F002AC0F9 /* compass_filled-32.png in Resources */,
 				CF68295D1B6800B2004DE59E /* icon4.png in Resources */,
+				CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */,
+				CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */,
 				CF6829271B67D889004DE59E /* LaunchScreen.xib in Resources */,
+				CFE3A9BD1B71104F002AC0F9 /* body_scan_filled-32.png in Resources */,
 				CF68295F1B6800B2004DE59E /* icon6.png in Resources */,
 				CF68295C1B6800B2004DE59E /* icon3.png in Resources */,
 				CF6829421B67E071004DE59E /* Podfile in Resources */,
 				CF68295A1B6800B2004DE59E /* icon1.png in Resources */,
 				CF6829241B67D889004DE59E /* Images.xcassets in Resources */,
+				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
 				CF68295B1B6800B2004DE59E /* icon2.png in Resources */,
 				CF68295E1B6800B2004DE59E /* icon5.png in Resources */,
 			);
@@ -412,12 +445,13 @@
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
+				CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */,
 				CF6829651B68127A004DE59E /* Manifest.m in Sources */,
 				CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */,
-				CF6829621B680AF2004DE59E /* ReportViewController.m in Sources */,
 				CFB6D0161B6842AD004849C4 /* User.m in Sources */,
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
+				CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */,
 				CF6829191B67D889004DE59E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
