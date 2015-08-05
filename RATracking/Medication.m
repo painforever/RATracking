@@ -28,15 +28,14 @@ static AFHTTPRequestOperationManager *manager = nil;
 
 +(NSDictionary*)constructParamsForRailsRESTCall:(NSString *)med_name withRouteName:(NSString *)route_name withDosage:(NSString *)dosage withDaysOfTreatment:(NSString *)days_of_treatment withTimesPerDay:(NSString *)times_per_day withTimes:(NSString *)times withDrugId:(NSString *)drug_id{
     
-    NSMutableDictionary *res_dic = [[NSMutableDictionary alloc] initWithObjects:@"" forKeys:@"patient_prescription"];
-    [res_dic setObject:@"" forKey:@"patient_prescription_item"];
-    
-    return nil;
+    NSMutableDictionary *res_dic = [[NSMutableDictionary alloc] initWithObjects:@[@"dasd", @"12312"] forKeys:@[@"patient_prescription", @"patient_prescription_item"]];
+    [res_dic setObject:@{@"wocao": @{@"beijing": @"good"}} forKey:@"patient_prescription_item"];
+    return res_dic;
 }
 
 +(NSDictionary *)getDrugIdByDrugName:(NSString *)drug_name{
     NSString *params = [NSString stringWithFormat:@"drug_name=%@", drug_name];
-    NSString *res_str = [Get getRequest:[SERVER_URL stringByAppendingString:@"medications/find_by_drug_name"] withParams: params];
+    NSString *res_str = [Get getRequest:[SERVER_URL stringByAppendingString:@"medications/find_by_drug_name/?"] withParams: params];
     if([res_str isEqualToString:@"failed"]) return nil;
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:res_str] options:NSJSONReadingMutableContainers error:nil];
     return res;

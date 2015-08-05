@@ -35,6 +35,11 @@
     NSDictionary *param_to_post = [Medication constructParamsForRailsRESTCall: self.med_name.text withRouteName:self.route_name.text withDosage:self.dosage.text withDaysOfTreatment:self.days_of_treatment.text withTimesPerDay:self.times_per_day.text withTimes:self.times.text withDrugId: drug[@"drug_id"]];
     
     [Medication getAFManager].requestSerializer = [AFJSONRequestSerializer serializer];
+    [[Medication getAFManager] POST:[SERVER_URL stringByAppendingString:@"patient_prescriptions"] parameters:param_to_post success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"failed");
+    }];
 }
 
 #pragma text field delegate
