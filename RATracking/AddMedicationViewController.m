@@ -6,6 +6,7 @@
 //  Created by Yu Song on 8/4/15.
 //  Copyright (c) 2015 EagleForce. All rights reserved.
 //
+//http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif  default drug photo
 
 #import "AddMedicationViewController.h"
 
@@ -24,7 +25,9 @@
 }
 
 - (IBAction)submit_action:(id)sender {
-    [self validateUserInputs];
+    if (![self validateUserInputs])
+        return;
+    
 }
 
 #pragma text field delegate

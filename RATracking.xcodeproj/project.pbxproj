@@ -28,6 +28,12 @@
 		CF68295E1B6800B2004DE59E /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829581B6800B2004DE59E /* icon5.png */; };
 		CF68295F1B6800B2004DE59E /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829591B6800B2004DE59E /* icon6.png */; };
 		CF6829651B68127A004DE59E /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829641B68127A004DE59E /* Manifest.m */; };
+		CF704EFD1B7284190073F6CB /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704EFC1B7284190073F6CB /* Medication.m */; };
+		CF704F001B7284260073F6CB /* AdverseEventReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704EFF1B7284260073F6CB /* AdverseEventReporting.m */; };
+		CF704F071B7285000073F6CB /* Get.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F021B7285000073F6CB /* Get.m */; };
+		CF704F081B7285000073F6CB /* JSONHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F041B7285000073F6CB /* JSONHandler.m */; };
+		CF704F091B7285000073F6CB /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F061B7285000073F6CB /* Post.m */; };
+		CF704F0D1B7295010073F6CB /* MedHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F0C1B7295010073F6CB /* MedHistoryCell.m */; };
 		CFB6D0121B684250004849C4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0111B684250004849C4 /* Constants.m */; };
 		CFB6D0161B6842AD004849C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0151B6842AD004849C4 /* User.m */; };
 		CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */; };
@@ -86,6 +92,18 @@
 		CF6829591B6800B2004DE59E /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon6.png; path = Images/icon6.png; sourceTree = SOURCE_ROOT; };
 		CF6829631B68127A004DE59E /* Manifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manifest.h; sourceTree = "<group>"; };
 		CF6829641B68127A004DE59E /* Manifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manifest.m; sourceTree = "<group>"; };
+		CF704EFB1B7284190073F6CB /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		CF704EFC1B7284190073F6CB /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
+		CF704EFE1B7284260073F6CB /* AdverseEventReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverseEventReporting.h; sourceTree = "<group>"; };
+		CF704EFF1B7284260073F6CB /* AdverseEventReporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverseEventReporting.m; sourceTree = "<group>"; };
+		CF704F011B7285000073F6CB /* Get.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get.h; sourceTree = "<group>"; };
+		CF704F021B7285000073F6CB /* Get.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get.m; sourceTree = "<group>"; };
+		CF704F031B7285000073F6CB /* JSONHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHandler.h; sourceTree = "<group>"; };
+		CF704F041B7285000073F6CB /* JSONHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHandler.m; sourceTree = "<group>"; };
+		CF704F051B7285000073F6CB /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		CF704F061B7285000073F6CB /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		CF704F0B1B7295010073F6CB /* MedHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedHistoryCell.h; sourceTree = "<group>"; };
+		CF704F0C1B7295010073F6CB /* MedHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedHistoryCell.m; sourceTree = "<group>"; };
 		CFB6D0101B684250004849C4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CFB6D0111B684250004849C4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		CFB6D0141B6842AD004849C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -163,6 +181,7 @@
 		CF6829151B67D889004DE59E /* RATracking */ = {
 			isa = PBXGroup;
 			children = (
+				CF704F0A1B7294E60073F6CB /* Cells */,
 				CFB6D0131B68429C004849C4 /* Models */,
 				CFB6D00F1B6841D8004849C4 /* Constants */,
 				CF6829531B67FFBC004DE59E /* Images */,
@@ -243,6 +262,12 @@
 		CF68294A1B67FCE7004DE59E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				CF704F011B7285000073F6CB /* Get.h */,
+				CF704F021B7285000073F6CB /* Get.m */,
+				CF704F031B7285000073F6CB /* JSONHandler.h */,
+				CF704F041B7285000073F6CB /* JSONHandler.m */,
+				CF704F051B7285000073F6CB /* Post.h */,
+				CF704F061B7285000073F6CB /* Post.m */,
 				CF68294B1B67FD0F004DE59E /* JKPopMenuItem.h */,
 				CF68294C1B67FD0F004DE59E /* JKPopMenuItem.m */,
 				CF68294D1B67FD0F004DE59E /* JKPopMenuView.h */,
@@ -267,6 +292,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		CF704F0A1B7294E60073F6CB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF704F0B1B7295010073F6CB /* MedHistoryCell.h */,
+				CF704F0C1B7295010073F6CB /* MedHistoryCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		CFB6D00F1B6841D8004849C4 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +315,10 @@
 			children = (
 				CFB6D0141B6842AD004849C4 /* User.h */,
 				CFB6D0151B6842AD004849C4 /* User.m */,
+				CF704EFB1B7284190073F6CB /* Medication.h */,
+				CF704EFC1B7284190073F6CB /* Medication.m */,
+				CF704EFE1B7284260073F6CB /* AdverseEventReporting.h */,
+				CF704EFF1B7284260073F6CB /* AdverseEventReporting.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -453,16 +491,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF704F081B7285000073F6CB /* JSONHandler.m in Sources */,
 				CFB6D0121B684250004849C4 /* Constants.m in Sources */,
 				CF6829491B67E62B004DE59E /* UIViewController+SharedUIMethods.m in Sources */,
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
+				CF704EFD1B7284190073F6CB /* Medication.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
+				CF704F091B7285000073F6CB /* Post.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
 				CFE3A9C91B714BC8002AC0F9 /* AddMedicationViewController.m in Sources */,
 				CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */,
+				CF704F001B7284260073F6CB /* AdverseEventReporting.m in Sources */,
 				CF6829651B68127A004DE59E /* Manifest.m in Sources */,
 				CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */,
 				CFB6D0161B6842AD004849C4 /* User.m in Sources */,
+				CF704F071B7285000073F6CB /* Get.m in Sources */,
+				CF704F0D1B7295010073F6CB /* MedHistoryCell.m in Sources */,
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */,

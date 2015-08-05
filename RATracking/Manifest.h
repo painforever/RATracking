@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 #import "Constants.h"
+#import "Post.h"
+#import "Get.h"
+#import "JSONHandler.h"
+#import "Medication.h"
+#import "AdverseEventReporting.h"
 
 
 @interface Manifest : NSObject
