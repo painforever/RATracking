@@ -153,12 +153,12 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="867"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medication Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J2E-eV-vok">
-                                                <rect key="frame" x="29" y="128" width="227" height="30"/>
+                                                <rect key="frame" x="29" y="128" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Route Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-Ew-KXO">
-                                                <rect key="frame" x="29" y="181" width="227" height="30"/>
+                                                <rect key="frame" x="29" y="181" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -178,7 +178,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Times, seperated by comma" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOp-AF-BHx">
-                                                <rect key="frame" x="29" y="380" width="211" height="30"/>
+                                                <rect key="frame" x="29" y="380" width="290" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -194,42 +194,6 @@
                                                     <action selector="times_per_day_action:" destination="iDk-rR-mOD" eventType="valueChanged" id="S9X-j8-F77"/>
                                                 </connections>
                                             </stepper>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT5-3X-OLU">
-                                                <rect key="frame" x="265" y="380" width="60" height="30"/>
-                                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Add">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="times_done_action:" destination="iDk-rR-mOD" eventType="touchUpInside" id="k1i-du-B55"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4J-90-hAv">
-                                                <rect key="frame" x="264" y="127" width="61" height="31"/>
-                                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Done">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="med_name_done_action:" destination="iDk-rR-mOD" eventType="touchUpInside" id="7da-tY-nAN"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP6-Oy-OuE">
-                                                <rect key="frame" x="264" y="181" width="61" height="31"/>
-                                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title="Done">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="route_name_done_action:" destination="iDk-rR-mOD" eventType="touchUpInside" id="3DU-U1-LTs"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-Dg-xVB">
                                                 <rect key="frame" x="114" y="490" width="121" height="38"/>
                                                 <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -255,11 +219,8 @@
                         <outlet property="days_of_treatment_stepper" destination="ysf-Vb-JvB" id="FZS-IL-ema"/>
                         <outlet property="dosage" destination="tw8-dt-dzC" id="w6i-MI-ErN"/>
                         <outlet property="med_name" destination="J2E-eV-vok" id="iqK-ph-Zl9"/>
-                        <outlet property="med_name_done" destination="J4J-90-hAv" id="gQn-Ug-VVv"/>
                         <outlet property="route_name" destination="XoZ-Ew-KXO" id="LNq-AP-LkZ"/>
-                        <outlet property="route_name_done" destination="tP6-Oy-OuE" id="yCq-iT-35r"/>
                         <outlet property="submit" destination="Cel-Dg-xVB" id="pOn-Rz-MKD"/>
-                        <outlet property="time_done" destination="lT5-3X-OLU" id="qkx-g9-QOi"/>
                         <outlet property="times" destination="MOp-AF-BHx" id="e9W-fc-o5S"/>
                         <outlet property="times_per_day" destination="pTS-IL-Khd" id="FXX-mg-XwO"/>
                         <outlet property="times_per_day_stepper" destination="eWm-5Y-HaX" id="w2q-af-aO3"/>
