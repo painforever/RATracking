@@ -24,7 +24,7 @@
 }
 
 - (IBAction)submit_action:(id)sender {
-    
+    [self validateUserInputs];
 }
 
 #pragma text field delegate
@@ -118,5 +118,35 @@
 }
 -(IBAction)done_for_route_name: (UIBarButtonItem*)btn{
     [self.route_name resignFirstResponder];
+}
+
+#pragma input validations
+-(BOOL)validateUserInputs{
+    NSString *med_name_str = [self trim: self.med_name.text];
+    NSString *route_name_str = [self trim: self.route_name.text];
+    NSString *days_of_treatment_str = [self trim: self.days_of_treatment.text];
+    NSString *times_per_day_str = [self trim: self.times_per_day.text];
+    NSArray *times_array = [self.times.text componentsSeparatedByString:@","];
+    if ([med_name_str length] == 0) {
+        [self showAlert:@"Medication name." withMessage:@"Medication name cannot be blank!"];
+        return NO;
+    }
+    else if([route_name_str length] == 0){
+        [self showAlert:@"Route name." withMessage:@"Route Name cannot be blank!"];
+        return NO;
+    }
+    else if([days_of_treatment_str isEqualToString:@"0"] || ![self isNnumber: days_of_treatment_str]){
+        [self showAlert:@"Days of treatment." withMessage:@"Days of treatment input is invalid, please input integer numbers."];
+        return NO;
+    }
+    else if([times_per_day_str isEqualToString:@"0"] || ![self isNnumber: times_per_day_str]){
+        [self showAlert:@"Times per day." withMessage:@"Times per day input is invalid, please input integer numbers."];
+        return NO;
+    }
+    else if([times_array count] != [times_per_day_str integerValue] || [self.times.text length] == 0){
+        [self showAlert:@"Times does not match." withMessage:@"Times and treatment count does not match, The count of times you input here must be the same as 'Times per day'."];
+        return NO;
+    }
+    return YES;
 }
 @end

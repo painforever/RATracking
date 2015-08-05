@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Manifest.h"
+#import "UIViewController+SharedUIMethods.h"
 
 @interface AddMedicationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate>
 //Pickers

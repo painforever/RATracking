@@ -82,4 +82,14 @@
     jkpop.delegate = self;
     [jkpop show];
 }
+
+-(NSString *)trim: (NSString *)str{
+    return [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+-(BOOL)isNnumber:(NSString *)input{
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\d+" options:NSRegularExpressionCaseInsensitive error:nil];
+    NSTextCheckingResult *matches = [regex firstMatchInString:input options:0 range:NSMakeRange(0, input.length)];
+    return matches != nil;
+}
 @end
