@@ -27,7 +27,14 @@
 - (IBAction)submit_action:(id)sender {
     if (![self validateUserInputs])
         return;
+    NSDictionary *drug = [Medication getDrugIdByDrugName: [self trim: self.med_name.text]];
+    if (drug == nil) {
+        [self showAlert:@"No such drug." withMessage:@"There no such drug."];
+        return;
+    }
+    NSDictionary *param_to_post = [Medication constructParamsForRailsRESTCall: self.med_name.text withRouteName:self.route_name.text withDosage:self.dosage.text withDaysOfTreatment:self.days_of_treatment.text withTimesPerDay:self.times_per_day.text withTimes:self.times.text withDrugId: drug[@"drug_id"]];
     
+    [Medication getAFManager].requestSerializer = [AFJSONRequestSerializer serializer];
 }
 
 #pragma text field delegate
