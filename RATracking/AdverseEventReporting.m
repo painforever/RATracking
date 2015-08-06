@@ -8,6 +8,13 @@
 
 #import "AdverseEventReporting.h"
 
+static AFHTTPRequestOperationManager *manager = nil;
+
 @implementation AdverseEventReporting
++(AFHTTPRequestOperationManager*)getAFManager{
+    if(manager==nil)
+        manager=[AFHTTPRequestOperationManager manager];
+    return manager;
+}
 
 @end

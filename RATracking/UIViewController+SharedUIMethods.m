@@ -55,7 +55,7 @@
                                                             image:[UIImage imageNamed:@"Icon_Home"]
                                                  highlightedImage:nil
                                                            action:^(REMenuItem *item) {
-                                                               NSLog(@"Item: %@", item);
+                                                               [self pushToViewController:@"AdverseDetailsViewController"];
                                                            }];
     return @[addadverseEvent];
 }
@@ -91,5 +91,11 @@
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\d+" options:NSRegularExpressionCaseInsensitive error:nil];
     NSTextCheckingResult *matches = [regex firstMatchInString:input options:0 range:NSMakeRange(0, input.length)];
     return matches != nil;
+}
+
+-(void)clearAllTextFields:(NSArray *)text_fields{
+    for (UITextField *text_field in text_fields){
+        text_field.text = @"";
+    }
 }
 @end

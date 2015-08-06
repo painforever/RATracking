@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Manifest.h"
 @interface AdverseEventReporting : NSObject
-
++(AFHTTPRequestOperationManager*)getAFManager;
 @end

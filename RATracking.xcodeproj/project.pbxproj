@@ -28,6 +28,8 @@
 		CF68295E1B6800B2004DE59E /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829581B6800B2004DE59E /* icon5.png */; };
 		CF68295F1B6800B2004DE59E /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6829591B6800B2004DE59E /* icon6.png */; };
 		CF6829651B68127A004DE59E /* Manifest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829641B68127A004DE59E /* Manifest.m */; };
+		CF6D78D61B73B80C0004FC20 /* AdverseDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6D78D51B73B80C0004FC20 /* AdverseDetailsViewController.m */; };
+		CF6D78D91B73B9890004FC20 /* AdverseDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6D78D81B73B9890004FC20 /* AdverseDetailsCell.m */; };
 		CF704EFD1B7284190073F6CB /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704EFC1B7284190073F6CB /* Medication.m */; };
 		CF704F001B7284260073F6CB /* AdverseEventReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704EFF1B7284260073F6CB /* AdverseEventReporting.m */; };
 		CF704F071B7285000073F6CB /* Get.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F021B7285000073F6CB /* Get.m */; };
@@ -92,6 +94,10 @@
 		CF6829591B6800B2004DE59E /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon6.png; path = Images/icon6.png; sourceTree = SOURCE_ROOT; };
 		CF6829631B68127A004DE59E /* Manifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manifest.h; sourceTree = "<group>"; };
 		CF6829641B68127A004DE59E /* Manifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manifest.m; sourceTree = "<group>"; };
+		CF6D78D41B73B80C0004FC20 /* AdverseDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverseDetailsViewController.h; sourceTree = "<group>"; };
+		CF6D78D51B73B80C0004FC20 /* AdverseDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverseDetailsViewController.m; sourceTree = "<group>"; };
+		CF6D78D71B73B9890004FC20 /* AdverseDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverseDetailsCell.h; sourceTree = "<group>"; };
+		CF6D78D81B73B9890004FC20 /* AdverseDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverseDetailsCell.m; sourceTree = "<group>"; };
 		CF704EFB1B7284190073F6CB /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
 		CF704EFC1B7284190073F6CB /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
 		CF704EFE1B7284260073F6CB /* AdverseEventReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverseEventReporting.h; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 		CF68293D1B67D89A004DE59E /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CF6D78D31B73A41A0004FC20 /* AdverseEvent */,
 				CFE3A9C61B714BAD002AC0F9 /* RxHistory */,
 				CF6829431B67E58D004DE59E /* HomeViewController.h */,
 				CF6829441B67E58D004DE59E /* HomeViewController.m */,
@@ -292,11 +299,22 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		CF6D78D31B73A41A0004FC20 /* AdverseEvent */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D78D41B73B80C0004FC20 /* AdverseDetailsViewController.h */,
+				CF6D78D51B73B80C0004FC20 /* AdverseDetailsViewController.m */,
+			);
+			name = AdverseEvent;
+			sourceTree = "<group>";
+		};
 		CF704F0A1B7294E60073F6CB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				CF704F0B1B7295010073F6CB /* MedHistoryCell.h */,
 				CF704F0C1B7295010073F6CB /* MedHistoryCell.m */,
+				CF6D78D71B73B9890004FC20 /* AdverseDetailsCell.h */,
+				CF6D78D81B73B9890004FC20 /* AdverseDetailsCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -492,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF704F081B7285000073F6CB /* JSONHandler.m in Sources */,
+				CF6D78D61B73B80C0004FC20 /* AdverseDetailsViewController.m in Sources */,
 				CFB6D0121B684250004849C4 /* Constants.m in Sources */,
 				CF6829491B67E62B004DE59E /* UIViewController+SharedUIMethods.m in Sources */,
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
@@ -507,6 +526,7 @@
 				CFB6D0161B6842AD004849C4 /* User.m in Sources */,
 				CF704F071B7285000073F6CB /* Get.m in Sources */,
 				CF704F0D1B7295010073F6CB /* MedHistoryCell.m in Sources */,
+				CF6D78D91B73B9890004FC20 /* AdverseDetailsCell.m in Sources */,
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */,

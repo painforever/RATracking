@@ -36,9 +36,11 @@
     
     [Medication getAFManager].requestSerializer = [AFJSONRequestSerializer serializer];
     [[Medication getAFManager] POST:[SERVER_URL stringByAppendingString:@"patient_prescriptions"] parameters:param_to_post success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@", responseObject);
+        [self showAlert:@"Medication added." withMessage:[NSString stringWithFormat:@"%@ add success!", self.med_name.text]];
+        //clear all the inputs fields
+        [self clearAllTextFields:@[self.med_name, self.route_name, self.dosage, self.days_of_treatment, self.times_per_day, self.times]];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"failed");
+        [self showAlert:@"Medication add failed." withMessage:@"Medication add failed!"];
     }];
 }
 

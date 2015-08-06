@@ -14,4 +14,5 @@
 +(NSString *)ObjectToJSON: (id)obj;
 +(NSString *)ConvertDictionaryToQueryString:(NSDictionary *)dic;
 +(NSString *)ConvertBOOLToString: (BOOL)val;
++(NSString *)NSDateToString:(NSDate *)date;
 @end

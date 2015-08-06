@@ -14,8 +14,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initControls];
-    self.table_data = [Medication getMyMedications: patient_id];
-    [self.tableView reloadData];
+    [[Medication getAFManager] GET:[SERVER_URL stringByAppendingString:@"medications/?"] parameters:@{@"patient_id": patient_id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        self.table_data = (NSMutableArray *)responseObject;
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"get med failed");
+    }];
+    
 }
 
 #pragma menu for left top

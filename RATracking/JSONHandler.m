@@ -38,4 +38,11 @@
     if(val==YES) return @"YES";
     else return @"NO";
 }
+
++(NSString *)NSDateToString:(NSDate *)date{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [formatter stringFromDate: date];
+    return dateString;
+}
 @end

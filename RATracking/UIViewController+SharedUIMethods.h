@@ -38,4 +38,6 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 -(NSString *)trim: (NSString *)str;
 //check whether is number
 -(BOOL)isNnumber: (NSString *)input;
+//clear all the inputs fields
+-(void)clearAllTextFields: (NSArray *)text_fields;
 @end

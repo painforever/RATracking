@@ -12,7 +12,7 @@
 @interface Medication : NSObject
 +(AFHTTPRequestOperationManager*)getAFManager;
 
-+(NSMutableArray *)getMyMedications: (NSString *)patient_id;
+//+(NSMutableArray *)getMyMedications: (NSString *)patient_id;
 //construct params for Rails REST to call
 +(NSDictionary *)constructParamsForRailsRESTCall:(NSString *)med_name withRouteName:(NSString *)route_name withDosage:(NSString *)dosage withDaysOfTreatment:(NSString *)days_of_treatment withTimesPerDay:(NSString *)times_per_day withTimes: (NSString *)times withDrugId:(NSString *)drug_id;
 

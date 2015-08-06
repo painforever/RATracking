@@ -18,18 +18,21 @@ static AFHTTPRequestOperationManager *manager = nil;
     return manager;
 }
 
-+(NSMutableArray *)getMyMedications:(NSString *)patient_id{
-    NSMutableArray *res = [[NSMutableArray alloc] init];
-    NSString *params = [NSString stringWithFormat:@"patient_id=%@", patient_id];
-    NSString *result_str = [Get getRequest:[SERVER_URL stringByAppendingString:@"medications/?"] withParams: params];
-    NSMutableArray *result_arr = [NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:result_str] options:NSJSONReadingMutableContainers error:nil];
-    return result_arr;
-}
+//+(NSMutableArray *)getMyMedications:(NSString *)patient_id{
+//    NSMutableArray *res = [[NSMutableArray alloc] init];
+//    NSString *params = [NSString stringWithFormat:@"patient_id=%@", patient_id];
+//    NSString *result_str = [Get getRequest:[SERVER_URL stringByAppendingString:@"medications/?"] withParams: params];
+//    NSMutableArray *result_arr = [NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:result_str] options:NSJSONReadingMutableContainers error:nil];
+//    return result_arr;
+//}
 
 +(NSDictionary*)constructParamsForRailsRESTCall:(NSString *)med_name withRouteName:(NSString *)route_name withDosage:(NSString *)dosage withDaysOfTreatment:(NSString *)days_of_treatment withTimesPerDay:(NSString *)times_per_day withTimes:(NSString *)times withDrugId:(NSString *)drug_id{
     
-    NSMutableDictionary *res_dic = [[NSMutableDictionary alloc] initWithObjects:@[@"dasd", @"12312"] forKeys:@[@"patient_prescription", @"patient_prescription_item"]];
-    [res_dic setObject:@{@"wocao": @{@"beijing": @"good"}} forKey:@"patient_prescription_item"];
+    NSMutableDictionary *res_dic = [[NSMutableDictionary alloc] initWithObjects:@[@"", @""] forKeys:@[@"patient_prescription", @"patient_prescription_item"]];
+    
+    [res_dic setObject:@{@"route_name": route_name, @"dosage": dosage, @"days_of_treatment": days_of_treatment, @"times_per_day": times_per_day, @"time_of_day": times, @"drug_id": drug_id, @"is_finished":@"no"} forKey:@"patient_prescription_item"];
+    
+    [res_dic setObject:@{@"patient_id": patient_id, @"date_prescribed": [JSONHandler NSDateToString:[NSDate date]]} forKey:@"patient_prescription"];
     return res_dic;
 }
 

@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+SharedUIMethods.h"
+#import "AdverseDetailsCell.h"
+#import "AdverseDetailsViewController.h"
 
-@interface AdverseEventViewController : UIViewController <JKPopMenuViewSelectDelegate >
+@interface AdverseEventViewController : UIViewController <JKPopMenuViewSelectDelegate , UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) REMenu *menu;
+@property (strong, nonatomic) NSMutableArray *table_data;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
 - (IBAction)actions_action:(id)sender;
 - (IBAction)toggleMenu:(id)sender;
 @end
