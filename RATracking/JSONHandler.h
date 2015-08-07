@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @interface JSONHandler : NSObject
 +(NSString*)DataToString:(NSData*)data;
@@ -15,4 +16,6 @@
 +(NSString *)ConvertDictionaryToQueryString:(NSDictionary *)dic;
 +(NSString *)ConvertBOOLToString: (BOOL)val;
 +(NSString *)NSDateToString:(NSDate *)date;
++(NSString *)microtime;
++(NSString *)md5: (NSString *)input;
 @end

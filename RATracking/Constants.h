@@ -17,4 +17,7 @@ extern NSString *full_name;
 //non control properties
 extern NSArray *med_name_arr;
 extern NSArray *route_name_arr;
+
+//url for upload photos for drugs
+extern NSString * photo_upload_url;
 @end

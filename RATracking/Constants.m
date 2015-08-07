@@ -18,4 +18,7 @@ NSString *patient_id = @"";
 //non control properties
 NSArray *med_name_arr;
 NSArray *route_name_arr;
+
+NSString * photo_upload_url=@"http://10.0.80.80:3000/ra_api/medications/upload_drug_photo";
+//NSString * photo_upload_url=@"http://127.0.0.1:3000/ra_api/medications/upload_drug_photo";
 @end

@@ -10,7 +10,7 @@
 #import "Manifest.h"
 #import "UIViewController+SharedUIMethods.h"
 
-@interface AddMedicationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate>
+@interface AddMedicationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate, UIImagePickerControllerDelegate>
 //Pickers
 @property (strong, nonatomic) UIPickerView *med_picker;
 @property (strong, nonatomic) UIPickerView *route_name_picker;
