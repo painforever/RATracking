@@ -44,6 +44,9 @@
     }];
 }
 
+- (IBAction)add_photo_action:(id)sender {
+}
+
 #pragma text field delegate
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     [textField resignFirstResponder];

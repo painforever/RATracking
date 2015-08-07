@@ -24,6 +24,7 @@
 
 //buttons
 @property (strong, nonatomic) IBOutlet UIButton *submit;
+@property (strong, nonatomic) IBOutlet UIButton *add_photo_btn;
 
 //steppers
 @property (strong, nonatomic) IBOutlet UIStepper *days_of_treatment_stepper;
@@ -34,6 +35,7 @@
 
 //button actions
 - (IBAction)submit_action:(id)sender;
+- (IBAction)add_photo_action:(id)sender;
 
 
 @end

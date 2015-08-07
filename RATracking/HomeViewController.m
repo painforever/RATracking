@@ -80,9 +80,9 @@
     RxDetailsViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"RxDetailsViewController"];
     NSDictionary *data_selected = [self.table_data objectAtIndex:indexPath.row];
     view.prescription_id = [data_selected objectForKey:@"prescription_id"];
-    view.drug_id = [data_selected objectForKeyedSubscript:@"drug_id"];
-    view.drug_name = [data_selected objectForKeyedSubscript:@"drug_name"];
-    view.drug_photo = [data_selected objectForKeyedSubscript:@"drug_photo"];
+    view.drug_id = [[data_selected objectForKey:@"drug_id"] stringValue];
+    view.drug_name = [data_selected objectForKey:@"drug_name"];
+    view.drug_photo = [NSString stringWithFormat:@"%@", [data_selected objectForKey:@"drug_photo"]];
     [self.navigationController pushViewController:view animated:YES];
 }
 @end
