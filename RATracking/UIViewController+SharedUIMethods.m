@@ -55,7 +55,7 @@
                                                             image:[UIImage imageNamed:@"Icon_Home"]
                                                  highlightedImage:nil
                                                            action:^(REMenuItem *item) {
-                                                               [self pushToViewController:@"AdverseDetailsViewController"];
+                                                               [self pushToViewController:@"NewEventFormViewController"];
                                                            }];
     return @[addadverseEvent];
 }

@@ -77,6 +77,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    RxDetailsViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"RxDetailsViewController"];
+    NSDictionary *data_selected = [self.table_data objectAtIndex:indexPath.row];
+    view.prescription_id = [data_selected objectForKey:@"prescription_id"];
+    view.drug_id = [data_selected objectForKeyedSubscript:@"drug_id"];
+    view.drug_name = [data_selected objectForKeyedSubscript:@"drug_name"];
+    view.drug_photo = [data_selected objectForKeyedSubscript:@"drug_photo"];
+    [self.navigationController pushViewController:view animated:YES];
 }
 @end

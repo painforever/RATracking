@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B2697FE090F0466F22FC040 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CC4EDDB894A008E9C33D60 /* libPods.a */; };
+		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
+		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
 		CF6829191B67D889004DE59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829181B67D889004DE59E /* main.m */; };
 		CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68291B1B67D889004DE59E /* AppDelegate.m */; };
 		CF68291F1B67D889004DE59E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68291E1B67D889004DE59E /* ViewController.m */; };
@@ -63,6 +65,10 @@
 		0A77089B5FBF40779C54782B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8266FD4FC2AF9D6FCF32136C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7CC4EDDB894A008E9C33D60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3A6D3E1B74F3F100C188A6 /* NewEventFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventFormViewController.h; sourceTree = "<group>"; };
+		CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventFormViewController.m; sourceTree = "<group>"; };
+		CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxDetailsViewController.h; sourceTree = "<group>"; };
+		CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxDetailsViewController.m; sourceTree = "<group>"; };
 		CF6829131B67D889004DE59E /* RATracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RATracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6829171B67D889004DE59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6829181B67D889004DE59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -308,6 +314,8 @@
 			children = (
 				CF6D78D41B73B80C0004FC20 /* AdverseDetailsViewController.h */,
 				CF6D78D51B73B80C0004FC20 /* AdverseDetailsViewController.m */,
+				CF3A6D3E1B74F3F100C188A6 /* NewEventFormViewController.h */,
+				CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */,
 			);
 			name = AdverseEvent;
 			sourceTree = "<group>";
@@ -371,6 +379,8 @@
 			children = (
 				CFE3A9C71B714BC8002AC0F9 /* AddMedicationViewController.h */,
 				CFE3A9C81B714BC8002AC0F9 /* AddMedicationViewController.m */,
+				CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */,
+				CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */,
 			);
 			name = RxHistory;
 			sourceTree = "<group>";
@@ -523,11 +533,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF704F081B7285000073F6CB /* JSONHandler.m in Sources */,
+				CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */,
 				CF6D78D61B73B80C0004FC20 /* AdverseDetailsViewController.m in Sources */,
 				CFB6D0121B684250004849C4 /* Constants.m in Sources */,
 				CF6829491B67E62B004DE59E /* UIViewController+SharedUIMethods.m in Sources */,
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF704EFD1B7284190073F6CB /* Medication.m in Sources */,
+				CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF704F091B7285000073F6CB /* Post.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,

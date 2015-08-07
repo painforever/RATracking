@@ -114,16 +114,14 @@
 
 #pragma mark- Picker View Delegate
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:
-(NSInteger)row inComponent:(NSInteger)component{
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component{
     //[myTextField setText:[pickerArray objectAtIndex:row]];
     if ([self.med_picker isEqual: pickerView]){
         [self.med_name setText: med_name_arr[row]];
     }
     else [self.route_name setText: route_name_arr[row]];
 }
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
-(NSInteger)row forComponent:(NSInteger)component{
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow: (NSInteger)row forComponent:(NSInteger)component{
     if ([self.med_picker isEqual: pickerView])
         return [med_name_arr objectAtIndex:row];
     else return [route_name_arr objectAtIndex:row];

@@ -18,4 +18,6 @@
 
 //get drug_id by drug_name
 +(NSDictionary *)getDrugIdByDrugName:(NSString *)drug_name;
+//medications/:drug_id
++(NSDictionary *)medicationsShow: (NSString *)drug_id;
 @end

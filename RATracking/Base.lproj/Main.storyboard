@@ -275,7 +275,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJv-ha-UhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480.5" y="-255.5"/>
+            <point key="canvasLocation" x="2442.5" y="-611.5"/>
+        </scene>
+        <!--Rx Details View Controller-->
+        <scene sceneID="zOg-1R-Rjh">
+            <objects>
+                <viewController storyboardIdentifier="RxDetailsViewController" id="7dH-Ip-fTF" customClass="RxDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DGC-eA-0Rh"/>
+                        <viewControllerLayoutGuide type="bottom" id="II3-Mg-uu4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDU-lC-oAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCR-5s-nGE">
+                                <rect key="frame" x="48" y="28" width="279" height="266"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PbA-ug-CM4"/>
+                                    <constraint firstAttribute="height" constant="200" id="QK3-Md-b6Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nCR-5s-nGE" firstAttribute="top" secondItem="DGC-eA-0Rh" secondAttribute="bottom" constant="10" id="84t-aW-7Tk"/>
+                            <constraint firstAttribute="centerX" secondItem="nCR-5s-nGE" secondAttribute="centerX" id="rST-A4-J3B"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="drug_image" destination="nCR-5s-nGE" id="Ham-0u-ZHU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bf8-Xz-RE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.5" y="109.5"/>
         </scene>
         <!--Joint View Controller-->
         <scene sceneID="Un6-xg-SXE">
@@ -327,6 +362,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-wZ-ytv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950.5" y="-997.5"/>
+        </scene>
+        <!--New Event Form View Controller-->
+        <scene sceneID="ss0-wc-xrd">
+            <objects>
+                <viewController storyboardIdentifier="NewEventFormViewController" id="hLO-lI-zlJ" customClass="NewEventFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sYs-wI-NaJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zct-79-SSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0co-Nx-qzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMA-ot-o9W">
+                                <rect key="frame" x="124" y="519" width="126" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1h4-xf-UXL"/>
+                                    <constraint firstAttribute="width" constant="130" id="LxA-sf-LGw"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.97213977630000004" green="0.9663027327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit_action:" destination="hLO-lI-zlJ" eventType="touchUpInside" id="HKv-Wn-MXu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medication" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbk-UU-ujH">
+                                <rect key="frame" x="41" y="113" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adverse event name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QI2-HI-FSL">
+                                <rect key="frame" x="41" y="171" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lm7-Rp-yzy">
+                                <rect key="frame" x="41" y="220" width="292" height="164"/>
+                                <color key="backgroundColor" red="0.97213977630000004" green="0.9663027327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Lm7-Rp-yzy" secondAttribute="centerX" constant="0.5" id="95h-0R-R8b"/>
+                            <constraint firstAttribute="centerX" secondItem="wbk-UU-ujH" secondAttribute="centerX" constant="0.5" id="d0I-Yk-oVz"/>
+                            <constraint firstAttribute="centerX" secondItem="QI2-HI-FSL" secondAttribute="centerX" constant="0.5" id="vsd-jB-Ytc"/>
+                            <constraint firstAttribute="centerX" secondItem="pMA-ot-o9W" secondAttribute="centerX" constant="0.5" id="w1K-gn-ggI"/>
+                            <constraint firstItem="Zct-79-SSG" firstAttribute="top" secondItem="pMA-ot-o9W" secondAttribute="bottom" constant="70" id="ycp-2J-sbe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="event_name" destination="QI2-HI-FSL" id="mk8-n9-Jx4"/>
+                        <outlet property="med_name" destination="wbk-UU-ujH" id="owj-OI-oiH"/>
+                        <outlet property="notes" destination="Lm7-Rp-yzy" id="NMj-TN-V4m"/>
+                        <outlet property="submit_btn" destination="pMA-ot-o9W" id="ut1-vz-ekB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIG-Va-2cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486.5" y="-2300.5"/>
         </scene>
         <!--Adverse Event View Controller-->
         <scene sceneID="Zu7-WY-Piw">
@@ -513,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVP-eA-pyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498.5" y="-1766.5"/>
+            <point key="canvasLocation" x="2486.5" y="-1576.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9xU-kM-eRm">
@@ -603,7 +703,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1722.5" y="517.5"/>
+            <point key="canvasLocation" x="1592.5" y="559.5"/>
         </scene>
         <!--Joint Report-->
         <scene sceneID="wC2-yw-KZc">
@@ -661,7 +761,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vR-BL-zde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231.5" y="517.5"/>
+            <point key="canvasLocation" x="1139.5" y="551.5"/>
         </scene>
     </scenes>
     <resources>

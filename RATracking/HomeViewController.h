@@ -10,6 +10,7 @@
 #import "UIViewController+SharedUIMethods.h"
 #import "Manifest.h"
 #import "MedHistoryCell.h"
+#import "RxDetailsViewController.h"
 
 
 @interface HomeViewController : UIViewController <JKPopMenuViewSelectDelegate, UITableViewDelegate, UITableViewDataSource>

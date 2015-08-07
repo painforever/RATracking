@@ -9,8 +9,8 @@
 #import "Constants.h"
 
 @implementation Constants
-NSString *SERVER_URL = @"http://127.0.0.1:3000/ra_api/";
-//NSString *SERVER_URL = @"http://10.0.80.80:3000/ra_api/";
+//NSString *SERVER_URL = @"http://127.0.0.1:3000/ra_api/";
+NSString *SERVER_URL = @"http://10.0.80.80:3000/ra_api/";
 NSString *user_id = @"";
 NSString *full_name = @"";
 NSString *patient_id = @"";
