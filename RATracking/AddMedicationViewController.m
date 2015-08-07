@@ -184,7 +184,8 @@
     NSURL *url = [NSURL URLWithString: photo_upload_url];
     // And dismiss the image picker.
     [self dismissViewControllerAnimated:TRUE completion:nil];
-   // [self uploadAvatar: chosenImage];
+    NSString *filename = [NSString stringWithFormat:@"%@.jpg", [JSONHandler md5:[JSONHandler microtime]]];
+    [self uploadAvatar:chosenImage withFileName: filename];
     NSLog(@"take photo finished!");
 }
 
@@ -192,11 +193,11 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
--(void)uploadAvatar: (UIImage *)filename{
+-(void)uploadAvatar: (UIImage *)file_data withFileName: (NSString *)filename{
     NSData* imageData =  UIImageJPEGRepresentation(filename, 1.0);
     // NSData *imageData   = [NSData dataWithContentsOfFile:filename];
     NSString *urlString = photo_upload_url;
-    
+
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:urlString]];
     [request setHTTPMethod:@"POST"];
