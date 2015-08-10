@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Manifest.h"
+#import "PharmacyCell.h"
 
-@interface SearchViewController : UITableViewController <UISearchBarDelegate>
+@interface SearchViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @property (strong, nonatomic) NSMutableArray *table_data;
 @property (strong, nonatomic) NSMutableArray *searchResult;

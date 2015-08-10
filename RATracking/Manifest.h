@@ -14,6 +14,7 @@
 #import "JSONHandler.h"
 #import "Medication.h"
 #import "AdverseEventReporting.h"
+#import "Pharmacy.h"
 
 
 @interface Manifest : NSObject

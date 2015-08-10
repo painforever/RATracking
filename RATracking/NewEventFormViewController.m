@@ -98,13 +98,23 @@
     }
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField{
-    if ([self.med_name isEqual: textField]) {
-        NSDictionary *drug_dic = [Medication getDrugIdByDrugName: self.med_name.text];;
-        self.selected_drug_id = [drug_dic[@"drug_id"] stringValue];
-        
-        NSDictionary *side_effects_dic = [Medication medicationsShow: self.selected_drug_id];
-        self.event_arr = [[side_effects_dic objectForKey:@"side_effects"] componentsSeparatedByString:@","];
+    @try {
+        if ([self.med_name isEqual: textField]) {
+            NSDictionary *drug_dic = [Medication getDrugIdByDrugName: self.med_name.text];;
+            self.selected_drug_id = [drug_dic[@"drug_id"] stringValue];
+            
+            NSDictionary *side_effects_dic = [Medication medicationsShow: self.selected_drug_id];
+            self.event_arr = [[side_effects_dic objectForKey:@"side_effects"] componentsSeparatedByString:@","];
+        }
     }
+    @catch (NSException *exception) {
+        [self showAlert:@"Cannot find such medication." withMessage:@"There is no such medication in our database."];
+    }
+    @finally {
+        [self.med_name setText:@""];
+        [self.event_name setText:@""];
+    }
+    
 }
 
 #pragma mark - Picker View Data source
