@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Manifest.h"
 #import "PharmacyCell.h"
+#import "PharmacyDetailsViewController.h"
 
 @interface SearchViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;

@@ -41,6 +41,7 @@
 		CF704F0D1B7295010073F6CB /* MedHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704F0C1B7295010073F6CB /* MedHistoryCell.m */; };
 		CFA878EB1B78F26700AABC6C /* Pharmacy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA878EA1B78F26700AABC6C /* Pharmacy.m */; };
 		CFA878EE1B79230C00AABC6C /* PharmacyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA878ED1B79230C00AABC6C /* PharmacyCell.m */; };
+		CFA878F11B792A3600AABC6C /* PharmacyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA878F01B792A3600AABC6C /* PharmacyDetailsViewController.m */; };
 		CFB6D0121B684250004849C4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0111B684250004849C4 /* Constants.m */; };
 		CFB6D0161B6842AD004849C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0151B6842AD004849C4 /* User.m */; };
 		CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */; };
@@ -125,6 +126,8 @@
 		CFA878EA1B78F26700AABC6C /* Pharmacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharmacy.m; sourceTree = "<group>"; };
 		CFA878EC1B79230C00AABC6C /* PharmacyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyCell.h; sourceTree = "<group>"; };
 		CFA878ED1B79230C00AABC6C /* PharmacyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyCell.m; sourceTree = "<group>"; };
+		CFA878EF1B792A3600AABC6C /* PharmacyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyDetailsViewController.h; sourceTree = "<group>"; };
+		CFA878F01B792A3600AABC6C /* PharmacyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyDetailsViewController.m; sourceTree = "<group>"; };
 		CFB6D0101B684250004849C4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CFB6D0111B684250004849C4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		CFB6D0141B6842AD004849C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -331,6 +334,8 @@
 			children = (
 				CF6D78DB1B73F41F0004FC20 /* SearchViewController.h */,
 				CF6D78DC1B73F41F0004FC20 /* SearchViewController.m */,
+				CFA878EF1B792A3600AABC6C /* PharmacyDetailsViewController.h */,
+				CFA878F01B792A3600AABC6C /* PharmacyDetailsViewController.m */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				CF704F091B7285000073F6CB /* Post.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
 				CFE3A9C91B714BC8002AC0F9 /* AddMedicationViewController.m in Sources */,
+				CFA878F11B792A3600AABC6C /* PharmacyDetailsViewController.m in Sources */,
 				CFE3A9C51B7119AB002AC0F9 /* JointViewController.m in Sources */,
 				CF704F001B7284260073F6CB /* AdverseEventReporting.m in Sources */,
 				CF6829651B68127A004DE59E /* Manifest.m in Sources */,

@@ -33,14 +33,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    PharmacyDetailsViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"PharmacyDetailsViewController"];
+    NSDictionary *dic = [self.table_data objectAtIndex:indexPath.row];
+    view.pharmacy_name = dic[@"pharmacy_name"];
+    view.address = [NSString stringWithFormat:@"%@ %@ %@ %@", dic[@"address1"], dic[@"address2"], dic[@"city"], dic[@"state"], dic[@"zipcode"]];
+    [self.navigationController pushViewController:view animated:YES];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
 }
-
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [searchBar resignFirstResponder];

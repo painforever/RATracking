@@ -764,10 +764,10 @@
             </objects>
             <point key="canvasLocation" x="1414.5" y="671.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Pharmacy Details View Controller-->
         <scene sceneID="kdh-0z-vfj">
             <objects>
-                <viewController id="Enl-kg-ouc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PharmacyDetailsViewController" id="Enl-kg-ouc" customClass="PharmacyDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AIq-qs-HID"/>
                         <viewControllerLayoutGuide type="bottom" id="8XQ-7Y-TGF"/>
@@ -775,9 +775,34 @@
                     <view key="view" contentMode="scaleToFill" id="PTS-gb-VbX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Hp-Nh-AD5">
+                                <rect key="frame" x="27" y="28" width="321" height="273"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pharmacy Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygv-Qi-xzh">
+                                <rect key="frame" x="45" y="392" width="265" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5z-0P-K4p">
+                                <rect key="frame" x="45" y="446" width="265" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6Hp-Nh-AD5" secondAttribute="centerX" id="SGD-yP-5ZN"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="address_label" destination="p5z-0P-K4p" id="9We-3v-KX4"/>
+                        <outlet property="mapView" destination="6Hp-Nh-AD5" id="QnF-oA-pSS"/>
+                        <outlet property="pharmacy_name_label" destination="ygv-Qi-xzh" id="N75-V3-Qk2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghk-rH-DfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
