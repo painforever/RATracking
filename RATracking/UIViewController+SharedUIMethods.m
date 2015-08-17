@@ -60,16 +60,18 @@
     return @[addadverseEvent];
 }
 
--(NSArray *)actionsInJoint{
-    REMenuItem *joint = [[REMenuItem alloc] initWithTitle:@"Report pain of joints"
-                                                           subtitle:@"Let us know your pain of all kinds of joints anytime."
-                                                              image:[UIImage imageNamed:@"Icon_Home"]
-                                                   highlightedImage:nil
-                                                             action:^(REMenuItem *item) {
-                                                                 NSLog(@"Item: %@", item);
-                                                             }];
-    return @[joint];
-}
+//-(NSArray *)actionsInJoint{
+//    REMenuItem *joint = [[REMenuItem alloc] initWithTitle:@"Report pain of joints"
+//                                                           subtitle:@"Let us know your pain of all kinds of joints anytime."
+//                                                              image:[UIImage imageNamed:@"Icon_Home"]
+//                                                   highlightedImage:nil
+//                                                             action:^(REMenuItem *item) {
+//                                                                 NSLog(@"Item: %@", item);
+//                                                                 JointReportFormViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"JointReportFormViewController"];
+//                                                                 [self.navigationController pushViewController:view animated:YES];
+//                                                             }];
+//    return @[joint];
+//}
 
 -(void)quickStart{
     NSMutableArray *array = [[NSMutableArray alloc]init];

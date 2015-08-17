@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3B2697FE090F0466F22FC040 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CC4EDDB894A008E9C33D60 /* libPods.a */; };
+		CF239E8A1B82242B003917CF /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E881B82242B003917CF /* hand.png */; };
+		CF239E8B1B82242B003917CF /* human.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E891B82242B003917CF /* human.jpg */; };
+		CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */; };
+		CF239E8F1B8229FE003917CF /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8E1B8229FE003917CF /* red_button.png */; };
+		CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E901B823102003917CF /* Yellow_icon.svg.png */; };
+		CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF239E941B82388D003917CF /* JointReportFormViewController.m */; };
 		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
 		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
 		CF6829191B67D889004DE59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829181B67D889004DE59E /* main.m */; };
@@ -68,6 +74,13 @@
 		0A77089B5FBF40779C54782B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8266FD4FC2AF9D6FCF32136C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7CC4EDDB894A008E9C33D60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF239E881B82242B003917CF /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = Images/hand.png; sourceTree = SOURCE_ROOT; };
+		CF239E891B82242B003917CF /* human.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = human.jpg; path = Images/human.jpg; sourceTree = SOURCE_ROOT; };
+		CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "human-body-outline-drawing-108.jpg"; path = "Images/human-body-outline-drawing-108.jpg"; sourceTree = SOURCE_ROOT; };
+		CF239E8E1B8229FE003917CF /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_button.png; path = Images/red_button.png; sourceTree = SOURCE_ROOT; };
+		CF239E901B823102003917CF /* Yellow_icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yellow_icon.svg.png; path = Images/Yellow_icon.svg.png; sourceTree = SOURCE_ROOT; };
+		CF239E931B82388D003917CF /* JointReportFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JointReportFormViewController.h; sourceTree = "<group>"; };
+		CF239E941B82388D003917CF /* JointReportFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JointReportFormViewController.m; sourceTree = "<group>"; };
 		CF3A6D3E1B74F3F100C188A6 /* NewEventFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventFormViewController.h; sourceTree = "<group>"; };
 		CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventFormViewController.m; sourceTree = "<group>"; };
 		CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxDetailsViewController.h; sourceTree = "<group>"; };
@@ -181,6 +194,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF239E921B823790003917CF /* JointReport */ = {
+			isa = PBXGroup;
+			children = (
+				CF239E931B82388D003917CF /* JointReportFormViewController.h */,
+				CF239E941B82388D003917CF /* JointReportFormViewController.m */,
+			);
+			name = JointReport;
+			sourceTree = "<group>";
+		};
 		CF68290A1B67D889004DE59E = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +285,7 @@
 		CF68293D1B67D89A004DE59E /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CF239E921B823790003917CF /* JointReport */,
 				CF6D78DA1B73F3EE0004FC20 /* Search */,
 				CF6D78D31B73A41A0004FC20 /* AdverseEvent */,
 				CFE3A9C61B714BAD002AC0F9 /* RxHistory */,
@@ -307,6 +330,11 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF239E901B823102003917CF /* Yellow_icon.svg.png */,
+				CF239E8E1B8229FE003917CF /* red_button.png */,
+				CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */,
+				CF239E881B82242B003917CF /* hand.png */,
+				CF239E891B82242B003917CF /* human.jpg */,
 				CFE3A9B51B711035002AC0F9 /* tabbar_icons */,
 				CF6829541B6800B2004DE59E /* icon1.png */,
 				CF6829551B6800B2004DE59E /* icon2.png */,
@@ -486,17 +514,22 @@
 				CFE3A9BE1B71104F002AC0F9 /* compass_filled-32.png in Resources */,
 				CF68295D1B6800B2004DE59E /* icon4.png in Resources */,
 				CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */,
+				CF239E8F1B8229FE003917CF /* red_button.png in Resources */,
+				CF239E8B1B82242B003917CF /* human.jpg in Resources */,
 				CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */,
 				CF6829271B67D889004DE59E /* LaunchScreen.xib in Resources */,
+				CF239E8A1B82242B003917CF /* hand.png in Resources */,
 				CFE3A9BD1B71104F002AC0F9 /* body_scan_filled-32.png in Resources */,
 				CF68295F1B6800B2004DE59E /* icon6.png in Resources */,
 				CF68295C1B6800B2004DE59E /* icon3.png in Resources */,
+				CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */,
 				CF6829421B67E071004DE59E /* Podfile in Resources */,
 				CF68295A1B6800B2004DE59E /* icon1.png in Resources */,
 				CF6829241B67D889004DE59E /* Images.xcassets in Resources */,
 				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
 				CF68295B1B6800B2004DE59E /* icon2.png in Resources */,
 				CF68295E1B6800B2004DE59E /* icon5.png in Resources */,
+				CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +588,7 @@
 				CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */,
 				CF704EFD1B7284190073F6CB /* Medication.m in Sources */,
 				CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */,
+				CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF704F091B7285000073F6CB /* Post.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,

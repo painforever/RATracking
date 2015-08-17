@@ -11,7 +11,8 @@
 #include "REMenu.h"
 #import "JKPopMenuItem.h"
 #import "JKPopMenuView.h"
-
+#import "UIViewController+CWPopup.h"
+#import "JointReportFormViewController.h"
 //ViewControllers that needed
 #import "AddMedicationViewController.h"
 
@@ -29,7 +30,7 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 //all kindd of actions in different views
 -(NSArray *)actionsInRxHistory;
 -(NSArray *)actionsInAdverseEvent;
--(NSArray *)actionsInJoint;
+//-(NSArray *)actionsInJoint;
 
 //6 icons popup menu
 -(void)quickStart;

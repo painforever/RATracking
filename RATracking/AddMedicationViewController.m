@@ -185,6 +185,7 @@
     // And dismiss the image picker.
     [self dismissViewControllerAnimated:TRUE completion:nil];
     NSString *filename = [NSString stringWithFormat:@"%@.jpg", [JSONHandler md5:[JSONHandler microtime]]];
+    self.image_filename = filename;
     [self uploadAvatar:chosenImage withFileName: filename];
     NSLog(@"take photo finished!");
 }
@@ -201,7 +202,6 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:urlString]];
     [request setHTTPMethod:@"POST"];
-    
     
     NSString *boundary = [NSString stringWithFormat:@"Boundary-%@",[[NSUUID UUID] UUIDString]];
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];

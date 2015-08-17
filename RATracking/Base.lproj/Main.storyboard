@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJv-ha-UhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442.5" y="-611.5"/>
+            <point key="canvasLocation" x="2380.5" y="-385.5"/>
         </scene>
         <!--Rx Details View Controller-->
         <scene sceneID="zOg-1R-Rjh">
@@ -363,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bf8-Xz-RE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442.5" y="109.5"/>
+            <point key="canvasLocation" x="2380.5" y="329.5"/>
         </scene>
         <!--Joint View Controller-->
         <scene sceneID="Un6-xg-SXE">
@@ -376,7 +376,96 @@
                     <view key="view" contentMode="scaleToFill" id="4Yq-Of-Xh8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="human-body-outline-drawing-108.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RRL-fl-Nz1">
+                                <rect key="frame" x="15" y="72" width="344" height="538"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lA3-Cz-rFd">
+                                <rect key="frame" x="155" y="115" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-OQ-xqX">
+                                <rect key="frame" x="85" y="157" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c61-ha-bKP">
+                                <rect key="frame" x="225" y="157" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-bc-XvC">
+                                <rect key="frame" x="73" y="238" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3m-lB-Pnb">
+                                <rect key="frame" x="243" y="238" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph9-u4-jQG">
+                                <rect key="frame" x="29" y="321" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb1-P3-Krx">
+                                <rect key="frame" x="110" y="428" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyr-X2-a7P">
+                                <rect key="frame" x="195" y="428" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bor-3z-jos">
+                                <rect key="frame" x="96" y="549" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMs-lr-Cf3">
+                                <rect key="frame" x="206" y="549" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-h5-WsB">
+                                <rect key="frame" x="117" y="321" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-wg-vZh">
+                                <rect key="frame" x="287" y="321" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-pi-8wv">
+                                <rect key="frame" x="187" y="321" width="62" height="61"/>
+                                <state key="normal" backgroundImage="red_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qyg-aE-LFI" firstAttribute="top" secondItem="RRL-fl-Nz1" secondAttribute="bottom" constant="8" id="CLx-YU-x73"/>
+                            <constraint firstItem="RRL-fl-Nz1" firstAttribute="top" secondItem="v7A-46-PUi" secondAttribute="bottom" constant="8" id="D0L-Gz-BSa"/>
+                            <constraint firstItem="RRL-fl-Nz1" firstAttribute="leading" secondItem="4Yq-Of-Xh8" secondAttribute="leading" constant="16" id="aAP-80-vIt"/>
+                            <constraint firstAttribute="trailing" secondItem="RRL-fl-Nz1" secondAttribute="trailing" constant="16" id="eeB-5c-euG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AcO-yN-iy9">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="Lvj-Og-x30">
@@ -411,10 +500,100 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="left_arm_joint" destination="f9M-bc-XvC" id="x3c-ab-2V2"/>
+                        <outlet property="left_feet" destination="Bor-3z-jos" id="oc1-WO-WiU"/>
+                        <outlet property="left_hand" destination="Ph9-u4-jQG" id="2r3-nf-igz"/>
+                        <outlet property="left_leg_joint" destination="Nb1-P3-Krx" id="WA0-Id-40T"/>
+                        <outlet property="left_root_leg" destination="fNn-h5-WsB" id="ZGb-UM-baU"/>
+                        <outlet property="left_shoulder" destination="YtN-OQ-xqX" id="WKc-XT-aJI"/>
+                        <outlet property="neck" destination="lA3-Cz-rFd" id="8SY-HG-RWT"/>
+                        <outlet property="right_arm_joint" destination="l3m-lB-Pnb" id="dC7-wu-zea"/>
+                        <outlet property="right_feet" destination="QMs-lr-Cf3" id="1Bn-iz-BXc"/>
+                        <outlet property="right_hand" destination="E1k-wg-vZh" id="77s-9i-smX"/>
+                        <outlet property="right_leg_joint" destination="vyr-X2-a7P" id="1xS-Mx-iHa"/>
+                        <outlet property="right_root_leg" destination="JUM-pi-8wv" id="LWm-Pa-3t8"/>
+                        <outlet property="right_shoulder" destination="c61-ha-bKP" id="tH6-rY-iDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-wZ-ytv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950.5" y="-997.5"/>
+        </scene>
+        <!--Joint Report Form View Controller-->
+        <scene sceneID="9Pz-GP-ecu">
+            <objects>
+                <viewController storyboardIdentifier="JointReportFormViewController" id="MZ1-di-1zZ" customClass="JointReportFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6BU-pg-6Ng"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ufp-3S-Re7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUb-Rx-8yv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ylg-yc-KSA">
+                                <rect key="frame" x="73" y="133" width="240" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8m2-SQ-c9w">
+                                <rect key="frame" x="73" y="255" width="240" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-9c-XT1">
+                                <rect key="frame" x="73" y="366" width="240" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St4-Kg-cb2">
+                                <rect key="frame" x="63" y="87" width="177" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swollen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-3R-Mq4">
+                                <rect key="frame" x="63" y="208" width="233" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-IT-2hY">
+                                <rect key="frame" x="63" y="330" width="170" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-ga-hZ1">
+                                <rect key="frame" x="241" y="171" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAb-oY-UKE">
+                                <rect key="frame" x="241" y="293" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwv-gi-F3m">
+                                <rect key="frame" x="241" y="412" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-AU-ldI">
+                                <rect key="frame" x="126" y="478" width="134" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.97213977630000004" green="0.9663027327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="150"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EC-QF-Cvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364.5" y="-1138.5"/>
         </scene>
         <!--New Event Form View Controller-->
         <scene sceneID="ss0-wc-xrd">
@@ -479,7 +658,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIG-Va-2cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486.5" y="-2300.5"/>
+            <point key="canvasLocation" x="1818.5" y="-2744.5"/>
         </scene>
         <!--Adverse Event View Controller-->
         <scene sceneID="Zu7-WY-Piw">
@@ -579,7 +758,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvS-If-9jV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044.5" y="-1766.5"/>
+            <point key="canvasLocation" x="2044.5" y="-2010.5"/>
         </scene>
         <!--Adverse Details View Controller-->
         <scene sceneID="eD0-mt-MvF">
@@ -666,7 +845,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVP-eA-pyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486.5" y="-1576.5"/>
+            <point key="canvasLocation" x="2234.5" y="-2744.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9xU-kM-eRm">
@@ -871,6 +1050,8 @@
         <image name="ambulance_filled-32.png" width="32" height="32"/>
         <image name="body_scan_filled-32.png" width="32" height="32"/>
         <image name="compass_filled-32.png" width="32" height="32"/>
+        <image name="human-body-outline-drawing-108.jpg" width="928" height="1856"/>
+        <image name="red_button.png" width="420" height="420"/>
         <image name="treatment_plan_filled-32.png" width="32" height="32"/>
     </resources>
 </document>

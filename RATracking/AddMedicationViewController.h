@@ -11,6 +11,9 @@
 #import "UIViewController+SharedUIMethods.h"
 
 @interface AddMedicationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate, UIImagePickerControllerDelegate>
+//picture took for drug
+@property (strong, nonatomic) NSString *image_filename;
+
 //Pickers
 @property (strong, nonatomic) UIPickerView *med_picker;
 @property (strong, nonatomic) UIPickerView *route_name_picker;
