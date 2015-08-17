@@ -28,6 +28,10 @@
 
 @property (strong, nonatomic) NSMutableArray *all_buttons;
 
+//non controls
+@property (strong, nonatomic) NSString *selected_part;
+@property (strong, nonatomic) NSMutableDictionary *all_parts;
+
 
 - (IBAction)actions_action:(id)sender;
 - (IBAction)toggleMenu:(id)sender;

@@ -532,14 +532,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ylg-yc-KSA">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ylg-yc-KSA">
                                 <rect key="frame" x="73" y="133" width="240" height="31"/>
+                                <connections>
+                                    <action selector="tender_value_changed:" destination="MZ1-di-1zZ" eventType="valueChanged" id="98b-xA-Hvq"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8m2-SQ-c9w">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8m2-SQ-c9w">
                                 <rect key="frame" x="73" y="255" width="240" height="31"/>
+                                <connections>
+                                    <action selector="swollen_value_changed:" destination="MZ1-di-1zZ" eventType="valueChanged" id="qUD-Jx-JpW"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-9c-XT1">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-9c-XT1">
                                 <rect key="frame" x="73" y="366" width="240" height="31"/>
+                                <connections>
+                                    <action selector="pain_value_changed:" destination="MZ1-di-1zZ" eventType="valueChanged" id="iFG-hM-3tu"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St4-Kg-cb2">
                                 <rect key="frame" x="63" y="87" width="177" height="30"/>
@@ -559,37 +568,54 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-ga-hZ1">
-                                <rect key="frame" x="241" y="171" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-ga-hZ1">
+                                <rect key="frame" x="241" y="171" width="111" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAb-oY-UKE">
-                                <rect key="frame" x="241" y="293" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAb-oY-UKE">
+                                <rect key="frame" x="241" y="293" width="111" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwv-gi-F3m">
-                                <rect key="frame" x="241" y="412" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwv-gi-F3m">
+                                <rect key="frame" x="241" y="412" width="111" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-AU-ldI">
-                                <rect key="frame" x="126" y="478" width="134" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-AU-ldI">
+                                <rect key="frame" x="128" y="477" width="102" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.97213977630000004" green="0.9663027327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit_action:" destination="MZ1-di-1zZ" eventType="touchUpInside" id="5Xt-3g-HJw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9q5-AU-ldI" secondAttribute="centerX" constant="8.5" id="7tb-Iy-Bwm"/>
+                            <constraint firstAttribute="centerX" secondItem="8m2-SQ-c9w" secondAttribute="centerX" constant="-5.5" id="83T-SR-o4m"/>
+                            <constraint firstAttribute="centerX" secondItem="Ylg-yc-KSA" secondAttribute="centerX" constant="-5.5" id="EzX-9M-6vQ"/>
+                            <constraint firstAttribute="centerX" secondItem="dMc-9c-XT1" secondAttribute="centerX" constant="-5.5" id="qkQ-WP-pxa"/>
+                        </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="200" height="150"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pain_label" destination="wwv-gi-F3m" id="uzF-ji-HAn"/>
+                        <outlet property="pain_slider" destination="dMc-9c-XT1" id="rq5-9e-FsK"/>
+                        <outlet property="swollen_label" destination="pAb-oY-UKE" id="drZ-HR-wnh"/>
+                        <outlet property="swollen_slider" destination="8m2-SQ-c9w" id="L9F-MB-6s7"/>
+                        <outlet property="tender_label" destination="XWD-ga-hZ1" id="FTX-3I-bn3"/>
+                        <outlet property="tender_slider" destination="Ylg-yc-KSA" id="Bqg-yh-QVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EC-QF-Cvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

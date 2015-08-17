@@ -16,8 +16,7 @@
 }
 
 #pragma menu for left top
-- (IBAction)toggleMenu: (id)sender
-{
+- (IBAction)toggleMenu: (id)sender{
     if (self.menu.isOpen)
         return [self.menu close];
     [self.menu showFromNavigationController:self.navigationController];
@@ -35,6 +34,7 @@
 -(void)initControls{
     [self.menu close];
     self.title = @"Joint Report";
+    self.selected_part = @"";
     self.menu = [[REMenu alloc] initWithItems:[self actionsInJoint]];
     self.all_buttons = @[self.neck, self.left_shoulder, self.right_shoulder, self.left_arm_joint, self.right_arm_joint, self.left_hand, self.right_hand, self.left_root_leg, self.right_root_leg, self.left_leg_joint, self.right_leg_joint, self.left_feet, self.right_feet];
     int i = 0;
@@ -43,6 +43,7 @@
         i+=1;
         [btn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     }
+    self.all_parts = @{@"0": @"neck", @"1": @"left_shoulder", @"2": @"right_shoulder", @"3": @"left_arm_joint", @"4": @"right_arm_joint", @"5": @"left_hand", @"6": @"right_hand", @"7": @"left_root_leg", @"8": @"right_root_leg", @"9": @"left_leg_joint" ,@"10": @"right_leg_joint", @"11": @"left_feet", @"12": @"right_feet"};
 }
 
 -(NSArray *)actionsInJoint{
@@ -54,6 +55,11 @@
                                                        NSLog(@"Item: %@", item);
                                                        JointReportFormViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"JointReportFormViewController"];
                                                        view.view.frame = CGRectMake(0, 0, self.view.frame.size.width-50, self.view.frame.size.height-150);
+                                                       if ([self.selected_part isEqualToString:@""]) {
+                                                           [self showAlert:@"no body part selected." withMessage:@"You have to select a part of your body."];
+                                                           return;
+                                                       }
+                                                       view.selected_part = self.selected_part;
                                                        [self presentPopupViewController:view animated:YES completion:nil];
                                                    }];
     return @[joint];
@@ -76,7 +82,8 @@
 
 -(IBAction)onClick:(id)sender{
     UIButton *btn = (UIButton*)sender;
-    NSLog(@"btn: %d", [btn tag]);
+    self.selected_part = self.all_parts[[NSString stringWithFormat:@"%d", btn.tag]];
+    NSLog(@"part: %@", [NSString stringWithFormat:@"%@", self.selected_part]);
     [self changeAllOtherButtonsColor:btn];
 }
 
