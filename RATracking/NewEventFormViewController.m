@@ -111,8 +111,8 @@
         [self showAlert:@"Cannot find such medication." withMessage:@"There is no such medication in our database."];
     }
     @finally {
-        [self.med_name setText:@""];
-        [self.event_name setText:@""];
+//        [self.med_name setText:@""];
+//        [self.event_name setText:@""];
     }
     
 }

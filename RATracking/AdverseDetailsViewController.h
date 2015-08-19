@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *drug_start_time;
 @property (strong, nonatomic) IBOutlet UILabel *dosage;
 @property (strong, nonatomic) IBOutlet UILabel *notes;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 //non component
 @property (strong, nonatomic) NSString *drug_id;

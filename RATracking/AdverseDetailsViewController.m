@@ -12,12 +12,16 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    [self.scrollView setScrollEnabled:YES];
+    NSLog(@"size: %f", self.view.frame.size.height);
+    NSLog(@"size: %f", self.view.bounds.size.height);
+    [self.scrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+200)];
     self.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo_url]]];
     [[AdverseEventReporting getAFManager] GET:[NSString stringWithFormat:@"%@%@%@", SERVER_URL, @"adverse_event_reportings/",self.adverse_event_reporting_id] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *res_arr = (NSMutableArray *)responseObject;
         NSDictionary *ad = res_arr[0];
         NSDictionary *rx = res_arr[1];
-        self.drug_start_time.text = [NSString stringWithFormat:@"Date prescribed: %@", rx[@"date_prescribed"]];
+        self.drug_start_time.text = [NSString stringWithFormat:@"Date prescribed: %@", [rx[@"date_prescribed"] substringToIndex: 10]];
         self.dosage.text = [NSString stringWithFormat:@"Dosage: %@", ad[@"dosage"]];
         self.notes.text = [NSString stringWithFormat:@"Notes: %@", ad[@"notes"]];
         self.date_reported.text = self.date_reported_str;
