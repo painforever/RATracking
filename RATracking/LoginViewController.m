@@ -35,7 +35,7 @@
         if ([operation.response statusCode] == 500) [self showAlert:@"Email/Password is wrong!" withMessage:@"Email or password is wrong!"];
     }];
     
-    med_name_arr = @[@"Orencia", @"Enbrel", @"Xeljanz", @"Humira", @"Rituxan", @"Simponi", @"Remicade", @"Kineret", @"Actemra"];
+    med_name_arr = @[@"Abatacept", @"Etanercept", @"Tofacitinib", @"Adalimumab", @"Rituximab", @"Golimumab", @"Infliximab", @"Anakinra", @"Tocilizumab"];
     route_name_arr = @[@"ORAL", @"SHOOT"];
 }
 

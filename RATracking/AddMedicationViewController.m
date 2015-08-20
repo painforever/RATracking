@@ -37,6 +37,10 @@
     [Medication getAFManager].requestSerializer = [AFJSONRequestSerializer serializer];
     [[Medication getAFManager] POST:[SERVER_URL stringByAppendingString:@"patient_prescriptions"] parameters:param_to_post success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self showAlert:@"Medication added." withMessage:[NSString stringWithFormat:@"%@ add success!", self.med_name.text]];
+        NSDictionary *added_drug_dic = (NSDictionary *)responseObject;
+        //upload drug photo
+        [self uploadAvatar:self.selected_UIImage withFileName: self.image_filename withPrescriptionItemID: added_drug_dic[@"prescription_item_id"]];
+        
         //clear all the inputs fields
         [self clearAllTextFields:@[self.med_name, self.route_name, self.dosage, self.days_of_treatment, self.times_per_day, self.times]];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -67,6 +71,11 @@
 
 #pragma init controls
 -(void)initControls{
+    [self.scrollView setScrollEnabled:YES];
+    self.drug_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif"]]];
+    NSLog(@"size: %f", self.view.frame.size.height);
+    NSLog(@"size: %f", self.view.bounds.size.height);
+    [self.scrollView setContentSize:CGSizeMake(400, self.view.frame.size.height+400)];
     self.title = @"Add New Medication";
     //pickers
     self.med_picker = [[UIPickerView alloc] init];self.route_name_picker = [[UIPickerView alloc] init];
@@ -104,6 +113,10 @@
     
     self.med_name.delegate = self;
     self.route_name.delegate = self;
+    self.dosage.delegate = self;
+    self.days_of_treatment.delegate = self;
+    self.times_per_day.delegate = self;
+    self.times.delegate = self;
     //steppers
     
 }
@@ -180,13 +193,14 @@
 #pragma Camera
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-   // self.imageView.image = chosenImage;
     NSURL *url = [NSURL URLWithString: photo_upload_url];
     // And dismiss the image picker.
     [self dismissViewControllerAnimated:TRUE completion:nil];
     NSString *filename = [NSString stringWithFormat:@"%@.jpg", [JSONHandler md5:[JSONHandler microtime]]];
+    self.selected_UIImage = chosenImage;
     self.image_filename = filename;
-    [self uploadAvatar:chosenImage withFileName: filename];
+    //display image on GUI
+    self.drug_image.image = chosenImage;
     NSLog(@"take photo finished!");
 }
 
@@ -194,8 +208,8 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
--(void)uploadAvatar: (UIImage *)file_data withFileName: (NSString *)filename{
-    NSData* imageData =  UIImageJPEGRepresentation(filename, 1.0);
+-(void)uploadAvatar: (UIImage *)file_data withFileName: (NSString *)filename withPrescriptionItemID: (NSString *)item_id{
+    NSData* imageData =  UIImageJPEGRepresentation(file_data, 1.0);
     // NSData *imageData   = [NSData dataWithContentsOfFile:filename];
     NSString *urlString = photo_upload_url;
 
@@ -210,12 +224,10 @@
     NSMutableData *body = [NSMutableData data];
     
     [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"user_id\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-    NSString *userid = [NSString stringWithFormat:@"%@",user_id];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"item_id\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+    NSString *userid = [NSString stringWithFormat:@"%@",item_id];
     [body appendData:[userid dataUsingEncoding:NSUTF8StringEncoding]];
     [body appendData:[[NSString stringWithString:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-    
-    
     [body appendData:[[NSString stringWithFormat:@"--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     [body appendData:[[NSString stringWithString:[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"drug_photo\"; filename=\"%@\"\r\n", filename]] dataUsingEncoding:NSUTF8StringEncoding]];
     [body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];

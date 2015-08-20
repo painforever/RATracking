@@ -11,6 +11,8 @@
 #import "UIViewController+SharedUIMethods.h"
 
 @interface AddMedicationViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate, UIImagePickerControllerDelegate>
+//selected UIImage
+@property (strong, nonatomic) UIImage *selected_UIImage;
 //picture took for drug
 @property (strong, nonatomic) NSString *image_filename;
 
@@ -35,6 +37,10 @@
 //steppers' actions
 - (IBAction)days_of_treatment_action:(UIStepper*)sender;
 - (IBAction)times_per_day_action:(UIStepper *)sender;
+//scrollview
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+//images
+@property (strong, nonatomic) IBOutlet UIImageView *drug_image;
 
 //button actions
 - (IBAction)submit_action:(id)sender;

@@ -13,6 +13,7 @@ extern NSString *SERVER_URL;
 extern NSString *user_id;
 extern NSString *patient_id;
 extern NSString *full_name;
+extern NSString *BASE_URL;
 
 //non control properties
 extern NSArray *med_name_arr;
