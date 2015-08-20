@@ -20,8 +20,8 @@
 @property (strong, nonatomic) UIPickerView *event_name_picker;
 
 //datas
-@property (strong, nonatomic) NSArray *med_arr;
-@property (strong, nonatomic) NSArray *event_arr;
+@property (strong, nonatomic) NSMutableArray *med_arr;
+@property (strong, nonatomic) NSMutableArray *event_arr;
 @property (strong, nonatomic) NSString *selected_drug_id;
 
 @property (strong, nonatomic) IBOutlet UIButton *submit_btn;

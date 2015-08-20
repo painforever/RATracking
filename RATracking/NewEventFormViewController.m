@@ -104,17 +104,14 @@
             self.selected_drug_id = [drug_dic[@"drug_id"] stringValue];
             
             NSDictionary *side_effects_dic = [Medication medicationsShow: self.selected_drug_id];
-            self.event_arr = [[side_effects_dic objectForKey:@"side_effects"] componentsSeparatedByString:@","];
+            self.event_arr = (NSMutableArray*)[[side_effects_dic objectForKey:@"side_effects"] componentsSeparatedByString:@","];
+            [self.event_name_picker reloadAllComponents];
         }
     }
     @catch (NSException *exception) {
         [self showAlert:@"Cannot find such medication." withMessage:@"There is no such medication in our database."];
     }
-    @finally {
-//        [self.med_name setText:@""];
-//        [self.event_name setText:@""];
-    }
-    
+    @finally {}
 }
 
 #pragma mark - Picker View Data source
@@ -141,7 +138,6 @@
     if ([self.med_picker isEqual: pickerView])
         return [self.med_arr objectAtIndex:row];
     else return [self.event_arr objectAtIndex:row];
-    
 }
 
 -(IBAction)done_for_med_name: (UIBarButtonItem*)btn{
