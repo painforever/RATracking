@@ -15,6 +15,7 @@
 #import "Medication.h"
 #import "AdverseEventReporting.h"
 #import "Pharmacy.h"
+#import "Patient.h"
 
 
 @interface Manifest : NSObject

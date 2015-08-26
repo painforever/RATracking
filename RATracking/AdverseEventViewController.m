@@ -15,6 +15,7 @@
     [[AdverseEventReporting getAFManager] GET:[SERVER_URL stringByAppendingString:@"adverse_event_reportings"] parameters:@{@"patient_id": patient_id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.table_data = (NSMutableArray *)responseObject;
         [self.tableView reloadData];
+        NSLog(@"exexexe");
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"failed");
     }];

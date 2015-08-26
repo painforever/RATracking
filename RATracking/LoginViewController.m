@@ -14,6 +14,7 @@
     [super viewDidLoad];
     self.email.delegate = self;
     self.password.delegate = self;
+    [self setUpCWPopUp];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -39,6 +40,13 @@
     route_name_arr = @[@"ORAL", @"SHOOT"];
 }
 
+- (IBAction)signup_action:(id)sender {
+    SignUpViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
+    view.view.frame = CGRectMake(0, 0, self.view.frame.size.width-50, self.view.frame.size.height-150);
+    [self presentPopupViewController:view animated:YES completion:nil];
+    
+}
+
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     [textField resignFirstResponder];
 }
@@ -52,5 +60,20 @@
     patient_id = dic[@"patient_id"];
     user_id = dic[@"user_id"];
     full_name = [NSString stringWithFormat:@"%@ %@", dic[@"fname"], dic[@"lname"]];
+}
+
+//CWPopup
+-(void)setUpCWPopUp{
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPopup)];
+    tapRecognizer.numberOfTapsRequired = 2;
+    tapRecognizer.delegate = self;
+    self.useBlurForPopup = YES;
+    [self.view addGestureRecognizer:tapRecognizer];
+}
+
+- (void)dismissPopup {
+    if (self.popupViewController != nil) {
+        [self dismissPopupViewControllerAnimated:YES completion:^{}];
+    }
 }
 @end

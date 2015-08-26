@@ -5,6 +5,109 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="DBC-2z-zw7">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="DcX-l5-nG3" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAb-d8-my0"/>
+                        <viewControllerLayoutGuide type="bottom" id="WAk-df-Csm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VG4-H8-Xla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-LC-WIv">
+                                <rect key="frame" x="41" y="80" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DcX-l5-nG3" id="13i-30-7ow"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tnc-TW-uVd">
+                                <rect key="frame" x="41" y="137" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DcX-l5-nG3" id="6Br-sa-OSB"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-ts-jSw">
+                                <rect key="frame" x="41" y="196" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DcX-l5-nG3" id="kHf-ng-Ngj"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gck-on-MLo">
+                                <rect key="frame" x="41" y="253" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DcX-l5-nG3" id="fG9-SN-5SG"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirm" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VgE-wJ-pia">
+                                <rect key="frame" x="41" y="311" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DcX-l5-nG3" id="pts-A0-icj"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE9-LW-Cam">
+                                <rect key="frame" x="127" y="374" width="121" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="GtO-T6-cao"/>
+                                    <constraint firstAttribute="width" constant="121" id="hLH-qW-07W"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.97213977630000004" green="0.9663027327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signup_action:" destination="DcX-l5-nG3" eventType="touchUpInside" id="Zvq-3e-aum"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YOJ-ts-jSw" firstAttribute="leading" secondItem="Gck-on-MLo" secondAttribute="leading" id="0Kr-3o-VSr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VgE-wJ-pia" secondAttribute="trailing" constant="25" id="7Bj-MN-SJF"/>
+                            <constraint firstItem="M8F-LC-WIv" firstAttribute="leading" secondItem="VG4-H8-Xla" secondAttribute="leadingMargin" constant="25" id="C6H-tt-jJL"/>
+                            <constraint firstItem="VgE-wJ-pia" firstAttribute="leading" secondItem="Gck-on-MLo" secondAttribute="leading" id="CkZ-rF-Znd"/>
+                            <constraint firstItem="M8F-LC-WIv" firstAttribute="top" secondItem="TAb-d8-my0" secondAttribute="bottom" constant="60" id="DQ6-rF-afP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tnc-TW-uVd" secondAttribute="trailing" constant="25" id="E7R-PD-f1v"/>
+                            <constraint firstItem="Tnc-TW-uVd" firstAttribute="top" secondItem="M8F-LC-WIv" secondAttribute="bottom" constant="27" id="K6Q-pV-bFW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gck-on-MLo" secondAttribute="trailing" constant="25" id="Nss-d5-idQ"/>
+                            <constraint firstItem="Gck-on-MLo" firstAttribute="top" secondItem="YOJ-ts-jSw" secondAttribute="bottom" constant="27" id="a9N-FW-QUy"/>
+                            <constraint firstItem="Tnc-TW-uVd" firstAttribute="leading" secondItem="YOJ-ts-jSw" secondAttribute="leading" id="aU1-ys-yxn"/>
+                            <constraint firstItem="VgE-wJ-pia" firstAttribute="top" secondItem="Gck-on-MLo" secondAttribute="bottom" constant="28" id="bfn-60-Y9F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M8F-LC-WIv" secondAttribute="trailing" constant="25" id="eYc-Rw-TGf"/>
+                            <constraint firstItem="gE9-LW-Cam" firstAttribute="top" secondItem="VgE-wJ-pia" secondAttribute="bottom" constant="33" id="q3v-We-XMB"/>
+                            <constraint firstItem="YOJ-ts-jSw" firstAttribute="top" secondItem="Tnc-TW-uVd" secondAttribute="bottom" constant="29" id="qoR-oB-hsN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOJ-ts-jSw" secondAttribute="trailing" constant="25" id="sDB-As-Ap0"/>
+                            <constraint firstItem="Tnc-TW-uVd" firstAttribute="leading" secondItem="M8F-LC-WIv" secondAttribute="leading" id="sMf-NI-Y38"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gE9-LW-Cam" secondAttribute="trailing" constant="111" id="ukf-ES-qWg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="email" destination="M8F-LC-WIv" id="Qq9-v6-r6Z"/>
+                        <outlet property="first_name" destination="Tnc-TW-uVd" id="cMa-5Q-xOA"/>
+                        <outlet property="last_name" destination="YOJ-ts-jSw" id="vb3-nX-SYd"/>
+                        <outlet property="password" destination="Gck-on-MLo" id="2zU-pn-11V"/>
+                        <outlet property="password_confirm" destination="VgE-wJ-pia" id="hXQ-LO-6Yu"/>
+                        <outlet property="signup_btn" destination="gE9-LW-Cam" id="a5Z-Qd-Nxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJP-U7-6mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.5" y="-1492.5"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -64,7 +167,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="login_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dc1-h2-tEp"/>
+                                    <action selector="signup_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osn-h5-SyD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,6 +191,7 @@
                         <outlet property="email" destination="eph-Om-9qm" id="Xaa-CI-acq"/>
                         <outlet property="login_btn" destination="knx-oH-uTA" id="Wpy-AL-Oht"/>
                         <outlet property="password" destination="efo-I8-e3O" id="qLK-Tv-ayZ"/>
+                        <outlet property="signup_btn" destination="qJN-OI-R8C" id="0Oo-cx-UqA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
