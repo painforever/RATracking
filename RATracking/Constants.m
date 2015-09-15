@@ -10,12 +10,13 @@
 
 @implementation Constants
 NSString *SERVER_URL = @"http://127.0.0.1:3000/ra/";
-//NSString *SERVER_URL = @"http://10.0.80.58:3000/ra/";
+//NSString *SERVER_URL = @"http://10.0.80.66:3000/ra/";
 NSString *user_id = @"";
 NSString *full_name = @"";
 NSString *patient_id = @"";
-//NSString *BASE_URL = @"http://10.0.80.58:3000/";
-NSString *BASE_URL = @"http://127.0.0.1:3000/";
+
+NSString *BASE_URL = @"http://10.0.80.66:3000/";
+//NSString *BASE_URL = @"http://127.0.0.1:3000/";
 
 //non control properties
 NSArray *med_name_arr;
