@@ -33,7 +33,6 @@
 
 -(void)initControls{
     [self.menu close];
-    self.title = @"Joint Report";
     self.selected_part = @"";
     self.menu = [[REMenu alloc] initWithItems:[self actionsInJoint]];
     self.all_buttons = @[self.neck, self.left_shoulder, self.right_shoulder, self.left_arm_joint, self.right_arm_joint, self.left_hand, self.right_hand, self.left_root_leg, self.right_root_leg, self.left_leg_joint, self.right_leg_joint, self.left_feet, self.right_feet];

@@ -30,7 +30,7 @@ static AFHTTPRequestOperationManager *manager = nil;
     
     NSMutableDictionary *res_dic = [[NSMutableDictionary alloc] initWithObjects:@[@"", @""] forKeys:@[@"patient_prescription", @"patient_prescription_item"]];
     
-    [res_dic setObject:@{@"route_name": route_name, @"dosage": dosage, @"days_of_treatment": days_of_treatment, @"times_per_day": times_per_day, @"time_of_day": times, @"drug_id": drug_id, @"is_finished":@"no"} forKey:@"patient_prescription_item"];
+    [res_dic setObject:@{@"route_name": route_name, @"dosage": dosage, @"days_of_treatment": days_of_treatment, @"times_per_day": times_per_day, @"time_of_day": times, @"drug_id": drug_id, @"is_finished":@"no", @"drug_photo": default_drug_photo} forKey:@"patient_prescription_item"];
     
     [res_dic setObject:@{@"patient_id": patient_id, @"date_prescribed": [JSONHandler NSDateToString:[NSDate date]]} forKey:@"patient_prescription"];
     return res_dic;

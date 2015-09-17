@@ -21,4 +21,6 @@ extern NSArray *route_name_arr;
 
 //url for upload photos for drugs
 extern NSString * photo_upload_url;
+
+extern NSString *default_drug_photo;
 @end
