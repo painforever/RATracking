@@ -71,6 +71,11 @@
         drug_photo = @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif";
     }
     cell.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
+    
+    cell.drug_photo.layer.borderWidth = 1.0f;
+    cell.drug_photo.layer.borderColor = [UIColor blackColor].CGColor;
+    cell.drug_photo.layer.cornerRadius = 20.0f;
+    cell.drug_photo.clipsToBounds = YES;
     return cell;
 }
 

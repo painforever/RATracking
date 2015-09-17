@@ -69,10 +69,12 @@
     cell.drug_name_label.text = med_row_dic[@"drug_name"];
     cell.created_at_label.text = [NSString stringWithFormat:@"Date: %@", med_row_dic[@"date_prescribed"]];
     NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, med_row_dic[@"drug_photo"][@"thumb"][@"url"]];
-    if ([[self trim: drug_photo] length] == 0 || drug_photo == NULL) {
-        drug_photo = @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif";
-    }
     cell.drug_image_view.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
+    
+    cell.drug_image_view.layer.borderWidth = 1.0f;
+    cell.drug_image_view.layer.borderColor = [UIColor blackColor].CGColor;
+    cell.drug_image_view.layer.cornerRadius = 20.0f;
+    cell.drug_image_view.clipsToBounds = YES;
     return cell;
 }
 
@@ -84,6 +86,7 @@
     view.drug_name = [data_selected objectForKey:@"drug_name"];
     //assign drug photo
     NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, data_selected[@"drug_photo"][@"url"]];
+    NSLog(@"drug_photo: %@", drug_photo);
     view.drug_photo = [NSString stringWithFormat:@"%@", drug_photo];
     [self.navigationController pushViewController:view animated:YES];
 }

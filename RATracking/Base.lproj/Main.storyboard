@@ -225,7 +225,7 @@
                                                     <color key="textColor" red="0.36308663727425938" green="0.2680401752679592" blue="0.86188052398989901" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-j9-EfR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drug_default.gif" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-j9-EfR">
                                                     <rect key="frame" x="13" y="10" width="80" height="68.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="created time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-f9-V8f">
@@ -913,7 +913,7 @@
                                                     <color key="textColor" red="0.36308663730000001" green="0.26804017530000002" blue="0.86188052400000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-8G-uOj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drug_default.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-8G-uOj">
                                                     <rect key="frame" x="224" y="3" width="94" height="91.5"/>
                                                 </imageView>
                                             </subviews>
@@ -1034,7 +1034,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VoJ-eL-Xr6">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VoJ-eL-Xr6">
                                                 <rect key="frame" x="89" y="81" width="197" height="127"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="127" id="Bp9-7X-WWC"/>
@@ -1046,6 +1046,7 @@
                                         <constraints>
                                             <constraint firstItem="VoJ-eL-Xr6" firstAttribute="leading" secondItem="XMc-LQ-lV4" secondAttribute="leading" constant="89" id="5tl-a6-uCD"/>
                                             <constraint firstAttribute="trailing" secondItem="VoJ-eL-Xr6" secondAttribute="trailing" constant="89" id="98T-4r-M6E"/>
+                                            <constraint firstItem="VoJ-eL-Xr6" firstAttribute="top" secondItem="XMc-LQ-lV4" secondAttribute="top" constant="81" id="Lx0-0D-Ipr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1235,7 +1236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkw-S4-lBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.5" y="-997.5"/>
+            <point key="canvasLocation" x="1433.5" y="-1085.5"/>
         </scene>
         <!--Adverse Event-->
         <scene sceneID="96T-nM-Ozi">
@@ -1281,6 +1282,7 @@
         <image name="ambulance_filled-32.png" width="32" height="32"/>
         <image name="body_scan_filled-32.png" width="32" height="32"/>
         <image name="compass_filled-32.png" width="32" height="32"/>
+        <image name="drug_default.gif" width="387" height="449"/>
         <image name="human-body-outline-drawing-108.jpg" width="928" height="1856"/>
         <image name="red_button.png" width="420" height="420"/>
         <image name="treatment_plan_filled-32.png" width="32" height="32"/>

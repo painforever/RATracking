@@ -51,6 +51,7 @@
 		CFA878F11B792A3600AABC6C /* PharmacyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA878F01B792A3600AABC6C /* PharmacyDetailsViewController.m */; };
 		CFB6D0121B684250004849C4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0111B684250004849C4 /* Constants.m */; };
 		CFB6D0161B6842AD004849C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6D0151B6842AD004849C4 /* User.m */; };
+		CFCFCABF1BAB1FBB00FD0F14 /* drug_default.gif in Resources */ = {isa = PBXBuildFile; fileRef = CFCFCABE1BAB1FBB00FD0F14 /* drug_default.gif */; };
 		CFD8FE551B8E03910043B189 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD8FE521B8E03910043B189 /* Patient.m */; };
 		CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */; };
 		CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE3A9B71B71104F002AC0F9 /* ambulance_filled-32.png */; };
@@ -149,6 +150,7 @@
 		CFB6D0111B684250004849C4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		CFB6D0141B6842AD004849C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		CFB6D0151B6842AD004849C4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CFCFCABE1BAB1FBB00FD0F14 /* drug_default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = drug_default.gif; path = Images/drug_default.gif; sourceTree = SOURCE_ROOT; };
 		CFD8FE511B8E03910043B189 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		CFD8FE521B8E03910043B189 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 		CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity_feed_2-32.png"; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CFCFCABE1BAB1FBB00FD0F14 /* drug_default.gif */,
 				CF239E901B823102003917CF /* Yellow_icon.svg.png */,
 				CF239E8E1B8229FE003917CF /* red_button.png */,
 				CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */,
@@ -537,6 +540,7 @@
 				CF6829421B67E071004DE59E /* Podfile in Resources */,
 				CF68295A1B6800B2004DE59E /* icon1.png in Resources */,
 				CF6829241B67D889004DE59E /* Images.xcassets in Resources */,
+				CFCFCABF1BAB1FBB00FD0F14 /* drug_default.gif in Resources */,
 				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
 				CF68295B1B6800B2004DE59E /* icon2.png in Resources */,
 				CF68295E1B6800B2004DE59E /* icon5.png in Resources */,
