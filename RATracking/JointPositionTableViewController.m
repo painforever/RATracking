@@ -97,6 +97,10 @@
         BackJointViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"BackJointViewController"];
         view = segue.destinationViewController;
     }
+    else{
+        FingersJointsViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"FingersJointsViewController"];
+        view = segue.destinationViewController;
+    }
 }
 
 

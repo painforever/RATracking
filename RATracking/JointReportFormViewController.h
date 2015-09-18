@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *swollen_label;
 @property (strong, nonatomic) IBOutlet UILabel *pain_label;
 
+
 //non control
 @property (strong, nonatomic) NSString *selected_part;
 

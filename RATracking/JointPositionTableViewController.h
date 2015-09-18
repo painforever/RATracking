@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JointViewController.h"
 #import "BackJointViewController.h"
+#import "FingersJointsViewController.h"
 
 @interface JointPositionTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;

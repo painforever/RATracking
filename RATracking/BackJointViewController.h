@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+SharedUIMethods.h"
 
-@interface BackJointViewController : UIViewController
+@interface BackJointViewController : UIViewController <JKPopMenuViewSelectDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *bodyImageView;
+@property (strong, nonatomic) IBOutlet UIButton *up;
+@property (strong, nonatomic) IBOutlet UIButton *mid;
+@property (strong, nonatomic) IBOutlet UIButton *down;
 
+@property (strong, readwrite, nonatomic) REMenu *menu;
+@property (strong, nonatomic) NSString *selected_part;
+@property (strong, nonatomic) IBOutlet UIButton *actions_btn;
+
+- (IBAction)toggleMenu:(id)sender;
 @end
