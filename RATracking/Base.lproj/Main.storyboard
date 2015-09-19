@@ -1231,7 +1231,7 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZZ-rs-vvm">
                                         <rect key="frame" x="121" y="94" width="132" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="bn0-ML-4Ur"/>
                                             <constraint firstAttribute="width" constant="132" id="ig9-u6-XBW"/>
@@ -1243,7 +1243,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htu-c5-g0G">
                                         <rect key="frame" x="121" y="150" width="132" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="middle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1251,7 +1251,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kG-B8-bvJ">
                                         <rect key="frame" x="121" y="207" width="132" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.44694285090000002" blue="0.38869447950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="down">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1699,6 +1699,34 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="actions_btn" destination="04J-r4-QOc" id="Al8-Sr-Zgt"/>
+                        <outlet property="left_1th_down" destination="ThK-vh-6XP" id="J3J-4I-FYF"/>
+                        <outlet property="left_1th_up" destination="bLR-L9-8sF" id="GaW-hu-O0b"/>
+                        <outlet property="left_2th_down" destination="avg-gU-X3Q" id="bMW-3A-MDz"/>
+                        <outlet property="left_2th_mid" destination="2AT-kq-0RX" id="a3i-wa-O9R"/>
+                        <outlet property="left_2th_up" destination="veV-q4-QWw" id="JYJ-Xc-8jz"/>
+                        <outlet property="left_3th_down" destination="rvi-LF-kJP" id="GBd-E7-Vw9"/>
+                        <outlet property="left_3th_mid" destination="EAg-df-xZt" id="Dmd-dk-CLq"/>
+                        <outlet property="left_3th_up" destination="xri-kW-YiJ" id="Co4-U8-PVx"/>
+                        <outlet property="left_4th_down" destination="5yV-5R-zI4" id="y57-E3-5h2"/>
+                        <outlet property="left_4th_mid" destination="akT-hl-HU4" id="MkL-QC-jnZ"/>
+                        <outlet property="left_4th_up" destination="vRU-Wq-Sde" id="gPz-2L-wHR"/>
+                        <outlet property="left_5th_down" destination="e95-aP-1a8" id="dBu-Q3-QhH"/>
+                        <outlet property="left_5th_mid" destination="etQ-k6-r6S" id="z7t-a3-LTY"/>
+                        <outlet property="left_5th_up" destination="slO-Q3-yTc" id="gZs-M4-Fes"/>
+                        <outlet property="right_1th_down" destination="WPx-lG-EG2" id="AJa-oF-Ypg"/>
+                        <outlet property="right_1th_up" destination="bl2-Vd-fXG" id="vIT-bi-P2N"/>
+                        <outlet property="right_2th_down" destination="z8n-W5-4GF" id="Y7y-IG-Fyh"/>
+                        <outlet property="right_2th_mid" destination="kau-4o-Bye" id="DsP-rE-wed"/>
+                        <outlet property="right_2th_up" destination="Ke8-Cr-IJX" id="72U-Rd-OLG"/>
+                        <outlet property="right_3th_down" destination="xEa-r4-N15" id="Cdm-bR-I2P"/>
+                        <outlet property="right_3th_mid" destination="9fp-KA-db1" id="D8z-Ut-XUa"/>
+                        <outlet property="right_3th_up" destination="cMZ-Jv-J0s" id="fTr-jn-jtW"/>
+                        <outlet property="right_4th_down" destination="fL6-Lx-fsc" id="Eg4-8K-Z4T"/>
+                        <outlet property="right_4th_mid" destination="auU-r4-Ph3" id="bJT-4v-2BD"/>
+                        <outlet property="right_4th_up" destination="4Sp-HX-H6x" id="ozQ-67-9GE"/>
+                        <outlet property="right_5th_down" destination="6fJ-TJ-ZQ8" id="gRZ-gf-fkT"/>
+                        <outlet property="right_5th_mid" destination="YlK-z5-FWd" id="OlP-1i-3Hh"/>
+                        <outlet property="right_5th_up" destination="pZ2-XJ-EbS" id="wkg-UK-5tK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZ0-1q-SYq" userLabel="First Responder" sceneMemberID="firstResponder"/>

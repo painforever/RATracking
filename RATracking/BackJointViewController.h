@@ -19,5 +19,8 @@
 @property (strong, nonatomic) NSString *selected_part;
 @property (strong, nonatomic) IBOutlet UIButton *actions_btn;
 
+@property (strong, nonatomic) NSArray *buttons;
+@property (strong, nonatomic) NSArray *parts_text;
+
 - (IBAction)toggleMenu:(id)sender;
 @end

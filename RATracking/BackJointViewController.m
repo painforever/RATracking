@@ -27,10 +27,19 @@
 }
 
 -(void)initControls{
+    self.selected_part = @"";
     self.up.layer.cornerRadius = 10.0f;
     self.mid.layer.cornerRadius = 10.0f;
     self.down.layer.cornerRadius = 10.0f;
     self.menu = [[REMenu alloc] initWithItems:[self actionsInJoint]];
+    self.buttons = @[self.up, self.mid, self.down];
+    self.parts_text = @[@"back_up", @"back_mid", @"back_down"];
+    int i = 0;
+    for (UIButton *btn in self.buttons) {
+        btn.tag = i;
+        i+=1;
+        [btn addTarget:self action:@selector(onClick:) forControlEvents: UIControlEventTouchUpInside];
+    }
 }
 
 -(NSArray *)actionsInJoint{
@@ -58,6 +67,12 @@
     [self.menu showFromNavigationController:self.navigationController];
 }
 
+-(IBAction)onClick:(id)sender{
+    UIButton *clicked_btn = (UIButton *)sender;
+    self.selected_part = self.parts_text[clicked_btn.tag];
+    [self changeAllOtherButtonsColor: clicked_btn];
+}
+
 //CWPopup
 -(void)setUpCWPopUp{
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPopup)];
@@ -70,6 +85,17 @@
 - (void)dismissPopup {
     if (self.popupViewController != nil) {
         [self dismissPopupViewControllerAnimated:YES completion:^{}];
+    }
+}
+
+-(void)changeAllOtherButtonsColor:(UIButton*)clickedBtn{
+    [clickedBtn setBackgroundColor: [UIColor yellowColor]];
+    [clickedBtn setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
+    for(UIButton *btn in self.buttons){
+        if (clickedBtn.tag != btn.tag) {
+            [btn setBackgroundColor: [UIColor redColor]];
+            [btn setTitleColor: [UIColor whiteColor] forState:UIControlStateNormal];
+        }
     }
 }
 @end
