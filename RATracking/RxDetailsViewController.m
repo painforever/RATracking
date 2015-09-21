@@ -11,7 +11,10 @@
 @implementation RxDetailsViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.drug_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo]]];
+    if (self.drug_photo)
+        self.drug_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo]]];
+    else self.drug_image.image = [UIImage imageNamed:@"drug_default.jpg"];
+    
     self.drug_name_label.text = [NSString stringWithFormat: @"Name: %@", self.drug_name];
     [self loadData];
 }

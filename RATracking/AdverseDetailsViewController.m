@@ -16,7 +16,12 @@
     NSLog(@"size: %f", self.view.frame.size.height);
     NSLog(@"size: %f", self.view.bounds.size.height);
     [self.scrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+200)];
-    self.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo_url]]];
+    if (self.drug_photo_url)
+        self.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo_url]]];
+    
+    else self.drug_photo.image = [UIImage imageNamed:@"drug_default.jpg"];
+    NSLog(@"url: %@", self.drug_photo_url);
+    
     [[AdverseEventReporting getAFManager] GET:[NSString stringWithFormat:@"%@%@%@", SERVER_URL, @"adverse_event_reportings/",self.adverse_event_reporting_id] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *res_arr = (NSMutableArray *)responseObject;
         NSDictionary *ad = res_arr[0];

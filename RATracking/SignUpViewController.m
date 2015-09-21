@@ -12,6 +12,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
 }
+
 - (IBAction)signup_action:(id)sender {
     NSString *email=self.email.text;
     NSString *password=self.password.text;

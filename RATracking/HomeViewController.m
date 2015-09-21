@@ -16,6 +16,7 @@
     [self initControls];
     [[Medication getAFManager] GET:[SERVER_URL stringByAppendingString:@"medications/?"] parameters:@{@"patient_id": patient_id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.table_data = (NSMutableArray *)responseObject;
+        NSLog(@"wocao: %@", responseObject);
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"get med failed");
@@ -69,7 +70,10 @@
     cell.drug_name_label.text = med_row_dic[@"drug_name"];
     cell.created_at_label.text = [NSString stringWithFormat:@"Date: %@", med_row_dic[@"date_prescribed"]];
     NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, med_row_dic[@"drug_photo"][@"thumb"][@"url"]];
-    cell.drug_image_view.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
+    if ([med_row_dic[@"drug_photo"][@"thumb"][@"url"] isEqual: [NSNull null]])
+        cell.drug_image_view.image = [UIImage imageNamed:@"drug_default.jpg"];
+    else
+        cell.drug_image_view.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
     
     cell.drug_image_view.layer.borderWidth = 1.0f;
     cell.drug_image_view.layer.borderColor = [UIColor blackColor].CGColor;
@@ -87,7 +91,11 @@
     //assign drug photo
     NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, data_selected[@"drug_photo"][@"url"]];
     NSLog(@"drug_photo: %@", drug_photo);
-    view.drug_photo = [NSString stringWithFormat:@"%@", drug_photo];
+    if ([data_selected[@"drug_photo"][@"url"] isEqual:[NSNull null]]) {
+        view.drug_image.image = [UIImage imageNamed:@"drug_default.jpg"];
+        view.drug_photo = nil;
+    }
+    else view.drug_photo = [NSString stringWithFormat:@"%@", drug_photo];
     [self.navigationController pushViewController:view animated:YES];
 }
 @end

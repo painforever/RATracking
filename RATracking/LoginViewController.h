@@ -14,6 +14,7 @@
 #import "SignUpViewController.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *email;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 

@@ -16,6 +16,7 @@
 		CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF239E941B82388D003917CF /* JointReportFormViewController.m */; };
 		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
 		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
+		CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF446FB01BB09A75001FD9BD /* drug_default.jpg */; };
 		CF4EEF051BAB55BD00B49357 /* BackJointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4EEF041BAB55BD00B49357 /* BackJointViewController.m */; };
 		CF4EEF081BAB5AD800B49357 /* FingersJointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4EEF071BAB5AD800B49357 /* FingersJointsViewController.m */; };
 		CF6829191B67D889004DE59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829181B67D889004DE59E /* main.m */; };
@@ -92,6 +93,7 @@
 		CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventFormViewController.m; sourceTree = "<group>"; };
 		CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxDetailsViewController.h; sourceTree = "<group>"; };
 		CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxDetailsViewController.m; sourceTree = "<group>"; };
+		CF446FB01BB09A75001FD9BD /* drug_default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drug_default.jpg; path = Images/drug_default.jpg; sourceTree = SOURCE_ROOT; };
 		CF4EEF031BAB55BD00B49357 /* BackJointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackJointViewController.h; sourceTree = "<group>"; };
 		CF4EEF041BAB55BD00B49357 /* BackJointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackJointViewController.m; sourceTree = "<group>"; };
 		CF4EEF061BAB5AD800B49357 /* FingersJointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingersJointsViewController.h; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF446FB01BB09A75001FD9BD /* drug_default.jpg */,
 				CFCFCABE1BAB1FBB00FD0F14 /* drug_default.gif */,
 				CF239E901B823102003917CF /* Yellow_icon.svg.png */,
 				CF239E8E1B8229FE003917CF /* red_button.png */,
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6829221B67D889004DE59E /* Main.storyboard in Resources */,
+				CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */,
 				CFE3A9BE1B71104F002AC0F9 /* compass_filled-32.png in Resources */,
 				CF68295D1B6800B2004DE59E /* icon4.png in Resources */,
 				CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */,
@@ -781,10 +785,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RATracking/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -796,10 +801,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RATracking/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -15,7 +15,6 @@
     [[AdverseEventReporting getAFManager] GET:[SERVER_URL stringByAppendingString:@"adverse_event_reportings"] parameters:@{@"patient_id": patient_id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.table_data = (NSMutableArray *)responseObject;
         [self.tableView reloadData];
-        NSLog(@"exexexe");
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"failed");
     }];
@@ -67,10 +66,13 @@
     cell.event_name_label.text = report_row_dic[@"side_effects"];
     cell.report_date_label.text = report_row_dic[@"created_at"];
     NSString *drug_photo = [NSString stringWithFormat:@"%@", report_row_dic[@"drug_photo"]];
-    if ([[self trim: drug_photo] length] == 0 || drug_photo == NULL) {
-        drug_photo = @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif";
+    if ([report_row_dic[@"drug_photo"] isEqual: [NSNull null]]) {
+        cell.drug_photo.image = [UIImage imageNamed:@"drug_default.jpg"];
     }
-    cell.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
+    else{
+        NSString *image_url = [NSString stringWithFormat:@"%@/uploads/patient_prescription_item/drug_photo/%@/%@", BASE_URL, report_row_dic[@"prescription_item_id"], report_row_dic[@"drug_photo"]];
+        cell.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: image_url]]];
+    }
     
     cell.drug_photo.layer.borderWidth = 1.0f;
     cell.drug_photo.layer.borderColor = [UIColor blackColor].CGColor;
@@ -87,7 +89,9 @@
     view.event_names_str = [NSString stringWithFormat:@"Event name: %@", selected_report_dic[@"side_effects"]];
     view.related_drug_str = [NSString stringWithFormat:@"Related drug: %@", selected_report_dic[@"drug_name"]];
     
-    view.drug_photo_url = selected_report_dic[@"drug_photo"];
+    if ([selected_report_dic[@"drug_photo"] isEqual: [NSNull null]])
+        view.drug_photo_url = nil;
+    else view.drug_photo_url = [NSString stringWithFormat:@"%@/uploads/patient_prescription_item/drug_photo/%@/%@", BASE_URL, selected_report_dic[@"prescription_item_id"], selected_report_dic[@"drug_photo"]];
     view.drug_id = selected_report_dic[@"drug_id"];
     view.adverse_event_reporting_id = selected_report_dic[@"id"];
     [self.navigationController pushViewController:view animated:YES];

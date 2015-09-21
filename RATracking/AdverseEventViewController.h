@@ -15,6 +15,7 @@
 @property (strong, nonatomic) REMenu *menu;
 @property (strong, nonatomic) NSMutableArray *table_data;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) UIImageView *selected_image_view;
 
 
 - (IBAction)actions_action:(id)sender;
