@@ -859,7 +859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIG-Va-2cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810.5" y="-2056.5"/>
+            <point key="canvasLocation" x="2090.5" y="-2024.5"/>
         </scene>
         <!--Adverse Event View Controller-->
         <scene sceneID="Zu7-WY-Piw">
@@ -1063,7 +1063,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVP-eA-pyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2266.5" y="-2056.5"/>
+            <point key="canvasLocation" x="2534.5" y="-2036.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9xU-kM-eRm">
@@ -1081,6 +1081,7 @@
                         <segue destination="3g5-ZB-n2q" kind="relationship" relationship="viewControllers" id="PSO-BS-7lR"/>
                         <segue destination="rij-3w-W1O" kind="relationship" relationship="viewControllers" id="NX1-HF-QbH"/>
                         <segue destination="AZr-Mh-QVL" kind="relationship" relationship="viewControllers" id="M2y-Wk-t9Z"/>
+                        <segue destination="fcO-b8-eML" kind="relationship" relationship="viewControllers" id="Pwf-tA-uDr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRq-I9-x0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1851,6 +1852,34 @@
             </objects>
             <point key="canvasLocation" x="337.5" y="-1581.5"/>
         </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="Ads-Dc-LZu">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsTableViewController" id="S7x-He-VZR" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="f4M-Er-8jD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="settings" rowHeight="50" id="ehu-Gd-Wyb">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehu-Gd-Wyb" id="waq-7s-W4B">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S7x-He-VZR" id="TTV-r3-nlh"/>
+                            <outlet property="delegate" destination="S7x-He-VZR" id="Xj5-w4-XNZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kI2-Fs-g9x"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IF-xM-maF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.5" y="-1998.5"/>
+        </scene>
         <!--Adverse Event-->
         <scene sceneID="96T-nM-Ozi">
             <objects>
@@ -1890,6 +1919,26 @@
             </objects>
             <point key="canvasLocation" x="965.5" y="671.5"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="C7V-GF-h2h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcO-b8-eML" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="password1-32.png" id="wgX-qq-bed"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dW4-ic-DfG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S7x-He-VZR" kind="relationship" relationship="rootViewController" id="sgF-IW-gmG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykg-pX-e9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865.5" y="-1998.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ambulance_filled-32.png" width="32" height="32"/>
@@ -1899,6 +1948,7 @@
         <image name="drug_default.jpg" width="592" height="444"/>
         <image name="hand.png" width="8315" height="4411"/>
         <image name="human-body-outline-drawing-108.jpg" width="928" height="1856"/>
+        <image name="password1-32.png" width="32" height="32"/>
         <image name="red_button.png" width="420" height="420"/>
         <image name="treatment_plan_filled-32.png" width="32" height="32"/>
     </resources>

@@ -10,6 +10,8 @@
 		3B2697FE090F0466F22FC040 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CC4EDDB894A008E9C33D60 /* libPods.a */; };
 		CF16B0AB1BB1ACA50077A1D5 /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0A91BB1ACA50077A1D5 /* account.png */; };
 		CF16B0AC1BB1ACA50077A1D5 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0AA1BB1ACA50077A1D5 /* envelope.png */; };
+		CF16B0AE1BB1B72B0077A1D5 /* password1-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0AD1BB1B72B0077A1D5 /* password1-32.png */; };
+		CF16B0B41BB1B7E20077A1D5 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */; };
 		CF239E8A1B82242B003917CF /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E881B82242B003917CF /* hand.png */; };
 		CF239E8B1B82242B003917CF /* human.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E891B82242B003917CF /* human.jpg */; };
 		CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */; };
@@ -86,6 +88,9 @@
 		B7CC4EDDB894A008E9C33D60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16B0A91BB1ACA50077A1D5 /* account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = account.png; path = Images/account.png; sourceTree = SOURCE_ROOT; };
 		CF16B0AA1BB1ACA50077A1D5 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/envelope.png; sourceTree = SOURCE_ROOT; };
+		CF16B0AD1BB1B72B0077A1D5 /* password1-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "password1-32.png"; path = "Images/tabbar_icons/password1-32.png"; sourceTree = SOURCE_ROOT; };
+		CF16B0B21BB1B7E20077A1D5 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CF239E881B82242B003917CF /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = Images/hand.png; sourceTree = SOURCE_ROOT; };
 		CF239E891B82242B003917CF /* human.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = human.jpg; path = Images/human.jpg; sourceTree = SOURCE_ROOT; };
 		CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "human-body-outline-drawing-108.jpg"; path = "Images/human-body-outline-drawing-108.jpg"; sourceTree = SOURCE_ROOT; };
@@ -329,6 +334,8 @@
 				CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */,
 				CFCFCAC31BAB4B8200FD0F14 /* JointPositionTableViewController.h */,
 				CFCFCAC41BAB4B8200FD0F14 /* JointPositionTableViewController.m */,
+				CF16B0B21BB1B7E20077A1D5 /* SettingsTableViewController.h */,
+				CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -450,6 +457,7 @@
 		CFE3A9B51B711035002AC0F9 /* tabbar_icons */ = {
 			isa = PBXGroup;
 			children = (
+				CF16B0AD1BB1B72B0077A1D5 /* password1-32.png */,
 				CFE3A9B61B71104F002AC0F9 /* activity_feed_2-32.png */,
 				CFE3A9B71B71104F002AC0F9 /* ambulance_filled-32.png */,
 				CFE3A9B81B71104F002AC0F9 /* body_scan_filled-32.png */,
@@ -569,6 +577,7 @@
 				CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */,
 				CF6829421B67E071004DE59E /* Podfile in Resources */,
 				CF68295A1B6800B2004DE59E /* icon1.png in Resources */,
+				CF16B0AE1BB1B72B0077A1D5 /* password1-32.png in Resources */,
 				CF6829241B67D889004DE59E /* Images.xcassets in Resources */,
 				CFCFCABF1BAB1FBB00FD0F14 /* drug_default.gif in Resources */,
 				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
@@ -639,6 +648,7 @@
 				CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
 				CF704F091B7285000073F6CB /* Post.m in Sources */,
+				CF16B0B41BB1B7E20077A1D5 /* SettingsTableViewController.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
 				CFE3A9C91B714BC8002AC0F9 /* AddMedicationViewController.m in Sources */,
 				CFA878F11B792A3600AABC6C /* PharmacyDetailsViewController.m in Sources */,
