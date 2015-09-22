@@ -12,6 +12,7 @@
 #import "Manifest.h"
 #import "AppDelegate.h"
 #import "SignUpViewController.h"
+#import "File.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
 

@@ -26,4 +26,8 @@ NSArray *route_name_arr;
 NSString * photo_upload_url=@"http://127.0.0.1:3000/ra/medications/upload_drug_photo";
 
 NSString *default_drug_photo = @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif";
+
+NSString *REMEMBERED_EMAIL_FILENAME = @"email.txt";;
+NSString *REMEMBERED_PASS_FILENAME = @"pass.txt";
+NSString *REMEMBERED_USER_DATA = @"user_data.txt";
 @end

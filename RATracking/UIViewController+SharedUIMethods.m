@@ -107,4 +107,23 @@
         imageView.layer.cornerRadius = radius;
         imageView.clipsToBounds = YES;
 }
+
+-(UIView *)setLeftViewForTextfields:(NSString *)imageName withContainerScale:(int)containerScale withImageIconScale:(int)imageScale withUITextField:(UITextField *)textfield{
+    UIImageView *iconImage = [[UIImageView alloc] initWithFrame:CGRectMake(9, 9, imageScale, imageScale)];
+    iconImage.image = [UIImage imageNamed: imageName];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, containerScale, containerScale)];
+    container.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+    [container addSubview: iconImage];
+    textfield.leftViewMode = UITextFieldViewModeAlways;
+    return container;
+}
+
+-(void)resetLocalFile:(NSString *)email withPassword:(NSString *)password{
+    [File deleteFileByName: REMEMBERED_EMAIL_FILENAME];
+    [File deleteFileByName: REMEMBERED_PASS_FILENAME];
+    [File createFileByName: REMEMBERED_EMAIL_FILENAME];
+    [File createFileByName: REMEMBERED_PASS_FILENAME];
+    [File writeToFileByName: REMEMBERED_EMAIL_FILENAME withContent: email];
+    [File writeToFileByName:REMEMBERED_PASS_FILENAME withContent:password];
+}
 @end

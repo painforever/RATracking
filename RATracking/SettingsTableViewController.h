@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UpdateViewController.h"
 
 @interface SettingsTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *table_data;

@@ -28,7 +28,7 @@
 +(NSString *)getDrugsInPrescription: (NSString*)patient_id withPrescriptionId:(NSString*)prescription_id;
 +(NSString *)pushRx: (NSString*)rx_id;
 +(NSArray*)getMyProfile:(NSString*)user_id;
-+(NSString*)updatePassword:(NSString*)new_password withEmail:(NSString*)email throughUserID:(NSString*)user_id;
++(NSString*)updatePassword:(NSString*)new_password withOldPassword: (NSString *)old_password withEmail:(NSString*)email throughUserID:(NSString*)user_id;
 +(NSString*)eatNonOralDrug:(NSString*)prescription_instance_id withPatientID:(NSString*)patient_id withScores:(NSString*)scores;
 +(NSString*)signUp:(NSString *)email withPassword:(NSString *)password withFirstName:(NSString*)first_name withLastName:(NSString *)last_name;
 

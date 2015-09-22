@@ -90,8 +90,8 @@
     return dic;
 }
 
-+(NSString*)updatePassword:(NSString*)new_password withEmail:(NSString*)email throughUserID:(NSString*)user_id{
-    NSString *param=[[NSString alloc] initWithFormat:@"new_password=%@&email=%@&user_id=%@", new_password, email, user_id];
++(NSString*)updatePassword:(NSString*)new_password withOldPassword:(NSString *)old_password withEmail:(NSString *)email throughUserID:(NSString *)user_id{
+    NSString *param=[[NSString alloc] initWithFormat:@"new_password=%@&old_password=%@&email=%@&user_id=%@", new_password, email, user_id];
     return [Post postRequest:[SERVER_URL stringByAppendingString:@"users/update_password"] withParams:param];
 }
 

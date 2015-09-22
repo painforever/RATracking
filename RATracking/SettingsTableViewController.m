@@ -16,7 +16,7 @@
 }
 
 -(void)viewDidLoad{
-    self.table_data = @[@"Settings", @"Log out"];
+    self.table_data = @[@"Change Password", @"Log Out"];
     [self.tableView reloadData];
 }
 
@@ -33,5 +33,15 @@
     }
     cell.textLabel.text = self.table_data[indexPath.row];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        UpdateViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"UpdateViewController"];
+        [self.navigationController pushViewController:view animated:YES];
+    }
+    else if(indexPath.row == 1){
+        //LOGOUT
+    }
 }
 @end

@@ -23,4 +23,8 @@ extern NSArray *route_name_arr;
 extern NSString * photo_upload_url;
 
 extern NSString *default_drug_photo;
+
+extern NSString *REMEMBERED_EMAIL_FILENAME;
+extern NSString *REMEMBERED_PASS_FILENAME;
+extern NSString *REMEMBERED_USER_DATA;
 @end

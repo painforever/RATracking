@@ -27,6 +27,7 @@
 - (IBAction)login_action:(id)sender {
     [[User getAFManager] POST: [SERVER_URL stringByAppendingString:@"sessions"] parameters:@{@"email": self.email.text, @"password": self.password.text} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ([operation.response statusCode] == 201){
+            [self storeAccount];
             NSDictionary *res_dic = (NSDictionary *)responseObject;
             [self assignAllConstants:res_dic];
             UITabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
@@ -39,10 +40,6 @@
     
     med_name_arr = @[@"Abatacept", @"Etanercept", @"Tofacitinib", @"Adalimumab", @"Rituximab", @"Golimumab", @"Infliximab", @"Anakinra", @"Tocilizumab"];
     route_name_arr = @[@"ORAL", @"SHOOT"];
-    
-//    SignUpViewController * view = [[SignUpViewController alloc] init];
-//    view.first_name = @"songyu";
-//    NSLog(@"sss %@", view.first_name);
     
 //    UITabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
 //    AppDelegate *ddd = [UIApplication sharedApplication].delegate;
@@ -104,5 +101,15 @@
     self.email.leftView = usernameIconContainer;
     self.password.leftViewMode = UITextFieldViewModeAlways;
     self.password.leftView = passwordIconContainer;
+}
+
+#pragma methods for remembering password
+
+//this method must be called after userDefault data synced
+-(void)storeAccount{
+    [File createFileByName: REMEMBERED_EMAIL_FILENAME];[File writeToFileByName: REMEMBERED_EMAIL_FILENAME withContent: self.email.text];
+    [File createFileByName: REMEMBERED_PASS_FILENAME];[File writeToFileByName: REMEMBERED_PASS_FILENAME withContent: self.password.text];
+    NSArray *user_data_arr = @[user_id, patient_id];
+    [File createFileByName: REMEMBERED_USER_DATA];[File writeToFileByName: REMEMBERED_USER_DATA withContent: [user_data_arr componentsJoinedByString:@","]];
 }
 @end

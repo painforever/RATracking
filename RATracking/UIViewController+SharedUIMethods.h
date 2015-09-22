@@ -15,6 +15,7 @@
 #import "JointReportFormViewController.h"
 //ViewControllers that needed
 #import "AddMedicationViewController.h"
+#import "File.h"
 
 #define DEFAULT_BLUE [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0]
 static const CGSize progressViewSize = { 100.0f, 10.0f };
@@ -44,4 +45,9 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 
 //globally style image by params
 -(void)styleImageView: (UIImageView *)imageView withBorderColor: (CGColorRef)color withCornerRadius: (CGFloat)radius withBorderWidth: (CGFloat) width;
+
+//set the left view
+-(UIView *)setLeftViewForTextfields: (NSString *)imageName withContainerScale: (int)containerScale withImageIconScale: (int)imageScale withUITextField: (UITextField *)textfield;
+
+-(void)resetLocalFile: (NSString *)email withPassword: (NSString *)password;
 @end

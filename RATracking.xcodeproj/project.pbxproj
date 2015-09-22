@@ -12,6 +12,9 @@
 		CF16B0AC1BB1ACA50077A1D5 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0AA1BB1ACA50077A1D5 /* envelope.png */; };
 		CF16B0AE1BB1B72B0077A1D5 /* password1-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0AD1BB1B72B0077A1D5 /* password1-32.png */; };
 		CF16B0B41BB1B7E20077A1D5 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */; };
+		CF16B0B81BB1CF8B0077A1D5 /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16B0B71BB1CF8B0077A1D5 /* UpdateViewController.m */; };
+		CF16B0BA1BB1D1EC0077A1D5 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0B91BB1D1EC0077A1D5 /* settings.png */; };
+		CF16B0BD1BB1DA710077A1D5 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16B0BC1BB1DA710077A1D5 /* File.m */; };
 		CF239E8A1B82242B003917CF /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E881B82242B003917CF /* hand.png */; };
 		CF239E8B1B82242B003917CF /* human.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E891B82242B003917CF /* human.jpg */; };
 		CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */; };
@@ -91,6 +94,11 @@
 		CF16B0AD1BB1B72B0077A1D5 /* password1-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "password1-32.png"; path = "Images/tabbar_icons/password1-32.png"; sourceTree = SOURCE_ROOT; };
 		CF16B0B21BB1B7E20077A1D5 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		CF16B0B61BB1CF8B0077A1D5 /* UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateViewController.h; sourceTree = "<group>"; };
+		CF16B0B71BB1CF8B0077A1D5 /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
+		CF16B0B91BB1D1EC0077A1D5 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Images/settings.png; sourceTree = SOURCE_ROOT; };
+		CF16B0BB1BB1DA710077A1D5 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		CF16B0BC1BB1DA710077A1D5 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		CF239E881B82242B003917CF /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = Images/hand.png; sourceTree = SOURCE_ROOT; };
 		CF239E891B82242B003917CF /* human.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = human.jpg; path = Images/human.jpg; sourceTree = SOURCE_ROOT; };
 		CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "human-body-outline-drawing-108.jpg"; path = "Images/human-body-outline-drawing-108.jpg"; sourceTree = SOURCE_ROOT; };
@@ -225,6 +233,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF16B0B51BB1CD920077A1D5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CF16B0B61BB1CF8B0077A1D5 /* UpdateViewController.h */,
+				CF16B0B71BB1CF8B0077A1D5 /* UpdateViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		CF239E921B823790003917CF /* JointReport */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +341,7 @@
 		CF68293D1B67D89A004DE59E /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CF16B0B51BB1CD920077A1D5 /* Settings */,
 				CF239E921B823790003917CF /* JointReport */,
 				CF6D78DA1B73F3EE0004FC20 /* Search */,
 				CF6D78D31B73A41A0004FC20 /* AdverseEvent */,
@@ -352,6 +370,8 @@
 		CF68294A1B67FCE7004DE59E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				CF16B0BB1BB1DA710077A1D5 /* File.h */,
+				CF16B0BC1BB1DA710077A1D5 /* File.m */,
 				CF704F011B7285000073F6CB /* Get.h */,
 				CF704F021B7285000073F6CB /* Get.m */,
 				CF704F031B7285000073F6CB /* JSONHandler.h */,
@@ -371,6 +391,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF16B0B91BB1D1EC0077A1D5 /* settings.png */,
 				CF16B0A91BB1ACA50077A1D5 /* account.png */,
 				CF16B0AA1BB1ACA50077A1D5 /* envelope.png */,
 				CF446FB01BB09A75001FD9BD /* drug_default.jpg */,
@@ -571,6 +592,7 @@
 				CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */,
 				CF6829271B67D889004DE59E /* LaunchScreen.xib in Resources */,
 				CF239E8A1B82242B003917CF /* hand.png in Resources */,
+				CF16B0BA1BB1D1EC0077A1D5 /* settings.png in Resources */,
 				CFE3A9BD1B71104F002AC0F9 /* body_scan_filled-32.png in Resources */,
 				CF68295F1B6800B2004DE59E /* icon6.png in Resources */,
 				CF68295C1B6800B2004DE59E /* icon3.png in Resources */,
@@ -647,6 +669,7 @@
 				CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */,
 				CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */,
 				CF68291F1B67D889004DE59E /* ViewController.m in Sources */,
+				CF16B0BD1BB1DA710077A1D5 /* File.m in Sources */,
 				CF704F091B7285000073F6CB /* Post.m in Sources */,
 				CF16B0B41BB1B7E20077A1D5 /* SettingsTableViewController.m in Sources */,
 				CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */,
@@ -668,6 +691,7 @@
 				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CFA5D2491B8CC65700905476 /* SignUpViewController.m in Sources */,
+				CF16B0B81BB1CF8B0077A1D5 /* UpdateViewController.m in Sources */,
 				CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */,
 				CF6829191B67D889004DE59E /* main.m in Sources */,
 				CFCFCAC21BAB4AB000FD0F14 /* PositionCell.m in Sources */,
