@@ -12,6 +12,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    self.title = @"Search Pharmacies";
     self.searchBar.delegate = self;
 }
 #pragma mark - Table view data source

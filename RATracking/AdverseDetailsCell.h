@@ -12,5 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *drug_photo;
 @property (strong, nonatomic) IBOutlet UILabel *event_name_label;
 @property (strong, nonatomic) IBOutlet UILabel *report_date_label;
+@property (weak, nonatomic) IBOutlet UILabel *drug_name;
+@property (weak, nonatomic) IBOutlet UILabel *dosage;
 
 @end

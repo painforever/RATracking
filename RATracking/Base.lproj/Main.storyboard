@@ -120,13 +120,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knx-oH-uTA">
-                                <rect key="frame" x="38" y="428" width="110" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knx-oH-uTA">
+                                <rect key="frame" x="38" y="374" width="298" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.070236308712234075" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="ORD-VC-pUU"/>
-                                    <constraint firstAttribute="width" constant="110" id="pZh-Yp-HPv"/>
-                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,33 +131,21 @@
                                     <action selector="login_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K81-5s-jsA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efo-I8-e3O">
-                                <rect key="frame" x="38" y="360" width="298" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="G0o-6u-3vy"/>
-                                    <constraint firstAttribute="width" constant="300" id="MOO-Xx-nGE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efo-I8-e3O">
+                                <rect key="frame" x="38" y="296" width="298" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="G0o-6u-3vy"/>
-                                        <exclude reference="MOO-Xx-nGE"/>
-                                    </mask>
-                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Om-9qm">
-                                <rect key="frame" x="38" y="300" width="298" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Om-9qm">
+                                <rect key="frame" x="38" y="218" width="298" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-OI-R8C">
-                                <rect key="frame" x="226" y="428" width="110" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-OI-R8C">
+                                <rect key="frame" x="38" y="449" width="298" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.070236308710000001" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="2h0-TO-vyK"/>
-                                    <constraint firstAttribute="height" constant="43" id="vmF-hz-qZX"/>
-                                </constraints>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,18 +156,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="knx-oH-uTA" firstAttribute="top" secondItem="efo-I8-e3O" secondAttribute="bottom" constant="38" id="1HH-35-nfQ"/>
-                            <constraint firstItem="qJN-OI-R8C" firstAttribute="trailing" secondItem="efo-I8-e3O" secondAttribute="trailing" id="8df-ta-iyV"/>
-                            <constraint firstItem="efo-I8-e3O" firstAttribute="leading" secondItem="eph-Om-9qm" secondAttribute="leading" id="PcI-BS-NB5"/>
-                            <constraint firstItem="efo-I8-e3O" firstAttribute="top" secondItem="eph-Om-9qm" secondAttribute="bottom" constant="30" id="Tfd-Ma-q01"/>
-                            <constraint firstItem="eph-Om-9qm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="280" id="aGv-jv-KNJ"/>
-                            <constraint firstItem="efo-I8-e3O" firstAttribute="width" secondItem="eph-Om-9qm" secondAttribute="width" id="hIV-Sv-KIf"/>
-                            <constraint firstItem="qJN-OI-R8C" firstAttribute="top" secondItem="efo-I8-e3O" secondAttribute="bottom" constant="38" id="kKA-bg-gnR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eph-Om-9qm" secondAttribute="trailing" constant="23" id="l4r-Tf-mCk"/>
-                            <constraint firstItem="knx-oH-uTA" firstAttribute="leading" secondItem="efo-I8-e3O" secondAttribute="leading" id="q0U-3r-txo"/>
-                            <constraint firstItem="eph-Om-9qm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="zXU-Wc-q4g"/>
-                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -220,8 +192,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="drug name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-bt-mcj">
-                                                    <rect key="frame" x="101" y="8" width="163" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <rect key="frame" x="101" y="8" width="218" height="36"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="18"/>
                                                     <color key="textColor" red="0.36308663727425938" green="0.2680401752679592" blue="0.86188052398989901" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -230,8 +202,8 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="created time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-f9-V8f">
                                                     <rect key="frame" x="101" y="54" width="210" height="27.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -377,7 +349,7 @@
                                                     <action selector="add_photo_action:" destination="iDk-rR-mOD" eventType="touchUpInside" id="oEx-3c-uSE"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdk-ip-2Op">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drug_default.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mdk-ip-2Op">
                                                 <rect key="frame" x="93" y="412" width="187" height="131"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medication Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J2E-eV-vok">
@@ -880,33 +852,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-ET-zwP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-ET-zwP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adverse_row" rowHeight="100" id="NUE-xA-C2h" customClass="AdverseDetailsCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adverse_row" rowHeight="140" id="NUE-xA-C2h" customClass="AdverseDetailsCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NUE-xA-C2h" id="9a4-ZN-22C">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rez-wV-ZDe">
                                                     <rect key="frame" x="22" y="8" width="182" height="40"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                     <color key="textColor" red="0.36308663730000001" green="0.26804017530000002" blue="0.86188052400000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="report date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiU-Qw-OgU">
-                                                    <rect key="frame" x="22" y="63" width="174" height="28.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.36308663730000001" green="0.26804017530000002" blue="0.86188052400000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="22" y="103" width="174" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drug_default.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-8G-uOj">
-                                                    <rect key="frame" x="224" y="3" width="94" height="91.5"/>
+                                                    <rect key="frame" x="224" y="23" width="94" height="91.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dosage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-GN-8uQ">
+                                                    <rect key="frame" x="22" y="83" width="81" height="21"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drug Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLY-I6-reg">
+                                                    <rect key="frame" x="22" y="50" width="187" height="25"/>
+                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                                    <color key="textColor" red="0.36308663730000001" green="0.26804017530000002" blue="0.86188052400000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dosage" destination="oVo-GN-8uQ" id="k72-1v-8za"/>
+                                            <outlet property="drug_name" destination="ZLY-I6-reg" id="hZW-9s-9r9"/>
                                             <outlet property="drug_photo" destination="Zaq-8G-uOj" id="0Ci-wa-CVh"/>
                                             <outlet property="event_name_label" destination="Rez-wV-ZDe" id="Ybj-z1-VPA"/>
                                             <outlet property="report_date_label" destination="eiU-Qw-OgU" id="LV6-OF-jJW"/>
@@ -1119,16 +1105,16 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wWi-TA-d3l" id="YtW-5f-BOH">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHarmacy name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-DH-JB4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pharmacy name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-DH-JB4">
                                             <rect key="frame" x="21" y="13" width="254" height="37"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="15"/>
                                             <color key="textColor" red="0.36308663730000001" green="0.26804017530000002" blue="0.86188052400000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIJ-Gf-ZKf">
                                             <rect key="frame" x="21" y="64" width="313" height="27.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1889,6 +1875,7 @@
         <image name="body_scan_filled-32.png" width="32" height="32"/>
         <image name="compass_filled-32.png" width="32" height="32"/>
         <image name="drug_default.gif" width="387" height="449"/>
+        <image name="drug_default.jpg" width="592" height="444"/>
         <image name="hand.png" width="8315" height="4411"/>
         <image name="human-body-outline-drawing-108.jpg" width="928" height="1856"/>
         <image name="red_button.png" width="420" height="420"/>

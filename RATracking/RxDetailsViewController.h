@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Manifest.h"
 #import "Medication.h"
+#import "UIViewController+SharedUIMethods.h"
 
 @interface RxDetailsViewController : UIViewController
 @property (strong, nonatomic) NSString *prescription_id;

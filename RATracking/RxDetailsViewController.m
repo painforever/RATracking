@@ -11,6 +11,7 @@
 @implementation RxDetailsViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
+    [self styleImageView:self.drug_image withBorderColor:[UIColor blackColor].CGColor withCornerRadius:20.0f withBorderWidth:1.0f];
     if (self.drug_photo)
         self.drug_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo]]];
     else self.drug_image.image = [UIImage imageNamed:@"drug_default.jpg"];

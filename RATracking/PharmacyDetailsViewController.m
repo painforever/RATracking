@@ -12,6 +12,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    self.title = @"Pharmacy Details";
     NSString *location = self.address;
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder geocodeAddressString:location

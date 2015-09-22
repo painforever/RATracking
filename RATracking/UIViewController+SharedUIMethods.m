@@ -100,4 +100,11 @@
         text_field.text = @"";
     }
 }
+
+-(void)styleImageView:(UIImageView *)imageView withBorderColor:(CGColorRef)color withCornerRadius:(CGFloat)radius withBorderWidth:(CGFloat)width{
+        imageView.layer.borderWidth = width;
+        imageView.layer.borderColor = color;
+        imageView.layer.cornerRadius = radius;
+        imageView.clipsToBounds = YES;
+}
 @end

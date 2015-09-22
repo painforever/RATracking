@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Manifest.h"
+#import "UIViewController+SharedUIMethods.h"
 
 @interface AdverseDetailsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *drug_photo;

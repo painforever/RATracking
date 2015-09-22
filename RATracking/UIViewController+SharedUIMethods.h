@@ -41,4 +41,7 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 -(BOOL)isNnumber: (NSString *)input;
 //clear all the inputs fields
 -(void)clearAllTextFields: (NSArray *)text_fields;
+
+//globally style image by params
+-(void)styleImageView: (UIImageView *)imageView withBorderColor: (CGColorRef)color withCornerRadius: (CGFloat)radius withBorderWidth: (CGFloat) width;
 @end

@@ -72,9 +72,6 @@
 #pragma init controls
 -(void)initControls{
     [self.scrollView setScrollEnabled:YES];
-    self.drug_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: @"http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif"]]];
-    NSLog(@"size: %f", self.view.frame.size.height);
-    NSLog(@"size: %f", self.view.bounds.size.height);
     [self.scrollView setContentSize:CGSizeMake(400, self.view.frame.size.height+400)];
     self.title = @"Add New Medication";
     //pickers

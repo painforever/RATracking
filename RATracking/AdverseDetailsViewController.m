@@ -12,9 +12,8 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    [self styleImageView:self.drug_photo withBorderColor:[UIColor blackColor].CGColor withCornerRadius:20.0f withBorderWidth:1.0f];
     [self.scrollView setScrollEnabled:YES];
-    NSLog(@"size: %f", self.view.frame.size.height);
-    NSLog(@"size: %f", self.view.bounds.size.height);
     [self.scrollView setContentSize:CGSizeMake(320, self.view.frame.size.height+200)];
     if (self.drug_photo_url)
         self.drug_photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: self.drug_photo_url]]];
@@ -24,6 +23,7 @@
     
     [[AdverseEventReporting getAFManager] GET:[NSString stringWithFormat:@"%@%@%@", SERVER_URL, @"adverse_event_reportings/",self.adverse_event_reporting_id] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *res_arr = (NSMutableArray *)responseObject;
+        NSLog(@"des: %@", [res_arr description]);
         NSDictionary *ad = res_arr[0];
         NSDictionary *rx = res_arr[1];
         self.drug_start_time.text = [NSString stringWithFormat:@"Date prescribed: %@", [rx[@"date_prescribed"] substringToIndex: 10]];

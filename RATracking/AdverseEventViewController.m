@@ -63,6 +63,8 @@
         cell = [[AdverseDetailsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     NSDictionary *report_row_dic = [self.table_data objectAtIndex: indexPath.row];
+    cell.drug_name.text = [NSString stringWithFormat:@"Drug Name: %@", report_row_dic[@"drug_name"]];
+    cell.dosage.text = [NSString stringWithFormat:@"Dosage: %@", [report_row_dic[@"dosage"] stringValue]];
     cell.event_name_label.text = report_row_dic[@"side_effects"];
     cell.report_date_label.text = report_row_dic[@"created_at"];
     NSString *drug_photo = [NSString stringWithFormat:@"%@", report_row_dic[@"drug_photo"]];

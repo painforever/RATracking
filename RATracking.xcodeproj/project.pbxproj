@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B2697FE090F0466F22FC040 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CC4EDDB894A008E9C33D60 /* libPods.a */; };
+		CF16B0AB1BB1ACA50077A1D5 /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0A91BB1ACA50077A1D5 /* account.png */; };
+		CF16B0AC1BB1ACA50077A1D5 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16B0AA1BB1ACA50077A1D5 /* envelope.png */; };
 		CF239E8A1B82242B003917CF /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E881B82242B003917CF /* hand.png */; };
 		CF239E8B1B82242B003917CF /* human.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E891B82242B003917CF /* human.jpg */; };
 		CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */; };
@@ -82,6 +84,8 @@
 		0A77089B5FBF40779C54782B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8266FD4FC2AF9D6FCF32136C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7CC4EDDB894A008E9C33D60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF16B0A91BB1ACA50077A1D5 /* account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = account.png; path = Images/account.png; sourceTree = SOURCE_ROOT; };
+		CF16B0AA1BB1ACA50077A1D5 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/envelope.png; sourceTree = SOURCE_ROOT; };
 		CF239E881B82242B003917CF /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = Images/hand.png; sourceTree = SOURCE_ROOT; };
 		CF239E891B82242B003917CF /* human.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = human.jpg; path = Images/human.jpg; sourceTree = SOURCE_ROOT; };
 		CF239E8C1B822844003917CF /* human-body-outline-drawing-108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "human-body-outline-drawing-108.jpg"; path = "Images/human-body-outline-drawing-108.jpg"; sourceTree = SOURCE_ROOT; };
@@ -360,6 +364,8 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF16B0A91BB1ACA50077A1D5 /* account.png */,
+				CF16B0AA1BB1ACA50077A1D5 /* envelope.png */,
 				CF446FB01BB09A75001FD9BD /* drug_default.jpg */,
 				CFCFCABE1BAB1FBB00FD0F14 /* drug_default.gif */,
 				CF239E901B823102003917CF /* Yellow_icon.svg.png */,
@@ -568,7 +574,9 @@
 				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
 				CF68295B1B6800B2004DE59E /* icon2.png in Resources */,
 				CF68295E1B6800B2004DE59E /* icon5.png in Resources */,
+				CF16B0AC1BB1ACA50077A1D5 /* envelope.png in Resources */,
 				CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */,
+				CF16B0AB1BB1ACA50077A1D5 /* account.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
