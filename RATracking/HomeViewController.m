@@ -16,7 +16,6 @@
     [self initControls];
     [[Medication getAFManager] GET:[SERVER_URL stringByAppendingString:@"medications/?"] parameters:@{@"patient_id": patient_id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.table_data = (NSMutableArray *)responseObject;
-        NSLog(@"wocao: %@", responseObject);
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"get med failed");
