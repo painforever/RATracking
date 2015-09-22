@@ -41,7 +41,7 @@
         [self.navigationController pushViewController:view animated:YES];
     }
     else if(indexPath.row == 1){
-        //LOGOUT
+        [self jumpToViewController:@"LoginViewController"];
     }
 }
 @end
