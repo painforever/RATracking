@@ -35,14 +35,19 @@
     NSDictionary *param_to_post = [Medication constructParamsForRailsRESTCall: self.med_name.text withRouteName:self.route_name.text withDosage:self.dosage.text withDaysOfTreatment:self.days_of_treatment.text withTimesPerDay:self.times_per_day.text withTimes:self.times.text withDrugId: drug[@"drug_id"]];
     
     [Medication getAFManager].requestSerializer = [AFJSONRequestSerializer serializer];
+    NSLog(@"days of treatmentsd: %@",self.days_of_treatment.text);
     [[Medication getAFManager] POST:[SERVER_URL stringByAppendingString:@"patient_prescriptions"] parameters:param_to_post success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self showAlert:@"Medication added." withMessage:[NSString stringWithFormat:@"%@ add success!", self.med_name.text]];
         NSDictionary *added_drug_dic = (NSDictionary *)responseObject;
         //upload drug photo
         [self uploadAvatar:self.selected_UIImage withFileName: self.image_filename withPrescriptionItemID: added_drug_dic[@"prescription_item_id"]];
         
+        //start to schedule notifications
+        [self scheduleReminders: self.days_of_treatment.text withTimes: [self.times.text componentsSeparatedByString:@","]];
+        
         //clear all the inputs fields
         [self clearAllTextFields:@[self.med_name, self.route_name, self.dosage, self.days_of_treatment, self.times_per_day, self.times]];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self showAlert:@"Medication add failed." withMessage:@"Medication add failed!"];
     }];
@@ -233,5 +238,28 @@
     [request setHTTPBody:body];
     
     [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+}
+
+-(void)scheduleReminders: (NSString *)days withTimes: (NSArray *)times_arr{
+    int treatment_days = [days intValue];
+    for (int i = 0; i < treatment_days; i++) {
+        for (int j = 0; j < [times_arr count]; j++) {
+            NSDate *date = [self getEntireFormattedDateByAppendingTime: times_arr[j]];
+            NSLog(@"date: %@", [times_arr description]);
+            //we assume that the start of taking the drug will be the day after the patient scheduling
+            NSDateComponents *components= [[NSDateComponents alloc] init];
+            [components setDay:i];
+            NSCalendar *calendar = [NSCalendar currentCalendar];
+            NSDate *dateIncremented= [calendar dateByAddingComponents:components toDate:date options:0];
+            //start to init the Notifications
+            UILocalNotification *notification = [[UILocalNotification alloc]init];
+            notification.repeatInterval = NSDayCalendarUnit;
+            NSString *alert_msg = [NSString stringWithFormat:@"It's time to take %@.", self.med_name.text];
+            [notification setAlertBody: alert_msg];
+            [notification setFireDate: dateIncremented];
+            [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        }
+    }
 }
 @end

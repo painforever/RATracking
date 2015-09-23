@@ -50,4 +50,7 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 -(UIView *)setLeftViewForTextfields: (NSString *)imageName withContainerScale: (int)containerScale withImageIconScale: (int)imageScale withUITextField: (UITextField *)textfield;
 
 -(void)resetLocalFile: (NSString *)email withPassword: (NSString *)password;
+
+//get the all formated date by appending only time, the format is yyyy-MM-dd HH:mm:ss
+-(NSDate *)getEntireFormattedDateByAppendingTime: (NSString *)time;
 @end

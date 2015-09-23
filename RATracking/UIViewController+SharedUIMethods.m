@@ -126,4 +126,15 @@
     [File writeToFileByName: REMEMBERED_EMAIL_FILENAME withContent: email];
     [File writeToFileByName:REMEMBERED_PASS_FILENAME withContent:password];
 }
+
+-(NSDate *)getEntireFormattedDateByAppendingTime:(NSString *)time{
+    NSDateFormatter *formater=[[NSDateFormatter alloc] init];
+    [formater setDateFormat:@"yyyy-MM-dd"];
+    NSString *stringFromDate=[formater stringFromDate:[NSDate date]];
+    stringFromDate=[[stringFromDate stringByAppendingString:@" "] stringByAppendingString: time];
+    [formater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSLog(@"date 2 :%@", stringFromDate);
+    NSDate *date=[formater dateFromString:stringFromDate];
+    return date;
+}
 @end
