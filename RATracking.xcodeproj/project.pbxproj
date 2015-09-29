@@ -24,6 +24,7 @@
 		CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14A1BBADB19000FB0EF /* login.jpg */; settings = {ASSET_TAGS = (); }; };
 		CF36E14D1BBADDBF000FB0EF /* adverse_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14C1BBADDBF000FB0EF /* adverse_wall.jpg */; settings = {ASSET_TAGS = (); }; };
 		CF36E14F1BBAE03C000FB0EF /* human_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14E1BBAE03C000FB0EF /* human_wall.jpg */; settings = {ASSET_TAGS = (); }; };
+		CF36E1521BBB19C8000FB0EF /* RxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36E1511BBB19C8000FB0EF /* RxTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
 		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
 		CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF446FB01BB09A75001FD9BD /* drug_default.jpg */; };
@@ -38,7 +39,6 @@
 		CF6829331B67D88A004DE59E /* RATrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829321B67D88A004DE59E /* RATrackingTests.m */; };
 		CF6829401B67D8BC004DE59E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68293F1B67D8BC004DE59E /* LoginViewController.m */; };
 		CF6829421B67E071004DE59E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CF6829411B67E071004DE59E /* Podfile */; };
-		CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829441B67E58D004DE59E /* HomeViewController.m */; };
 		CF6829491B67E62B004DE59E /* UIViewController+SharedUIMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829481B67E62B004DE59E /* UIViewController+SharedUIMethods.m */; };
 		CF68294F1B67FD0F004DE59E /* JKPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68294C1B67FD0F004DE59E /* JKPopMenuItem.m */; };
 		CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68294E1B67FD0F004DE59E /* JKPopMenuView.m */; };
@@ -112,6 +112,8 @@
 		CF36E14A1BBADB19000FB0EF /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login.jpg; path = Images/login.jpg; sourceTree = SOURCE_ROOT; };
 		CF36E14C1BBADDBF000FB0EF /* adverse_wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adverse_wall.jpg; path = Images/adverse_wall.jpg; sourceTree = SOURCE_ROOT; };
 		CF36E14E1BBAE03C000FB0EF /* human_wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = human_wall.jpg; path = Images/human_wall.jpg; sourceTree = SOURCE_ROOT; };
+		CF36E1501BBB19C8000FB0EF /* RxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxTableViewController.h; sourceTree = "<group>"; };
+		CF36E1511BBB19C8000FB0EF /* RxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxTableViewController.m; sourceTree = "<group>"; };
 		CF3A6D3E1B74F3F100C188A6 /* NewEventFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventFormViewController.h; sourceTree = "<group>"; };
 		CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventFormViewController.m; sourceTree = "<group>"; };
 		CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxDetailsViewController.h; sourceTree = "<group>"; };
@@ -137,8 +139,6 @@
 		CF68293E1B67D8BC004DE59E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CF68293F1B67D8BC004DE59E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CF6829411B67E071004DE59E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CF6829431B67E58D004DE59E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		CF6829441B67E58D004DE59E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CF6829471B67E62B004DE59E /* UIViewController+SharedUIMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SharedUIMethods.h"; sourceTree = "<group>"; };
 		CF6829481B67E62B004DE59E /* UIViewController+SharedUIMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SharedUIMethods.m"; sourceTree = "<group>"; };
 		CF68294B1B67FD0F004DE59E /* JKPopMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKPopMenuItem.h; path = Libs/JKPopMenuItem.h; sourceTree = SOURCE_ROOT; };
@@ -352,14 +352,14 @@
 				CF6D78DA1B73F3EE0004FC20 /* Search */,
 				CF6D78D31B73A41A0004FC20 /* AdverseEvent */,
 				CFE3A9C61B714BAD002AC0F9 /* RxHistory */,
-				CF6829431B67E58D004DE59E /* HomeViewController.h */,
-				CF6829441B67E58D004DE59E /* HomeViewController.m */,
 				CFE3A9C01B711722002AC0F9 /* AdverseEventViewController.h */,
 				CFE3A9C11B711722002AC0F9 /* AdverseEventViewController.m */,
 				CFCFCAC31BAB4B8200FD0F14 /* JointPositionTableViewController.h */,
 				CFCFCAC41BAB4B8200FD0F14 /* JointPositionTableViewController.m */,
 				CF16B0B21BB1B7E20077A1D5 /* SettingsTableViewController.h */,
 				CF16B0B31BB1B7E20077A1D5 /* SettingsTableViewController.m */,
+				CF36E1501BBB19C8000FB0EF /* RxTableViewController.h */,
+				CF36E1511BBB19C8000FB0EF /* RxTableViewController.m */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -700,11 +700,11 @@
 				CF704F0D1B7295010073F6CB /* MedHistoryCell.m in Sources */,
 				CFA878EE1B79230C00AABC6C /* PharmacyCell.m in Sources */,
 				CF6D78D91B73B9890004FC20 /* AdverseDetailsCell.m in Sources */,
-				CF6829451B67E58D004DE59E /* HomeViewController.m in Sources */,
 				CF6829501B67FD0F004DE59E /* JKPopMenuView.m in Sources */,
 				CFA5D2491B8CC65700905476 /* SignUpViewController.m in Sources */,
 				CF16B0B81BB1CF8B0077A1D5 /* UpdateViewController.m in Sources */,
 				CFE3A9C21B711722002AC0F9 /* AdverseEventViewController.m in Sources */,
+				CF36E1521BBB19C8000FB0EF /* RxTableViewController.m in Sources */,
 				CF6829191B67D889004DE59E /* main.m in Sources */,
 				CFCFCAC21BAB4AB000FD0F14 /* PositionCell.m in Sources */,
 				CF6D78DD1B73F41F0004FC20 /* SearchViewController.m in Sources */,

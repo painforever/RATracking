@@ -1,15 +1,18 @@
-
 //
-//  HomeViewController.m
+//  RxTableViewController.m
 //  RATracking
 //
-//  Created by Yu Song on 7/28/15.
-//  Copyright (c) 2015 EagleForce. All rights reserved.
+//  Created by Yu Song on 9/29/15.
+//  Copyright © 2015 EagleForce. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "RxTableViewController.h"
 
-@implementation HomeViewController
+@interface RxTableViewController ()
+
+@end
+
+@implementation RxTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,7 +23,11 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"get med failed");
     }];
-    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma menu for left top
@@ -82,19 +89,27 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    RxDetailsViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"RxDetailsViewController"];
-    NSDictionary *data_selected = [self.table_data objectAtIndex:indexPath.row];
-    view.prescription_id = [data_selected objectForKey:@"prescription_id"];
-    view.drug_id = [[data_selected objectForKey:@"drug_id"] stringValue];
-    view.drug_name = [data_selected objectForKey:@"drug_name"];
-    //assign drug photo
-    NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, data_selected[@"drug_photo"][@"url"]];
-    NSLog(@"drug_photo: %@", drug_photo);
-    if ([data_selected[@"drug_photo"][@"url"] isEqual:[NSNull null]]) {
-        view.drug_image.image = [UIImage imageNamed:@"drug_default.jpg"];
-        view.drug_photo = nil;
-    }
-    else view.drug_photo = [NSString stringWithFormat:@"%@", drug_photo];
-    [self.navigationController pushViewController:view animated:YES];
+    self.selected_index = (int)indexPath.row;
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    if ([segue.identifier isEqualToString:@"see_rx_details"]) {
+//        self.details = [self.storyboard instantiateViewControllerWithIdentifier:@"RxDetailsViewController"];
+//        self.details = segue.destinationViewController;
+//        NSDictionary *data_selected = [self.table_data objectAtIndex: self.selected_index];
+//        NSLog(@"dadsada %@", [data_selected description]);
+//        self.details.prescription_id = [data_selected objectForKey:@"prescription_id"];
+//        self.details.drug_id = [[data_selected objectForKey:@"drug_id"] stringValue];
+//        self.details.drug_name = [data_selected objectForKey:@"drug_name"];
+//        //assign drug photo
+//        NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, data_selected[@"drug_photo"][@"url"]];
+//        NSLog(@"drug_photo: %@", drug_photo);
+//        if ([data_selected[@"drug_photo"][@"url"] isEqual:[NSNull null]]) {
+//            self.details.drug_image.image = [UIImage imageNamed:@"drug_default.jpg"];
+//            self.details.drug_photo = nil;
+//        }
+//        else self.details.drug_photo = [NSString stringWithFormat:@"%@", drug_photo];
+//    }
+}
+
 @end

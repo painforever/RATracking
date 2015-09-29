@@ -1,9 +1,9 @@
 //
-//  HomeViewController.h
+//  RxTableViewController.h
 //  RATracking
 //
-//  Created by Yu Song on 7/28/15.
-//  Copyright (c) 2015 EagleForce. All rights reserved.
+//  Created by Yu Song on 9/29/15.
+//  Copyright © 2015 EagleForce. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,12 +12,13 @@
 #import "MedHistoryCell.h"
 #import "RxDetailsViewController.h"
 
+@interface RxTableViewController : UITableViewController<JKPopMenuViewSelectDelegate>
 
-@interface HomeViewController : UIViewController <JKPopMenuViewSelectDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIButton *actions_btn;
 @property (strong, readwrite, nonatomic) REMenu *menu;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *table_data;
+@property (weak, nonatomic) RxDetailsViewController *details;
+@property (nonatomic) int selected_index;
 
 
 - (IBAction)actions_action:(id)sender;

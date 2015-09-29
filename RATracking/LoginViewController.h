@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+SharedUIMethods.h"
-#import "HomeViewController.h"
+#import "RxTableViewController.h"
 #import "Manifest.h"
 #import "AppDelegate.h"
 #import "SignUpViewController.h"
