@@ -49,6 +49,9 @@
     [self.menu setCloseCompletionHandler:^{
         NSLog(@"Menu did close");
     }];
+    UIImageView *wall = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"adverse_wall.jpg"]];
+    [wall setFrame:self.tableView.frame];
+    self.tableView.backgroundView = wall;
 }
 
 #pragma table stuff
@@ -67,6 +70,7 @@
     cell.dosage.text = [NSString stringWithFormat:@"Dosage: %@", [report_row_dic[@"dosage"] stringValue]];
     cell.event_name_label.text = report_row_dic[@"side_effects"];
     cell.report_date_label.text = report_row_dic[@"created_at"];
+    cell.backgroundColor = [UIColor clearColor];
     NSString *drug_photo = [NSString stringWithFormat:@"%@", report_row_dic[@"drug_photo"]];
     if ([report_row_dic[@"drug_photo"] isEqual: [NSNull null]]) {
         cell.drug_photo.image = [UIImage imageNamed:@"drug_default.jpg"];

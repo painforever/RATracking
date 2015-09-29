@@ -18,6 +18,9 @@
     [super viewDidLoad];
     self.title = @"Choose Positions";
     self.positions = @[@"front", @"back", @"fingers"];
+    UIImageView *wall = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"human_wall.jpg"]];
+    [wall setFrame:self.tableView.frame];
+    self.tableView.backgroundView = wall;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -42,6 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.positions[indexPath.row] forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
