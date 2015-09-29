@@ -21,6 +21,7 @@
 		CF239E8F1B8229FE003917CF /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8E1B8229FE003917CF /* red_button.png */; };
 		CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E901B823102003917CF /* Yellow_icon.svg.png */; };
 		CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF239E941B82388D003917CF /* JointReportFormViewController.m */; };
+		CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14A1BBADB19000FB0EF /* login.jpg */; settings = {ASSET_TAGS = (); }; };
 		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
 		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
 		CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF446FB01BB09A75001FD9BD /* drug_default.jpg */; };
@@ -106,6 +107,7 @@
 		CF239E901B823102003917CF /* Yellow_icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yellow_icon.svg.png; path = Images/Yellow_icon.svg.png; sourceTree = SOURCE_ROOT; };
 		CF239E931B82388D003917CF /* JointReportFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JointReportFormViewController.h; sourceTree = "<group>"; };
 		CF239E941B82388D003917CF /* JointReportFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JointReportFormViewController.m; sourceTree = "<group>"; };
+		CF36E14A1BBADB19000FB0EF /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login.jpg; path = Images/login.jpg; sourceTree = SOURCE_ROOT; };
 		CF3A6D3E1B74F3F100C188A6 /* NewEventFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventFormViewController.h; sourceTree = "<group>"; };
 		CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventFormViewController.m; sourceTree = "<group>"; };
 		CF3A6D411B750F6F00C188A6 /* RxDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxDetailsViewController.h; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF36E14A1BBADB19000FB0EF /* login.jpg */,
 				CF16B0B91BB1D1EC0077A1D5 /* settings.png */,
 				CF16B0A91BB1ACA50077A1D5 /* account.png */,
 				CF16B0AA1BB1ACA50077A1D5 /* envelope.png */,
@@ -595,6 +598,7 @@
 				CF16B0BA1BB1D1EC0077A1D5 /* settings.png in Resources */,
 				CFE3A9BD1B71104F002AC0F9 /* body_scan_filled-32.png in Resources */,
 				CF68295F1B6800B2004DE59E /* icon6.png in Resources */,
+				CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */,
 				CF68295C1B6800B2004DE59E /* icon3.png in Resources */,
 				CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */,
 				CF6829421B67E071004DE59E /* Podfile in Resources */,

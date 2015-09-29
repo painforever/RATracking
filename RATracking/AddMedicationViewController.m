@@ -69,8 +69,7 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     [textField resignFirstResponder];
 }
--(void)textFieldShouldReturn:(UITextField *)textField
-{
+-(void)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
 }
 
