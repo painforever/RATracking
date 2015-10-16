@@ -48,7 +48,7 @@ static AFHTTPRequestOperationManager *manager = nil;
     NSLog(@"url: %@", [[SERVER_URL stringByAppendingString:@"medications/"] stringByAppendingString: drug_id]);
     NSString *params = [NSString stringWithFormat:@"drug_id=%@", drug_id];
     NSString *res = [Get getRequest:[[SERVER_URL stringByAppendingString:@"medications/"] stringByAppendingString: drug_id] withParams: @""];
-    NSLog(@"res_dic: %@", res);
+    //NSLog(@"res_dic: %@", res);
     NSDictionary *dic = (NSDictionary *)[NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData: res] options:NSJSONReadingMutableContainers error:nil];
     return dic;
 }

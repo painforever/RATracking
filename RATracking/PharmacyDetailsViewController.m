@@ -9,16 +9,25 @@
 #import "PharmacyDetailsViewController.h"
 
 @implementation PharmacyDetailsViewController
-
+{
+    CLLocationManager *locationManager;
+    
+}
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.title = @"Pharmacy Details";
     NSString *location = self.address;
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
     [geocoder geocodeAddressString:location
                  completionHandler:^(NSArray* placemarks, NSError* error){
                      if (placemarks && placemarks.count > 0) {
                          CLPlacemark *topResult = [placemarks objectAtIndex:0];
+                         
+                         //long and lat
+                         NSLog(@"lat: %f", topResult.location.coordinate.latitude);
+                         NSLog(@"long: %f", topResult.location.coordinate.longitude);
+                         
                          MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:topResult];
                          MKCoordinateRegion region = self.mapView.region;
                          region.center = placemark.region.center;

@@ -92,7 +92,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"laiyige %@", segue.identifier);
     if ([segue.identifier isEqualToString:@"front"]) {
         JointViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"JointViewController"];
         view = segue.destinationViewController;
