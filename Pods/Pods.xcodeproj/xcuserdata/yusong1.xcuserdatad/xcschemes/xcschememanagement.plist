@@ -4,37 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CWPopup.xcscheme</key>
+		<key>CWPopup.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FXBlurView.xcscheme</key>
+		<key>FXBlurView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-REMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SocketRocket.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-THProgressView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ZBarSDK.xcscheme</key>
+		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,45 +29,80 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>REMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>THProgressView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Underscore.m.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZBarSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0917BD35E5CA2121237652B0</key>
+		<key>395372BB09FB899D3CA63071652125FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31E254D40F5176A4A7C36BEA</key>
+		<key>3D1B8A4078DCE9168FEEF4929C7B8F50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C0587B53AAF19CA458EFE41</key>
+		<key>411B7FA31818A8F12E56EE6136471081</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>875BFAF9615785EFF1CAC006</key>
+		<key>55561546406C125B40D3F3C35043B7E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DB8427FD256913E624945A3</key>
+		<key>659810C063D226692002A028729262AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90439C16E08ECEA6E27C5FC1</key>
+		<key>74080F194B60ED1909B3A0FE27D84D06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F405C1EA2E19A64698F7B22</key>
+		<key>94F7F189F3302603E3064AD0A6552133</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C14E4AB9C4E362998C1FC93D</key>
+		<key>9AD86C8AEC766E005121ABDCE31EE59B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C57F2475D73174D3FB23B54EC23B1A3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2504C936F3BD7926A212C440AB52FC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

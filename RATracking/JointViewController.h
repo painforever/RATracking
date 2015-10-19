@@ -27,6 +27,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *right_feet;
 
 @property (strong, nonatomic) NSMutableArray *all_buttons;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 //non controls
 @property (strong, nonatomic) NSString *selected_part;

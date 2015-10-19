@@ -69,7 +69,7 @@
     NSString *lat = [NSString stringWithFormat:@"%.8f", latitude];
     [[Medication getAFManager] GET:[SERVER_URL stringByAppendingString:@"pharmacies/find_pharmacies"] parameters:@{@"pharmacy_name": searchBar.text, @"longitude": lon, @"latitude": lat} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *res_arr = (NSMutableArray *)responseObject;
-        //self.table_data = [self getNearbyPharmacies: res_arr];
+        [self getNearbyPharmacies: res_arr];
         //[self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"failed");
@@ -126,25 +126,25 @@
     self.nearbyPharmaciesArray = [[NSMutableArray alloc] init];
     for (NSDictionary *pharmacy in allPharmacies) {
         NSString *address = [self getAddress:pharmacy];
+        NSLog(@"address is : %@", address);
         [geocoder geocodeAddressString: address
                      completionHandler:^(NSArray* placemarks, NSError* error){
                          if (placemarks && placemarks.count > 0) {
                              CLPlacemark *topResult = [placemarks objectAtIndex:0];
                              //just to print to see long and lat
-                             NSLog(@"lat: %f", topResult.location.coordinate.latitude);
-                             NSLog(@"long: %f", topResult.location.coordinate.longitude);
-                             if ([[self getMyCLLocation] distanceFromLocation:topResult.location] < 90) {
-                                 //[self.nearbyPharmaciesArray addObject: pharmacy];
+                             //NSLog(@"lat: %f", topResult.location.coordinate.latitude);
+                             //NSLog(@"long: %f", topResult.location.coordinate.longitude);
+                             NSLog(@"distance: %.8f", [[self getMyCLLocation] distanceFromLocation:topResult.location]);
+                             if ([[self getMyCLLocation] distanceFromLocation:topResult.location] < 1000000) {
+                                 [self.nearbyPharmaciesArray addObject: pharmacy];
+                                 self.table_data = self.nearbyPharmaciesArray;
+                                 [self.tableView reloadData];
                              }
-                             [self.nearbyPharmaciesArray addObject: pharmacy];
                              NSLog(@"pharmacy I like: %@", [self.nearbyPharmaciesArray description]);
                          }
                      }
          ];
-        self.table_data = self.nearbyPharmaciesArray;
-        [self.tableView reloadData];
     }
-    
     return self.nearbyPharmaciesArray;
 }
 

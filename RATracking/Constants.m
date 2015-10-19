@@ -10,9 +10,9 @@
 
 @implementation Constants
 
-NSString * photo_upload_url=@"http://10.0.80.51:3000/ra/medications/upload_drug_photo";
-NSString *BASE_URL = @"http://10.0.80.51:3000";
-NSString *SERVER_URL = @"http://10.0.80.51:3000/ra/";
+NSString * photo_upload_url=@"http://10.0.80.62:3000/ra/medications/upload_drug_photo";
+NSString *BASE_URL = @"http://10.0.80.62:3000";
+NSString *SERVER_URL = @"http://10.0.80.62:3000/ra/";
 
 
 //NSString *BASE_URL = @"http://127.0.0.1:3000";

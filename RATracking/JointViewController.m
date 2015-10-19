@@ -32,6 +32,9 @@
 }
 
 -(void)initControls{
+    //ScrollView
+    self.scrollView.userInteractionEnabled = YES;
+    self.scrollView.contentSize = CGSizeMake(375, 667);
     [self.menu close];
     self.selected_part = @"";
     self.menu = [[REMenu alloc] initWithItems:[self actionsInJoint]];
