@@ -53,6 +53,9 @@
     
 }
 
+- (IBAction)switcher_value_changed:(id)sender {
+}
+
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     [textField resignFirstResponder];
 }

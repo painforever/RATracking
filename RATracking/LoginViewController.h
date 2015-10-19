@@ -21,7 +21,9 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *signup_btn;
 @property (strong, nonatomic) IBOutlet UIButton *login_btn;
+@property (weak, nonatomic) IBOutlet UISwitch *switcher;
 
 - (IBAction)login_action:(id)sender;
 - (IBAction)signup_action:(id)sender;
+- (IBAction)switcher_value_changed:(id)sender;
 @end
