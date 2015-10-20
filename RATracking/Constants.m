@@ -24,6 +24,9 @@ NSString *user_id = @"";
 NSString *full_name = @"";
 NSString *patient_id = @"";
 
+NSString *email = @"";
+NSString *password = @"";
+
 //non control properties
 NSArray *med_name_arr;
 NSArray *route_name_arr;

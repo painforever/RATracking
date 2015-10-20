@@ -71,6 +71,8 @@
     patient_id = dic[@"patient_id"];
     user_id = dic[@"user_id"];
     full_name = [NSString stringWithFormat:@"%@ %@", dic[@"fname"], dic[@"lname"]];
+    email = dic[@"email_address"];
+    password = dic[@"password"];
 }
 
 //CWPopup

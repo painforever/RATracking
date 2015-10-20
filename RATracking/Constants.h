@@ -13,6 +13,8 @@ extern NSString *SERVER_URL;
 extern NSString *user_id;
 extern NSString *patient_id;
 extern NSString *full_name;
+extern NSString *email;
+extern NSString *password;
 extern NSString *BASE_URL;
 
 //non control properties

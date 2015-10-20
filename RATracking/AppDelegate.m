@@ -26,6 +26,8 @@
         user_id = fileContentArr[0];
         patient_id = fileContentArr[1];
         full_name = fileContentArr[2];
+        email = [File readFileByName: REMEMBERED_EMAIL_FILENAME];
+        password = [File readFileByName: REMEMBERED_PASS_FILENAME];
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UITabBarController *tabBarController = [sb instantiateViewControllerWithIdentifier:@"tabBarController"];
         AppDelegate *ddd = [UIApplication sharedApplication].delegate;

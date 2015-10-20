@@ -28,7 +28,8 @@
     self.old_password.leftView = [self setLeftViewForTextfields:@"account.png" withContainerScale:45 withImageIconScale:24 withUITextField:self.old_password];
     self.neo_password.leftView = [self setLeftViewForTextfields:@"settings.png" withContainerScale:45 withImageIconScale:24 withUITextField:self.neo_password];
     self.password_confirm.leftView = [self setLeftViewForTextfields:@"settings.png" withContainerScale:45 withImageIconScale:24 withUITextField:self.password_confirm];
-    self.email.text = [File readFileByName: REMEMBERED_EMAIL_FILENAME];
+    self.email.text = email;
+    //self.old_password.text = password;
 }
 
 - (IBAction)update_action:(id)sender {
@@ -36,6 +37,7 @@
         return;
     
     [[User getAFManager] POST:[SERVER_URL stringByAppendingString:@"users/update_password"] parameters:@{@"user_id": user_id, @"new_password": self.neo_password.text, @"email": self.email.text} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        password = self.neo_password.text;
         [self showAlert:@"Update success" withMessage:@"Update success!"];
         [self resetLocalFile:self.email.text withPassword: self.neo_password.text];
         self.old_password.text = @"";
@@ -43,7 +45,9 @@
         self.password_confirm.text = @"";
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed");
+        NSLog(@"error: %@", [error description]);
     }];
+    
 }
 
 -(BOOL)validateUserInput{
@@ -57,7 +61,7 @@
     }
     
     //validate old password
-    NSString *previous_pass = [File readFileByName: REMEMBERED_PASS_FILENAME];
+    NSString *previous_pass = password;
     if (![previous_pass isEqualToString: self.old_password.text]) {
         [self showAlert:@"Password is not correct as the previous one!" withMessage:@"Please make sure to input the correct previous password."];
         return NO;
