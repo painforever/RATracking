@@ -41,6 +41,11 @@
         [self.navigationController pushViewController:view animated:YES];
     }
     else if(indexPath.row == 1){
+        if ([File fileExistsByName:REMEMBERED_EMAIL_FILENAME]) {
+            [File deleteFileByName: REMEMBERED_EMAIL_FILENAME];
+            [File deleteFileByName:REMEMBERED_PASS_FILENAME];
+            [File deleteFileByName:REMEMBERED_USER_DATA];
+        }
         [self jumpToViewController:@"LoginViewController"];
     }
 }

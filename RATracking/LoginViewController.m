@@ -27,9 +27,11 @@
 - (IBAction)login_action:(id)sender {
     [[User getAFManager] POST: [SERVER_URL stringByAppendingString:@"sessions"] parameters:@{@"email": self.email.text, @"password": self.password.text} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ([operation.response statusCode] == 201){
-            [self storeAccount];
             NSDictionary *res_dic = (NSDictionary *)responseObject;
             [self assignAllConstants:res_dic];
+            if (self.switcher.on) {
+                [self storeAccount];
+            }
             UITabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
             AppDelegate *ddd = [UIApplication sharedApplication].delegate;
             [ddd.window setRootViewController: tabBarController];
@@ -110,9 +112,14 @@
 
 //this method must be called after userDefault data synced
 -(void)storeAccount{
+    if (![File fileExistsByName: REMEMBERED_EMAIL_FILENAME]) {
+        [File deleteFileByName:REMEMBERED_EMAIL_FILENAME];
+        [File deleteFileByName:REMEMBERED_PASS_FILENAME];
+        [File deleteFileByName:REMEMBERED_USER_DATA];
+    }
     [File createFileByName: REMEMBERED_EMAIL_FILENAME];[File writeToFileByName: REMEMBERED_EMAIL_FILENAME withContent: self.email.text];
     [File createFileByName: REMEMBERED_PASS_FILENAME];[File writeToFileByName: REMEMBERED_PASS_FILENAME withContent: self.password.text];
-    NSArray *user_data_arr = @[user_id, patient_id];
+    NSArray *user_data_arr = @[user_id, patient_id, full_name];
     [File createFileByName: REMEMBERED_USER_DATA];[File writeToFileByName: REMEMBERED_USER_DATA withContent: [user_data_arr componentsJoinedByString:@","]];
 }
 @end

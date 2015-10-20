@@ -19,6 +19,19 @@
     // Override point for customization after application launch.
     UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    
+    //for remembering the password
+    if ([File fileExistsByName:REMEMBERED_EMAIL_FILENAME]) {
+        NSArray *fileContentArr = [[File readFileByName:REMEMBERED_USER_DATA] componentsSeparatedByString:@","];
+        user_id = fileContentArr[0];
+        patient_id = fileContentArr[1];
+        full_name = fileContentArr[2];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UITabBarController *tabBarController = [sb instantiateViewControllerWithIdentifier:@"tabBarController"];
+        AppDelegate *ddd = [UIApplication sharedApplication].delegate;
+        [ddd.window setRootViewController: tabBarController];
+    }
+    
     return YES;
 }
 
