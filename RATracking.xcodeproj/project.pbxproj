@@ -21,15 +21,24 @@
 		CF239E8F1B8229FE003917CF /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E8E1B8229FE003917CF /* red_button.png */; };
 		CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = CF239E901B823102003917CF /* Yellow_icon.svg.png */; };
 		CF239E951B82388D003917CF /* JointReportFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF239E941B82388D003917CF /* JointReportFormViewController.m */; };
-		CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14A1BBADB19000FB0EF /* login.jpg */; settings = {ASSET_TAGS = (); }; };
-		CF36E14D1BBADDBF000FB0EF /* adverse_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14C1BBADDBF000FB0EF /* adverse_wall.jpg */; settings = {ASSET_TAGS = (); }; };
-		CF36E14F1BBAE03C000FB0EF /* human_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14E1BBAE03C000FB0EF /* human_wall.jpg */; settings = {ASSET_TAGS = (); }; };
-		CF36E1521BBB19C8000FB0EF /* RxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36E1511BBB19C8000FB0EF /* RxTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14A1BBADB19000FB0EF /* login.jpg */; };
+		CF36E14D1BBADDBF000FB0EF /* adverse_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14C1BBADDBF000FB0EF /* adverse_wall.jpg */; };
+		CF36E14F1BBAE03C000FB0EF /* human_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF36E14E1BBAE03C000FB0EF /* human_wall.jpg */; };
+		CF36E1521BBB19C8000FB0EF /* RxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36E1511BBB19C8000FB0EF /* RxTableViewController.m */; };
 		CF3A6D401B74F3F100C188A6 /* NewEventFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D3F1B74F3F100C188A6 /* NewEventFormViewController.m */; };
 		CF3A6D431B750F6F00C188A6 /* RxDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A6D421B750F6F00C188A6 /* RxDetailsViewController.m */; };
 		CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF446FB01BB09A75001FD9BD /* drug_default.jpg */; };
 		CF4EEF051BAB55BD00B49357 /* BackJointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4EEF041BAB55BD00B49357 /* BackJointViewController.m */; };
 		CF4EEF081BAB5AD800B49357 /* FingersJointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4EEF071BAB5AD800B49357 /* FingersJointsViewController.m */; };
+		CF65A74F1BE7F73F00AE2A46 /* Abatacept.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A7471BE7F73F00AE2A46 /* Abatacept.JPG */; };
+		CF65A7501BE7F73F00AE2A46 /* Adalimumab.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A7481BE7F73F00AE2A46 /* Adalimumab.JPG */; };
+		CF65A7511BE7F73F00AE2A46 /* Etanercept.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A7491BE7F73F00AE2A46 /* Etanercept.JPG */; };
+		CF65A7521BE7F73F00AE2A46 /* Golimumab.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A74A1BE7F73F00AE2A46 /* Golimumab.JPG */; };
+		CF65A7531BE7F73F00AE2A46 /* Infliximab.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A74B1BE7F73F00AE2A46 /* Infliximab.JPG */; };
+		CF65A7541BE7F73F00AE2A46 /* Rituximab.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A74C1BE7F73F00AE2A46 /* Rituximab.JPG */; };
+		CF65A7551BE7F73F00AE2A46 /* Tocilizumab.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A74D1BE7F73F00AE2A46 /* Tocilizumab.JPG */; };
+		CF65A7561BE7F73F00AE2A46 /* Tofacitinib.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A74E1BE7F73F00AE2A46 /* Tofacitinib.JPG */; };
+		CF65A7581BE7F8D900AE2A46 /* Anakinra.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CF65A7571BE7F8D900AE2A46 /* Anakinra.JPG */; };
 		CF6829191B67D889004DE59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6829181B67D889004DE59E /* main.m */; };
 		CF68291C1B67D889004DE59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68291B1B67D889004DE59E /* AppDelegate.m */; };
 		CF68291F1B67D889004DE59E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68291E1B67D889004DE59E /* ViewController.m */; };
@@ -123,6 +132,15 @@
 		CF4EEF041BAB55BD00B49357 /* BackJointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackJointViewController.m; sourceTree = "<group>"; };
 		CF4EEF061BAB5AD800B49357 /* FingersJointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingersJointsViewController.h; sourceTree = "<group>"; };
 		CF4EEF071BAB5AD800B49357 /* FingersJointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingersJointsViewController.m; sourceTree = "<group>"; };
+		CF65A7471BE7F73F00AE2A46 /* Abatacept.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Abatacept.JPG; path = Images/drug_static_images/Abatacept.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A7481BE7F73F00AE2A46 /* Adalimumab.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Adalimumab.JPG; path = Images/drug_static_images/Adalimumab.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A7491BE7F73F00AE2A46 /* Etanercept.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Etanercept.JPG; path = Images/drug_static_images/Etanercept.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A74A1BE7F73F00AE2A46 /* Golimumab.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Golimumab.JPG; path = Images/drug_static_images/Golimumab.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A74B1BE7F73F00AE2A46 /* Infliximab.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Infliximab.JPG; path = Images/drug_static_images/Infliximab.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A74C1BE7F73F00AE2A46 /* Rituximab.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rituximab.JPG; path = Images/drug_static_images/Rituximab.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A74D1BE7F73F00AE2A46 /* Tocilizumab.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Tocilizumab.JPG; path = Images/drug_static_images/Tocilizumab.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A74E1BE7F73F00AE2A46 /* Tofacitinib.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Tofacitinib.JPG; path = Images/drug_static_images/Tofacitinib.JPG; sourceTree = SOURCE_ROOT; };
+		CF65A7571BE7F8D900AE2A46 /* Anakinra.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Anakinra.JPG; path = Images/drug_static_images/Anakinra.JPG; sourceTree = SOURCE_ROOT; };
 		CF6829131B67D889004DE59E /* RATracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RATracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6829171B67D889004DE59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6829181B67D889004DE59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -263,6 +281,22 @@
 			name = JointReport;
 			sourceTree = "<group>";
 		};
+		CF65A7461BE7F72500AE2A46 /* drug_static_images */ = {
+			isa = PBXGroup;
+			children = (
+				CF65A7571BE7F8D900AE2A46 /* Anakinra.JPG */,
+				CF65A7471BE7F73F00AE2A46 /* Abatacept.JPG */,
+				CF65A7481BE7F73F00AE2A46 /* Adalimumab.JPG */,
+				CF65A7491BE7F73F00AE2A46 /* Etanercept.JPG */,
+				CF65A74A1BE7F73F00AE2A46 /* Golimumab.JPG */,
+				CF65A74B1BE7F73F00AE2A46 /* Infliximab.JPG */,
+				CF65A74C1BE7F73F00AE2A46 /* Rituximab.JPG */,
+				CF65A74D1BE7F73F00AE2A46 /* Tocilizumab.JPG */,
+				CF65A74E1BE7F73F00AE2A46 /* Tofacitinib.JPG */,
+			);
+			name = drug_static_images;
+			sourceTree = "<group>";
+		};
 		CF68290A1B67D889004DE59E = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +431,7 @@
 		CF6829531B67FFBC004DE59E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF65A7461BE7F72500AE2A46 /* drug_static_images */,
 				CF36E14E1BBAE03C000FB0EF /* human_wall.jpg */,
 				CF36E14C1BBADDBF000FB0EF /* adverse_wall.jpg */,
 				CF36E14A1BBADB19000FB0EF /* login.jpg */,
@@ -594,11 +629,17 @@
 				CF6829221B67D889004DE59E /* Main.storyboard in Resources */,
 				CF446FB11BB09A75001FD9BD /* drug_default.jpg in Resources */,
 				CFE3A9BE1B71104F002AC0F9 /* compass_filled-32.png in Resources */,
+				CF65A7541BE7F73F00AE2A46 /* Rituximab.JPG in Resources */,
 				CF68295D1B6800B2004DE59E /* icon4.png in Resources */,
+				CF65A7551BE7F73F00AE2A46 /* Tocilizumab.JPG in Resources */,
+				CF65A7581BE7F8D900AE2A46 /* Anakinra.JPG in Resources */,
 				CFE3A9BB1B71104F002AC0F9 /* activity_feed_2-32.png in Resources */,
+				CF65A7521BE7F73F00AE2A46 /* Golimumab.JPG in Resources */,
 				CF239E8F1B8229FE003917CF /* red_button.png in Resources */,
 				CF239E8B1B82242B003917CF /* human.jpg in Resources */,
 				CFE3A9BF1B71104F002AC0F9 /* treatment_plan_filled-32.png in Resources */,
+				CF65A7511BE7F73F00AE2A46 /* Etanercept.JPG in Resources */,
+				CF65A7531BE7F73F00AE2A46 /* Infliximab.JPG in Resources */,
 				CF6829271B67D889004DE59E /* LaunchScreen.xib in Resources */,
 				CF239E8A1B82242B003917CF /* hand.png in Resources */,
 				CF16B0BA1BB1D1EC0077A1D5 /* settings.png in Resources */,
@@ -606,16 +647,19 @@
 				CF68295F1B6800B2004DE59E /* icon6.png in Resources */,
 				CF36E14B1BBADB19000FB0EF /* login.jpg in Resources */,
 				CF68295C1B6800B2004DE59E /* icon3.png in Resources */,
+				CF65A74F1BE7F73F00AE2A46 /* Abatacept.JPG in Resources */,
 				CF239E911B823102003917CF /* Yellow_icon.svg.png in Resources */,
 				CF36E14D1BBADDBF000FB0EF /* adverse_wall.jpg in Resources */,
 				CF6829421B67E071004DE59E /* Podfile in Resources */,
 				CF68295A1B6800B2004DE59E /* icon1.png in Resources */,
 				CF16B0AE1BB1B72B0077A1D5 /* password1-32.png in Resources */,
+				CF65A7561BE7F73F00AE2A46 /* Tofacitinib.JPG in Resources */,
 				CF6829241B67D889004DE59E /* Images.xcassets in Resources */,
 				CFCFCABF1BAB1FBB00FD0F14 /* drug_default.gif in Resources */,
 				CFE3A9BC1B71104F002AC0F9 /* ambulance_filled-32.png in Resources */,
 				CF68295B1B6800B2004DE59E /* icon2.png in Resources */,
 				CF68295E1B6800B2004DE59E /* icon5.png in Resources */,
+				CF65A7501BE7F73F00AE2A46 /* Adalimumab.JPG in Resources */,
 				CF36E14F1BBAE03C000FB0EF /* human_wall.jpg in Resources */,
 				CF16B0AC1BB1ACA50077A1D5 /* envelope.png in Resources */,
 				CF239E8D1B822844003917CF /* human-body-outline-drawing-108.jpg in Resources */,

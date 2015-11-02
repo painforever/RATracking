@@ -49,9 +49,7 @@
     [self.menu setCloseCompletionHandler:^{
         NSLog(@"Menu did close");
     }];
-    UIImageView *wall = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"adverse_wall.jpg"]];
-    [wall setFrame:self.tableView.frame];
-    self.tableView.backgroundView = wall;
+    [self setUITableViewBackgroundImage:@"adverse_wall.jpg" withTableView:self.tableView];
 }
 
 #pragma table stuff
@@ -73,7 +71,10 @@
     cell.backgroundColor = [UIColor clearColor];
     NSString *drug_photo = [NSString stringWithFormat:@"%@", report_row_dic[@"drug_photo"]];
     if ([report_row_dic[@"drug_photo"] isEqual: [NSNull null]]) {
-        cell.drug_photo.image = [UIImage imageNamed:@"drug_default.jpg"];
+        if ([med_name_arr containsObject: cell.drug_name.text]) {
+            cell.drug_photo.image = [UIImage imageNamed: [NSString stringWithFormat:@"%@.JPG", cell.drug_name.text]];
+        }
+        else cell.drug_photo.image = [UIImage imageNamed:@"drug_default.jpg"];
     }
     else{
         NSString *image_url = [NSString stringWithFormat:@"%@/uploads/patient_prescription_item/drug_photo/%@/%@", BASE_URL, report_row_dic[@"prescription_item_id"], report_row_dic[@"drug_photo"]];

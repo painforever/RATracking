@@ -28,6 +28,8 @@
         full_name = fileContentArr[2];
         email = [File readFileByName: REMEMBERED_EMAIL_FILENAME];
         password = [File readFileByName: REMEMBERED_PASS_FILENAME];
+        med_name_arr = @[@"Abatacept", @"Etanercept", @"Tofacitinib", @"Adalimumab", @"Rituximab", @"Golimumab", @"Infliximab", @"Anakinra", @"Tocilizumab"];
+        route_name_arr = @[@"ORAL", @"SHOOT"];
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UITabBarController *tabBarController = [sb instantiateViewControllerWithIdentifier:@"tabBarController"];
         AppDelegate *ddd = [UIApplication sharedApplication].delegate;

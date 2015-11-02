@@ -53,4 +53,7 @@ static const CGSize progressViewSize = { 100.0f, 10.0f };
 
 //get the all formated date by appending only time, the format is yyyy-MM-dd HH:mm:ss
 -(NSDate *)getEntireFormattedDateByAppendingTime: (NSString *)time;
+
+//set Tableview background viewImage
+-(void)setUITableViewBackgroundImage: (NSString*)imageName withTableView: (UITableView *)tableView;
 @end

@@ -50,6 +50,7 @@
 }
 
 -(void)initControls{
+    [self setUITableViewBackgroundImage:@"adverse_wall.jpg" withTableView:self.tableView];
     self.title = @"Rx History";
     [self.menu close];
     self.menu = [[REMenu alloc] initWithItems:[self actionsInRxHistory]];
@@ -77,10 +78,10 @@
     cell.created_at_label.text = [NSString stringWithFormat:@"Date: %@", med_row_dic[@"date_prescribed"]];
     NSString *drug_photo = [NSString stringWithFormat:@"%@%@", BASE_URL, med_row_dic[@"drug_photo"][@"thumb"][@"url"]];
     if ([med_row_dic[@"drug_photo"][@"thumb"][@"url"] isEqual: [NSNull null]])
-        cell.drug_image_view.image = [UIImage imageNamed:@"drug_default.jpg"];
+        cell.drug_image_view.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.JPG", cell.drug_name_label.text]];
     else
         cell.drug_image_view.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: drug_photo]]];
-    
+    cell.backgroundColor = [UIColor clearColor];
     cell.drug_image_view.layer.borderWidth = 1.0f;
     cell.drug_image_view.layer.borderColor = [UIColor blackColor].CGColor;
     cell.drug_image_view.layer.cornerRadius = 20.0f;

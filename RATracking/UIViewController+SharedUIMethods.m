@@ -137,4 +137,10 @@
     NSDate *date=[formater dateFromString:stringFromDate];
     return date;
 }
+
+-(void)setUITableViewBackgroundImage:(NSString *)imageName withTableView: (UITableView *)tableView{
+    UIImageView *wall = [[UIImageView alloc] initWithImage:[UIImage imageNamed: imageName]];
+    [wall setFrame:tableView.frame];
+    tableView.backgroundView = wall;
+}
 @end

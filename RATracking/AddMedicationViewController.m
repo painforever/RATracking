@@ -9,7 +9,11 @@
 //http://bipolarhappens.com/bhblog/wp-content/uploads/med-question6.gif  default drug photo
 
 #import "AddMedicationViewController.h"
-
+@interface AddMedicationViewController()
+{
+    BOOL already_took_photo;
+}
+@end
 @implementation AddMedicationViewController
 
 -(void)viewDidLoad{
@@ -66,6 +70,14 @@
 }
 
 #pragma text field delegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    if ([textField isEqual: self.route_name]) {
+        self.route_name.text = @"ORAL";
+    }
+    if ([textField isEqual: self.med_name]) {
+        self.med_name.text = med_name_arr[0];
+    }
+}
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     [textField resignFirstResponder];
 }
@@ -122,11 +134,6 @@
     
 }
 
-#pragma mark - Text field delegates
-
--(void)textFieldDidBeginEditing:(UITextField *)textField{
-    
-}
 #pragma mark - Picker View Data source
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -203,6 +210,7 @@
     //display image on GUI
     self.drug_image.image = chosenImage;
     NSLog(@"take photo finished!");
+    already_took_photo = YES;
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
