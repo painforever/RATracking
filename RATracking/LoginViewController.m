@@ -92,13 +92,13 @@
 
 #pragma styles for controls
 -(void)styleLoginControls{
-    UIImageView* usernameIconImage = [[UIImageView alloc] initWithFrame:CGRectMake(9, 9, 24, 24)];
+    UIImageView* usernameIconImage = [[UIImageView alloc] initWithFrame:CGRectMake(12, 12, 24, 24)];
     usernameIconImage.image = [UIImage imageNamed:@"envelope.png"];
     UIView* usernameIconContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     usernameIconContainer.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
     [usernameIconContainer addSubview:usernameIconImage];
     
-    UIImageView *passwordIconImage = [[UIImageView alloc] initWithFrame:CGRectMake(9, 9, 24, 24)];
+    UIImageView *passwordIconImage = [[UIImageView alloc] initWithFrame:CGRectMake(12, 12, 24, 24)];
     passwordIconImage.image = [UIImage imageNamed:@"account.png"];
     UIView *passwordIconContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     passwordIconContainer.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
